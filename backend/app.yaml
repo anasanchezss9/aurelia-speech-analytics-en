@@ -1,0 +1,58 @@
+# Databricks App config
+# Docs: https://docs.databricks.com/dev-tools/databricks-apps/configuration.html
+
+command:
+  - "uvicorn"
+  - "app:app"
+  - "--host"
+  - "0.0.0.0"
+  - "--port"
+  - "8000"
+
+# To move the app to another workspace, the fields to change are PORTAL_CATALOG,
+# PORTAL_SCHEMA, PORTAL_JOB_ID and LAKEBASE_ENDPOINT.
+
+env:
+  # ----- Endpoints -----
+  # Empty disables live recording (Configure and Record tabs). To enable it, deploy
+  # Whisper with notebooks/01_deploy_whisper_turbo.py and put its name here.
+  - name: WHISPER_ENDPOINT
+    value: ""
+  - name: WHISPER_SCHEMA
+    value: "simple"
+  - name: LLM_MODEL
+    value: "databricks-claude-sonnet-4-6"
+  # en translates the Portuguese call summaries when the app reads them (traducao.py); pt turns it off.
+  - name: APP_IDIOMA
+    value: "en"
+  - name: WHISPER_FLUSH_SECONDS
+    value: "2.0"
+
+  # ----- Portal: catalog/schema/volume + pipeline tables -----
+  - name: PORTAL_CATALOG
+    value: "field_toolbox_catalog"
+  - name: PORTAL_SCHEMA
+    value: "aurelia_speech"
+  - name: PORTAL_VOLUME
+    value: "audio_landing"
+  - name: PORTAL_TABLE_BRONZE
+    value: "bronze_audio_files"
+  - name: PORTAL_TABLE_SILVER
+    value: "silver_transcripts"
+  - name: PORTAL_TABLE_GOLD
+    value: "gold_call_insights"
+
+  # ----- SQL Warehouse used by the dashboard queries -----
+  - name: PORTAL_WAREHOUSE_ID
+    valueFrom: "warehouse"
+
+  # ----- Job triggered by the Process button (pipeline → scoring → Lakebase queue) -----
+  - name: PORTAL_JOB_ID
+    valueFrom: "job_diario"
+
+  # ----- Lakebase: prioritized queue (read) and analyst decisions (write) -----
+  # No PGUSER: the app signs in as its own service principal (DATABRICKS_CLIENT_ID).
+  - name: LAKEBASE_ENDPOINT
+    value: "projects/aurelia-speech-ops/branches/production/endpoints/primary"
+  - name: PGDATABASE
+    value: "databricks_postgres"

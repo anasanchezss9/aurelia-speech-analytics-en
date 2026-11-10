@@ -1,0 +1,617 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Aurélia · Speech Analytics</title>
+    <link rel="stylesheet" href="/static/styles.css" />
+  </head>
+  <body>
+    <div class="app">
+      <header class="app-header">
+        <span class="dot"></span>
+        <h1>Aurélia · Speech Analytics</h1>
+        <nav class="app-nav">
+          <button class="nav-tab active" data-page="dashboard">📊 Dashboard</button>
+          <button class="nav-tab" data-page="fila">🕵️ Investigation queue</button>
+          <button class="nav-tab" data-page="upload">📤 Upload</button>
+          <button class="nav-tab" data-page="config">⚙️ Configure</button>
+          <button class="nav-tab" data-page="record">🎙️ Record</button>
+          <button class="nav-tab" data-page="architecture">🏗️ Architecture</button>
+        </nav>
+      </header>
+
+      <!-- ============ Dashboard (default) ============ -->
+      <section id="page-dashboard">
+        <div class="dash-header">
+          <div>
+            <h2 style="margin-bottom: 4px">Call analysis dashboard</h2>
+            <p class="subtitle" style="margin: 0">
+              Consolidated view of calls from Aurélia consultants — missing-product claims project.
+            </p>
+          </div>
+          <div class="dash-actions">
+            <span id="dash-updated" class="dash-updated">—</span>
+            <button class="ghost" id="dash-refresh">↻ Refresh</button>
+          </div>
+        </div>
+
+        <!-- KPIs -->
+        <div id="kpi-row" class="kpi-row">
+          <div class="kpi-card">
+            <div class="kpi-label">Total calls</div>
+            <div class="kpi-value" id="kpi-total">—</div>
+            <div class="kpi-sub" id="kpi-total-sub">audio and text</div>
+          </div>
+          <div class="kpi-card">
+            <div class="kpi-label">Analyzed</div>
+            <div class="kpi-value" id="kpi-analyzed">—</div>
+            <div class="kpi-sub" id="kpi-analyzed-sub">with Claude</div>
+          </div>
+          <div class="kpi-card">
+            <div class="kpi-label">Pending</div>
+            <div class="kpi-value" id="kpi-pending">—</div>
+            <div class="kpi-sub">awaiting processing</div>
+          </div>
+          <div class="kpi-card alert clickable" data-filter="fraude" title="Click to filter the list">
+            <div class="kpi-label">Suspected fraud</div>
+            <div class="kpi-value" id="kpi-fraud">—</div>
+            <div class="kpi-sub" id="kpi-fraud-sub">of total analyzed</div>
+          </div>
+          <div class="kpi-card warn">
+            <div class="kpi-label">Repeat issue</div>
+            <div class="kpi-value" id="kpi-rein">—</div>
+            <div class="kpi-sub">consultant mentions a recurring problem</div>
+          </div>
+          <div class="kpi-card">
+            <div class="kpi-label">Average churn risk</div>
+            <div class="kpi-value" id="kpi-churn">—</div>
+            <div class="kpi-sub">0 = low · 1 = high</div>
+          </div>
+        </div>
+
+        <!-- Charts row -->
+        <div class="dash-grid-2">
+          <div class="card chart-card">
+            <h3>Problem types</h3>
+            <div id="chart-tipo" class="chart-bars"></div>
+          </div>
+          <div class="card chart-card">
+            <h3>Sentiment distribution</h3>
+            <div id="chart-sent" class="chart-bars"></div>
+          </div>
+        </div>
+
+        <div class="dash-grid-2">
+          <div class="card chart-card">
+            <h3>Top consultants by number of calls</h3>
+            <div id="top-cons" class="data-table-wrap">
+              <p style="color: var(--db-muted)">No data yet</p>
+            </div>
+          </div>
+          <div class="card chart-card">
+            <h3>Top missing products</h3>
+            <div id="top-prod" class="data-table-wrap">
+              <p style="color: var(--db-muted)">No data yet</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Filterable list -->
+        <div class="card">
+          <div class="dash-list-header">
+            <h3 style="margin: 0">Calls — detailed view</h3>
+            <div class="filters">
+              <select id="filter-tipo" title="Problem type (main classification)">
+                <option value="">All types</option>
+                <option value="atraso">Late delivery</option>
+                <option value="falta_parcial">Missing items</option>
+                <option value="violacao_caixa">Damaged or opened box</option>
+                <option value="outro">Other</option>
+              </select>
+              <select id="filter-fraude" title="Fraud flag (separate from the type)">
+                <option value="">Suspected fraud: all</option>
+                <option value="true">Suspected only</option>
+                <option value="false">Not suspected</option>
+              </select>
+              <select id="filter-source">
+                <option value="">All sources</option>
+                <option value="upload">Portal upload</option>
+                <option value="recording">Portal recording</option>
+                <option value="landing">Direct drop into the volume</option>
+              </select>
+            </div>
+          </div>
+          <div id="calls-list" class="calls-list">
+            <p style="color: var(--db-muted)">Loading…</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- ============ Drill-down (modal over the dashboard) ============ -->
+      <div id="call-modal" class="call-modal" style="display: none">
+        <div class="call-modal-card">
+          <div class="call-modal-header">
+            <div>
+              <div class="muted">Call</div>
+              <h3 id="cm-title">—</h3>
+            </div>
+            <button class="ghost" id="cm-close">✕ Close</button>
+          </div>
+
+          <div class="call-modal-body">
+            <div class="cm-left">
+              <div class="card cm-card">
+                <h4>🎧 Audio</h4>
+                <audio id="cm-audio" controls preload="none" style="width: 100%"></audio>
+                <div class="cm-meta">
+                  <span id="cm-format">—</span> ·
+                  <span id="cm-source">—</span> ·
+                  <span id="cm-ingested">—</span>
+                </div>
+              </div>
+
+              <div class="card cm-card">
+                <h4>📝 Full transcript (Portuguese)</h4>
+                <div id="cm-transcript" class="transcript-box">—</div>
+              </div>
+            </div>
+
+            <div class="cm-right">
+              <div class="card cm-card">
+                <h4>🚨 Missing-product claim classification</h4>
+                <div class="ppm-grid">
+                  <div><span class="muted">Type</span><strong id="cm-tipo">—</strong></div>
+                  <div><span class="muted">Fraud</span><strong id="cm-fraude">—</strong></div>
+                  <div><span class="muted">Repeat issue</span><strong id="cm-rein">—</strong></div>
+                  <div><span class="muted">Churn</span><strong id="cm-churn">—</strong></div>
+                  <div><span class="muted">Consultant</span><strong id="cm-cons">—</strong></div>
+                  <div><span class="muted">Order</span><strong id="cm-ped">—</strong></div>
+                </div>
+
+                <div class="conf-block">
+                  <div class="conf-head">
+                    <span class="muted">Model confidence in the suspicion</span>
+                    <strong id="cm-fraude-conf">—</strong>
+                  </div>
+                  <div class="conf-track">
+                    <div id="cm-fraude-conf-bar" class="conf-bar" style="width: 0%"></div>
+                  </div>
+                  <div class="conf-note">
+                    How much this call, on its own, supports the suspicion — self-reported
+                    by the model, not a calibrated probability. It separates the explicit
+                    case from the rest well, but does not rank the doubtful cases against
+                    each other: treat it as a supporting read, never as a verdict.
+                  </div>
+                </div>
+              </div>
+
+              <div class="card cm-card">
+                <h4>💭 Sentiment &amp; intent</h4>
+                <div class="ppm-grid">
+                  <div><span class="muted">Sentiment</span><strong id="cm-sent">—</strong></div>
+                  <div><span class="muted">Emotion</span><strong id="cm-emo">—</strong></div>
+                  <div><span class="muted">Intent</span><strong id="cm-int">—</strong></div>
+                  <div><span class="muted">Compliance</span><strong id="cm-comp">—</strong></div>
+                </div>
+                <div id="cm-comp-reason" class="muted" style="margin-top: 8px"></div>
+              </div>
+
+              <div class="card cm-card">
+                <h4>🔍 Indicators and products</h4>
+                <div class="muted">Fraud indicators</div>
+                <ul id="cm-fraude-ind" class="bullets"></ul>
+                <div class="muted" style="margin-top: 12px">Missing products</div>
+                <ul id="cm-prod" class="bullets"></ul>
+                <div class="muted" style="margin-top: 12px">Topics</div>
+                <ul id="cm-topics" class="bullets"></ul>
+              </div>
+
+              <div class="card cm-card">
+                <h4>📋 Executive summary</h4>
+                <p id="cm-summary">—</p>
+                <h4 style="margin-top: 12px">→ Next action</h4>
+                <p id="cm-next">—</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- ============ Investigation queue (Lakebase) ============ -->
+      <section id="page-fila" style="display: none">
+        <div class="dash-header">
+          <div>
+            <h2 style="margin-bottom: 4px">Investigation queue</h2>
+            <p class="subtitle" style="margin: 0">
+              Open missing-product claims, ranked by fraud probability. The score comes from the model;
+              the decision is yours and flows back to the lakehouse as a label.
+            </p>
+          </div>
+          <div class="dash-actions">
+            <span id="fila-modelo" class="dash-updated">—</span>
+            <button class="ghost" id="fila-refresh">↻ Refresh</button>
+          </div>
+        </div>
+
+        <div class="kpi-row">
+          <div class="kpi-card"><div class="kpi-label">Open</div><div class="kpi-value" id="fk-abertos">—</div><div class="kpi-sub">in the queue</div></div>
+          <div class="kpi-card alert"><div class="kpi-label">High risk</div><div class="kpi-value" id="fk-alto">—</div><div class="kpi-sub" id="fk-alto-sub">score ≥ 0.5</div></div>
+          <div class="kpi-card"><div class="kpi-label">Decided</div><div class="kpi-value" id="fk-decididos">—</div><div class="kpi-sub">by analysts</div></div>
+          <div class="kpi-card warn"><div class="kpi-label">Confirmed frauds</div><div class="kpi-value" id="fk-fraudes">—</div><div class="kpi-sub">in this queue</div></div>
+        </div>
+
+        <div class="card">
+          <div class="dash-list-header">
+            <h3 style="margin: 0">Claims</h3>
+            <div class="filters">
+              <select id="fila-faixa">
+                <option value="">All risk bands</option>
+                <option value="alta">High risk</option>
+                <option value="media">Medium risk</option>
+                <option value="baixa">Low risk</option>
+              </select>
+              <label class="fila-check"><input type="checkbox" id="fila-pendentes" checked /> undecided only</label>
+            </div>
+          </div>
+          <div class="fila-grid">
+            <div id="fila-lista" class="data-table-wrap"><p class="muted">Loading…</p></div>
+            <div id="fila-detalhe" class="fila-detalhe"><p class="muted">Pick a claim from the list.</p></div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ============ Upload ============ -->
+      <section id="page-upload" style="display: none">
+        <h2>Audio upload</h2>
+        <p class="subtitle">
+          Drag <code>.wav</code>, <code>.mp3</code> or <code>.m4a</code> files here or
+          click to select them. The audio files go straight to the Unity Catalog volume.
+        </p>
+
+        <div class="card">
+          <div id="dropzone" class="dropzone">
+            <div class="dropzone-icon">📤</div>
+            <div class="dropzone-label">Drop files here or click to choose</div>
+            <div class="dropzone-hint">.wav · .mp3 · .m4a · up to 200 MB each</div>
+            <input type="file" id="file-input" accept=".wav,.mp3,.m4a,audio/*" multiple hidden />
+          </div>
+          <div id="upload-list" class="upload-list"></div>
+        </div>
+
+        <div class="card">
+          <div class="dash-list-header">
+            <h3 style="margin: 0">Processing</h3>
+            <div class="dash-actions">
+              <span id="proc-status-pill" class="pill">idle</span>
+              <button id="btn-process">▶ Process pending</button>
+            </div>
+          </div>
+          <p style="color: var(--db-muted); font-size: 14px">
+            Processing triggers the <strong>imperative pipeline</strong> (Bronze → Silver → Gold)
+            as a Serverless Job. Only new audio files are transcribed. Follow along below:
+          </p>
+          <div id="proc-log" class="proc-log">
+            <span class="muted">No runs in this session.</span>
+          </div>
+        </div>
+      </section>
+
+      <!-- ============ Screen 1: configuration ============ -->
+      <section id="page-config" style="display: none">
+        <h2>Configure analysis</h2>
+        <p class="subtitle">
+          Choose what to extract from the audio. Select preconfigured analyses and/or
+          add your own free-form questions.
+        </p>
+
+        <div id="config-error" class="error-box" style="display: none"></div>
+
+        <div class="card">
+          <h3>Preconfigured analyses</h3>
+          <div id="presets-grid" class="preset-grid">
+            <p style="color: var(--db-muted)">Loading…</p>
+          </div>
+        </div>
+
+        <div class="card">
+          <h3>Custom questions (optional)</h3>
+          <p style="color: var(--db-muted); font-size: 13px; margin-bottom: 12px">
+            E.g.: "Did the agent offer a product from the Raízes line?", "Was a
+            discount mentioned?"
+          </p>
+          <div id="questions-list"></div>
+          <button type="button" class="ghost" id="add-question-btn">
+            + Add question
+          </button>
+        </div>
+
+        <div class="actions">
+          <div></div>
+          <button id="continue-btn" disabled>Continue to recording →</button>
+        </div>
+      </section>
+
+      <!-- ============ Screen 2: recording ============ -->
+      <section id="page-record" style="display: none">
+        <h2>Record and transcribe</h2>
+        <p class="subtitle">
+          Click the button to record. The transcript appears in real time —
+          when you stop, we run the analysis.
+        </p>
+
+        <div id="record-error" class="error-box" style="display: none"></div>
+
+        <div class="card">
+          <div class="recorder">
+            <button
+              id="rec-button"
+              class="rec-button"
+              aria-label="Start recording"
+            >
+              <span class="icon"></span>
+            </button>
+            <div id="rec-status" class="rec-status">Ready to record</div>
+            <div id="timer" class="timer">00:00</div>
+          </div>
+        </div>
+
+        <div class="card">
+          <h3>Real-time transcript</h3>
+          <div id="transcript-box" class="transcript-box empty">
+            The transcript will appear here as you speak…
+          </div>
+        </div>
+
+        <div class="card">
+          <h3>Smart analysis</h3>
+          <div id="analysis-empty" style="color: var(--db-muted); font-size: 14px">
+            Stop the recording to enable the analysis.
+          </div>
+          <div id="analysis-loading" style="display: none">
+            <span class="spinner"></span> Analyzing with Claude Sonnet 4.6…
+          </div>
+          <div id="analysis-result" class="analysis-grid" style="display: none"></div>
+          <div id="analysis-error" class="error-box" style="display: none"></div>
+          <div style="margin-top: 16px">
+            <button id="analyze-btn" disabled>Analyze transcript</button>
+          </div>
+        </div>
+
+        <div class="actions">
+          <button class="ghost" id="back-btn">← Back to configuration</button>
+          <div></div>
+        </div>
+      </section>
+
+      <!-- ============ Screen 3: architecture ============ -->
+      <section id="page-architecture" style="display: none">
+        <h2>Solution architecture</h2>
+        <p class="subtitle">
+          Everything runs on the Databricks Intelligence Platform — no data moving between
+          vendors, with end-to-end governance through Unity Catalog.
+        </p>
+
+        <!-- ===== Current demo ===== -->
+        <div class="card">
+          <h3>What is running in this demo</h3>
+          <p style="color: var(--db-muted); font-size: 14px; margin-bottom: 20px">
+            Real-time pattern: cumulative WebSocket between the browser and a
+            Databricks App, with Whisper on GPU and Claude for analysis.
+          </p>
+
+          <div class="arch-diagram">
+            <div class="arch-row">
+              <div class="arch-node browser">
+                <div class="arch-icon">🌐</div>
+                <div class="arch-name">Browser</div>
+                <div class="arch-sub">MediaRecorder · WebM/Opus</div>
+              </div>
+              <div class="arch-arrow">
+                <span class="arch-arrow-label">Binary WebSocket</span>→
+              </div>
+              <div class="arch-node app">
+                <div class="arch-icon">⚡</div>
+                <div class="arch-name">Databricks App</div>
+                <div class="arch-sub">FastAPI · PyAV · OAuth</div>
+              </div>
+            </div>
+            <div class="arch-row">
+              <div class="arch-spacer"></div>
+              <div class="arch-down">↓ <span class="arch-arrow-label">REST + JSON Schema</span></div>
+              <div class="arch-spacer"></div>
+            </div>
+            <div class="arch-row">
+              <div class="arch-node serving">
+                <div class="arch-icon">🎙️</div>
+                <div class="arch-name">Mosaic AI Model Serving</div>
+                <div class="arch-sub">Whisper Large V3 Turbo · GPU_MEDIUM</div>
+                <div class="arch-pills">
+                  <span class="pill orange">scale-to-zero</span>
+                  <span class="pill orange">A10G</span>
+                </div>
+              </div>
+              <div class="arch-arrow">+</div>
+              <div class="arch-node fmapi">
+                <div class="arch-icon">🧠</div>
+                <div class="arch-name">Foundation Model API</div>
+                <div class="arch-sub">databricks-claude-sonnet-4-6</div>
+                <div class="arch-pills">
+                  <span class="pill orange">JSON Schema</span>
+                  <span class="pill orange">pay-per-token</span>
+                </div>
+              </div>
+            </div>
+            <div class="arch-row">
+              <div class="arch-spacer"></div>
+              <div class="arch-down">↓</div>
+              <div class="arch-spacer"></div>
+            </div>
+            <div class="arch-row">
+              <div class="arch-node uc full">
+                <div class="arch-icon">🏛️</div>
+                <div class="arch-name">Unity Catalog</div>
+                <div class="arch-sub">
+                  Governance · Lineage · App OAuth · Model registered at
+                  <code>field_toolbox_catalog.speech_analytics.whisper_large_v3_turbo</code>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <h4 style="margin-top: 24px">Databricks components used</h4>
+          <div class="comp-grid">
+            <div class="comp">
+              <div class="comp-name">Databricks Apps</div>
+              <div class="comp-desc">Hosting for FastAPI + frontend, automatic OAuth, managed scaling</div>
+            </div>
+            <div class="comp">
+              <div class="comp-name">Mosaic AI Model Serving</div>
+              <div class="comp-desc">GPU endpoint for Whisper Turbo with scale-to-zero</div>
+            </div>
+            <div class="comp">
+              <div class="comp-name">Foundation Model API</div>
+              <div class="comp-desc">Claude Sonnet 4.6 pay-per-token, no infrastructure to manage</div>
+            </div>
+            <div class="comp">
+              <div class="comp-name">Unity Catalog</div>
+              <div class="comp-desc">Whisper model registry, access control for the endpoint</div>
+            </div>
+            <div class="comp">
+              <div class="comp-name">MLflow</div>
+              <div class="comp-desc">Packaging Whisper as a pyfunc + tracking</div>
+            </div>
+            <div class="comp">
+              <div class="comp-name">Asset Bundles (DAB)</div>
+              <div class="comp-desc">Declarative deploy of the app + endpoint permissions</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- ===== Other architectures ===== -->
+        <h3 style="font-size: 22px; margin: 32px 0 12px; color: var(--db-text); text-transform: none; letter-spacing: 0">
+          Other architectures for Speech Analytics
+        </h3>
+        <p class="subtitle" style="margin-bottom: 16px">
+          The same workspace covers all 3 patterns — pick the right one for each use case.
+        </p>
+
+        <!-- Batch -->
+        <div class="card arch-alt">
+          <div class="arch-alt-header">
+            <span class="arch-tag batch">BATCH · D+1 / hourly</span>
+            <h3 style="color: var(--db-blue)">📦 Bulk processing</h3>
+          </div>
+          <p style="font-size: 14px; color: var(--db-muted); margin-bottom: 12px">
+            Daily pipeline that processes all of the previous day's calls. Ideal for
+            retroactive analyses, historical backfill and management reports.
+          </p>
+          <div class="arch-flow">
+            <div class="arch-step">📁 UC Volumes</div>
+            <span class="arch-flow-arrow">→</span>
+            <div class="arch-step">🔄 Auto Loader</div>
+            <span class="arch-flow-arrow">→</span>
+            <div class="arch-step">⚡ pandas_udf + Whisper</div>
+            <span class="arch-flow-arrow">→</span>
+            <div class="arch-step">🗃️ Delta Silver</div>
+            <span class="arch-flow-arrow">→</span>
+            <div class="arch-step">🤖 ai_query SQL</div>
+            <span class="arch-flow-arrow">→</span>
+            <div class="arch-step">📊 Delta Gold</div>
+          </div>
+          <div class="comp-grid">
+            <div class="comp"><div class="comp-name">Jobs / Workflows</div><div class="comp-desc">Daily serverless orchestration</div></div>
+            <div class="comp"><div class="comp-name">Auto Loader</div><div class="comp-desc">Incremental ingestion of WAV/MP3 from storage</div></div>
+            <div class="comp"><div class="comp-name">Spark + pandas_udf</div><div class="comp-desc">Whisper parallelized across all workers</div></div>
+            <div class="comp"><div class="comp-name">Delta Lake (Bronze/Silver/Gold)</div><div class="comp-desc">Governed medallion architecture</div></div>
+            <div class="comp"><div class="comp-name">AI Functions (ai_query, ai_classify, ai_mask)</div><div class="comp-desc">LLM analysis in pure SQL, no Python</div></div>
+            <div class="comp"><div class="comp-name">AI/BI Dashboards + Genie</div><div class="comp-desc">Final consumption by managers</div></div>
+          </div>
+          <p style="font-size: 13px; color: var(--db-muted); margin-top: 12px">
+            <strong>When to use</strong>: consolidated daily analysis, re-running analyses with new prompts,
+            backfilling months of history, model training.
+          </p>
+        </div>
+
+        <!-- Streaming -->
+        <div class="card arch-alt">
+          <div class="arch-alt-header">
+            <span class="arch-tag stream">STREAMING · seconds to minutes</span>
+            <h3 style="color: var(--db-green)">🌊 Near real-time</h3>
+          </div>
+          <p style="font-size: 14px; color: var(--db-muted); margin-bottom: 12px">
+            The telephony platform sends continuous chunks to Kafka. Lakeflow consumes,
+            transcribes, classifies and triggers actions with no manual operation.
+          </p>
+          <div class="arch-flow">
+            <div class="arch-step">📞 Telephony</div>
+            <span class="arch-flow-arrow">→</span>
+            <div class="arch-step">🔥 Kafka / Event Hub</div>
+            <span class="arch-flow-arrow">→</span>
+            <div class="arch-step">⚡ Structured Streaming</div>
+            <span class="arch-flow-arrow">→</span>
+            <div class="arch-step">🎙️ Whisper Serving</div>
+            <span class="arch-flow-arrow">→</span>
+            <div class="arch-step">🤖 ai_query streaming</div>
+            <span class="arch-flow-arrow">→</span>
+            <div class="arch-step">🔔 Webhook / Slack</div>
+          </div>
+          <div class="comp-grid">
+            <div class="comp"><div class="comp-name">Lakeflow / Spark Declarative Pipelines</div><div class="comp-desc">Declarative streaming pipeline, exactly-once</div></div>
+            <div class="comp"><div class="comp-name">Structured Streaming</div><div class="comp-desc">Same SDK as batch, with checkpoints</div></div>
+            <div class="comp"><div class="comp-name">Kafka / Event Hubs / Kinesis</div><div class="comp-desc">Real-time ingestion of audio chunks</div></div>
+            <div class="comp"><div class="comp-name">Streaming Tables / Materialized Views</div><div class="comp-desc">Always-fresh results for dashboards</div></div>
+            <div class="comp"><div class="comp-name">Mosaic AI Model Serving</div><div class="comp-desc">Whisper + LLM on autoscaling endpoints</div></div>
+            <div class="comp"><div class="comp-name">Real-Time Mode (RTM)</div><div class="comp-desc">Sub-second latency for extreme cases</div></div>
+          </div>
+          <p style="font-size: 13px; color: var(--db-muted); margin-top: 12px">
+            <strong>When to use</strong>: alerting a supervisor during a problematic call,
+            next-best-action for the agent, live compliance monitoring, operational dashboards.
+          </p>
+        </div>
+
+        <!-- Interactive real-time (this demo) -->
+        <div class="card arch-alt">
+          <div class="arch-alt-header">
+            <span class="arch-tag interactive">INTERACTIVE · this demo</span>
+            <h3 style="color: var(--db-orange)">🎙️ Real-time application with a user</h3>
+          </div>
+          <p style="font-size: 14px; color: var(--db-muted); margin-bottom: 12px">
+            Web app with a WebSocket where a user records audio and gets the transcript
+            in ~2-4s, then triggers analysis on demand. The pattern for POCs, internal
+            tools and end-user-facing products.
+          </p>
+          <div class="arch-flow">
+            <div class="arch-step">🌐 Browser</div>
+            <span class="arch-flow-arrow">↔</span>
+            <div class="arch-step">⚡ Databricks App</div>
+            <span class="arch-flow-arrow">→</span>
+            <div class="arch-step">🎙️ Whisper Serving</div>
+            <span class="arch-flow-arrow">→</span>
+            <div class="arch-step">🧠 Claude FM API</div>
+            <span class="arch-flow-arrow">→</span>
+            <div class="arch-step">📺 UI</div>
+          </div>
+          <div class="comp-grid">
+            <div class="comp"><div class="comp-name">Databricks Apps</div><div class="comp-desc">Web app hosting with automatic OAuth</div></div>
+            <div class="comp"><div class="comp-name">Mosaic AI Model Serving (GPU)</div><div class="comp-desc">Whisper Turbo with scale-to-zero</div></div>
+            <div class="comp"><div class="comp-name">Foundation Model API</div><div class="comp-desc">Claude Sonnet 4.6 with JSON Schema</div></div>
+            <div class="comp"><div class="comp-name">Unity Catalog</div><div class="comp-desc">Model + endpoint governance</div></div>
+            <div class="comp"><div class="comp-name">Asset Bundles (DAB)</div><div class="comp-desc">App deploy + endpoint permissions</div></div>
+            <div class="comp"><div class="comp-name">MLflow</div><div class="comp-desc">Model versioning and packaging</div></div>
+          </div>
+          <p style="font-size: 13px; color: var(--db-muted); margin-top: 12px">
+            <strong>When to use</strong>: internal tools (coaching agents in training),
+            POCs and proofs of concept, stakeholder demos, manual call annotation.
+          </p>
+        </div>
+      </section>
+
+      <div class="footer">
+        Transcription with ai_transcribe · analysis with Claude Sonnet 4.6 · fraud score on Model Serving · queue on Lakebase
+      </div>
+    </div>
+
+    <script src="/static/app.js"></script>
+  </body>
+</html>

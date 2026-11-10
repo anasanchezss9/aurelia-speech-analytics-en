@@ -1,0 +1,9 @@
+.databricks/
+.env
+__pycache__/
+node_modules/
+dist/
+.venv/
+.DS_Store
+dados_operacionais/saida/
+sintetico/audios/

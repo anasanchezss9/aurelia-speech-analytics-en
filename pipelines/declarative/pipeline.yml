@@ -1,0 +1,37 @@
+# =====================================================================
+# Declarative pipeline (Lakeflow) — Speech Analytics for missing-item claims
+# =====================================================================
+# A single journey, from file to model feature: audio and text become a
+# transcription, the transcription becomes structured analysis, and the analysis
+# is joined with operational data (order, delivery, consultant, investigation) in
+# the gold tables that the model, the analyst queue and Genie read.
+#
+# Serverless, triggered. To transcribe with Whisper instead of
+# ai_transcribe, swap 02_silver_transcript_ai_transcribe.sql for
+# 02_silver_transcript.sql — both publish silver_transcripts.
+# =====================================================================
+
+resources:
+  pipelines:
+    aurelia_speech_lakeflow:
+      name: aurelia-speech-lakeflow
+      catalog: ${var.catalog}
+      schema: ${var.schema}
+      serverless: true
+      continuous: false
+      channel: PREVIEW
+      libraries:
+        - file: {path: ./01_bronze.sql}
+        - file: {path: ./02_silver_transcript_ai_transcribe.sql}
+        - file: {path: ./02c_silver_transcricoes.sql}
+        - file: {path: ./03_gold_insights.sql}
+        - file: {path: ./04_silver_operacional.sql}
+        - file: {path: ./05_gold_operacional.sql}
+      configuration:
+        catalog:            ${var.catalog}
+        schema:             ${var.schema}
+        volume_landing:     audio_landing
+        volume_operacional: operacional
+        whisper_endpoint:   ${var.whisper_endpoint}
+        llm_endpoint:       ${var.llm_endpoint}
+        decisoes_lakebase:  ${var.catalog}.aurelia_speech_investigacao.lb_decisoes_history

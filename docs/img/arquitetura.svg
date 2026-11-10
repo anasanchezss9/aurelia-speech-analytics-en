@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1240" height="640" viewBox="0 0 1240 640" font-family="'DM Sans', -apple-system, 'Segoe UI', Helvetica, Arial, sans-serif">
+  <defs>
+    <marker id="seta" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M0,0 L10,5 L0,10 z" fill="#5A6F77"/>
+    </marker>
+    <marker id="seta-clara" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M0,0 L10,5 L0,10 z" fill="#B9C4C8"/>
+    </marker>
+    <marker id="seta-lava" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M0,0 L10,5 L0,10 z" fill="#FF3621"/>
+    </marker>
+    <style>
+      .rotulo { font-size: 11px; font-weight: 700; letter-spacing: 1.4px; fill: #FF3621; }
+      .titulo { font-size: 13.5px; font-weight: 700; fill: #1B3139; }
+      .texto { font-size: 11.5px; fill: #5A6F77; }
+      .titulo-claro { font-size: 13.5px; font-weight: 700; fill: #FFFFFF; }
+      .texto-claro { font-size: 11.5px; fill: #DCE4E7; }
+      .camada { font-size: 10.5px; font-weight: 700; letter-spacing: 1.2px; fill: #FF8A73; }
+      .caixa { fill: #FFFFFF; stroke: #DEDBD3; stroke-width: 1; }
+      .linha { stroke: #5A6F77; stroke-width: 1.4; fill: none; }
+    </style>
+  </defs>
+
+  <rect width="1240" height="640" rx="18" fill="#F9F7F4"/>
+
+  <text x="40" y="50" font-size="22" font-weight="700" fill="#1B3139">From the consultant's call to the analyst's decision</text>
+  <text x="40" y="74" class="texto" font-size="13">One journey in one Unity Catalog schema &#8212; and the decision flows back to the model as a label</text>
+
+  <!-- Fontes -->
+  <text x="40" y="112" class="rotulo">SOURCES</text>
+  <rect x="40" y="128" width="180" height="64" rx="10" class="caixa"/>
+  <text x="54" y="155" class="titulo">Contact center</text>
+  <text x="54" y="174" class="texto">8 kHz WAV audio</text>
+  <rect x="40" y="204" width="180" height="64" rx="10" class="caixa"/>
+  <text x="54" y="231" class="titulo">Telephony</text>
+  <text x="54" y="250" class="texto">text transcripts</text>
+  <rect x="40" y="280" width="180" height="64" rx="10" class="caixa"/>
+  <text x="54" y="307" class="titulo">Orders and deliveries</text>
+  <text x="54" y="326" class="texto">items, weight at DC and hub</text>
+  <rect x="40" y="356" width="180" height="64" rx="10" class="caixa"/>
+  <text x="54" y="383" class="titulo">Claims and consultants</text>
+  <text x="54" y="402" class="texto">claims, investigations</text>
+
+  <line x1="220" y1="160" x2="264" y2="208" class="linha" marker-end="url(#seta)"/>
+  <line x1="220" y1="236" x2="264" y2="250" class="linha" marker-end="url(#seta)"/>
+  <line x1="220" y1="312" x2="264" y2="306" class="linha" marker-end="url(#seta)"/>
+  <line x1="220" y1="388" x2="264" y2="356" class="linha" marker-end="url(#seta)"/>
+
+  <!-- Lakeflow -->
+  <text x="250" y="112" class="rotulo">LAKEFLOW</text>
+  <rect x="250" y="120" width="540" height="310" rx="14" fill="#1B3139"/>
+  <text x="268" y="148" class="titulo-claro" font-size="14.5">Spark Declarative Pipelines</text>
+  <text x="268" y="166" class="texto-claro" fill="#B9C4C8">serverless &#183; one SQL pipeline, from the file to the model feature</text>
+
+  <rect x="266" y="182" width="160" height="232" rx="10" fill="#24414A"/>
+  <text x="280" y="206" class="camada">BRONZE</text>
+  <text x="280" y="226" class="titulo-claro">as it lands</text>
+  <text x="280" y="252" class="texto-claro">&#8226; streaming read_files</text>
+  <text x="280" y="272" class="texto-claro">&#8226; audio, text and 10</text>
+  <text x="290" y="288" class="texto-claro">operational tables</text>
+  <text x="280" y="308" class="texto-claro">&#8226; each file read</text>
+  <text x="290" y="324" class="texto-claro">exactly once</text>
+
+  <rect x="438" y="182" width="160" height="232" rx="10" fill="#24414A"/>
+  <text x="452" y="206" class="camada">SILVER</text>
+  <text x="452" y="226" class="titulo-claro">validated</text>
+  <text x="452" y="252" class="texto-claro">&#8226; ai_transcribe: phone</text>
+  <text x="462" y="268" class="texto-claro">audio to text</text>
+  <text x="452" y="288" class="texto-claro">&#8226; audio and text merged</text>
+  <text x="452" y="308" class="texto-claro">&#8226; clean orders, deliveries</text>
+  <text x="462" y="324" class="texto-claro">and claims</text>
+  <text x="452" y="344" class="texto-claro">&#8226; 8 data quality</text>
+  <text x="462" y="360" class="texto-claro">expectations</text>
+
+  <rect x="610" y="182" width="164" height="232" rx="10" fill="#24414A"/>
+  <text x="624" y="206" class="camada">GOLD</text>
+  <text x="624" y="226" class="titulo-claro">ready to use</text>
+  <text x="624" y="252" class="texto-claro">&#8226; ai_query + JSON</text>
+  <text x="634" y="268" class="texto-claro">Schema: type, products,</text>
+  <text x="634" y="284" class="texto-claro">account signals</text>
+  <text x="624" y="304" class="texto-claro">&#8226; features per claim:</text>
+  <text x="634" y="320" class="texto-claro">weight, history, route</text>
+  <text x="624" y="340" class="texto-claro">&#8226; order number checked</text>
+  <text x="634" y="356" class="texto-claro">against records</text>
+  <text x="624" y="376" class="texto-claro">&#8226; aggregates per cycle</text>
+
+  <line x1="427" y1="298" x2="436" y2="298" stroke="#B9C4C8" stroke-width="1.4" marker-end="url(#seta-clara)"/>
+  <line x1="599" y1="298" x2="608" y2="298" stroke="#B9C4C8" stroke-width="1.4" marker-end="url(#seta-clara)"/>
+
+  <!-- Modelo -->
+  <text x="822" y="112" class="rotulo">MODEL</text>
+  <rect x="822" y="120" width="182" height="310" rx="12" class="caixa" stroke="#FF3621" stroke-width="1.6"/>
+  <text x="838" y="148" class="titulo" font-size="14.5">Fraud model</text>
+  <text x="838" y="176" class="texto">&#8226; MLflow: 3 candidates</text>
+  <text x="848" y="192" class="texto">on the same time split</text>
+  <text x="838" y="212" class="texto">&#8226; gradient boosting +</text>
+  <text x="848" y="228" class="texto">isotonic calibration</text>
+  <text x="838" y="248" class="texto">&#8226; registered in UC</text>
+  <text x="848" y="264" class="texto">with alias @campeao</text>
+  <text x="838" y="284" class="texto">&#8226; Model Serving,</text>
+  <text x="848" y="300" class="texto">scale-to-zero</text>
+  <text x="838" y="320" class="texto">&#8226; daily job: pipeline</text>
+  <text x="848" y="336" class="texto">&#8594; score &#8594; queue</text>
+  <rect x="836" y="362" width="154" height="52" rx="8" fill="#FDEDEA"/>
+  <text x="848" y="384" font-size="12" font-weight="700" fill="#C42A17">PR-AUC 0.83</text>
+  <text x="848" y="402" font-size="11" fill="#C42A17">vs 0.18 for the LLM alone</text>
+
+  <line x1="775" y1="270" x2="820" y2="270" class="linha" marker-end="url(#seta)"/>
+
+  <!-- Uso -->
+  <text x="1036" y="112" class="rotulo">USE</text>
+  <rect x="1036" y="120" width="168" height="92" rx="10" class="caixa"/>
+  <text x="1050" y="146" class="titulo">Databricks App</text>
+  <text x="1050" y="166" class="texto">analyst's queue: score,</text>
+  <text x="1050" y="182" class="texto">evidence and decision</text>
+  <rect x="1036" y="226" width="168" height="92" rx="10" class="caixa"/>
+  <text x="1050" y="252" class="titulo">Lakebase Postgres</text>
+  <text x="1050" y="272" class="texto">queue as a synced table</text>
+  <text x="1050" y="288" class="texto">(~160 ms); decisions</text>
+  <text x="1050" y="304" class="texto">insert-only</text>
+  <rect x="1036" y="332" width="168" height="98" rx="10" class="caixa"/>
+  <text x="1050" y="358" class="titulo">Genie</text>
+  <text x="1050" y="378" class="texto">loss prevention</text>
+  <text x="1050" y="394" class="texto">asks in plain language</text>
+  <text x="1050" y="410" class="texto">over the gold tables</text>
+
+  <line x1="1005" y1="272" x2="1034" y2="272" class="linha" marker-end="url(#seta)"/>
+  <line x1="1120" y1="214" x2="1120" y2="224" class="linha" marker-start="url(#seta)" marker-end="url(#seta)"/>
+  <path d="M 692 415 L 692 441 L 1018 441 L 1018 381 L 1034 381" class="linha" marker-end="url(#seta)"/>
+
+  <!-- Unity Catalog -->
+  <rect x="250" y="456" width="954" height="46" rx="10" fill="#EEEDE9"/>
+  <text x="268" y="484" class="titulo">Unity Catalog</text>
+  <text x="372" y="484" class="texto" font-size="12.5">one schema &#183; lineage from the audio file to the feature &#183; model with version and alias &#183; app permissions</text>
+
+  <!-- Volta da decis&#227;o -->
+  <path d="M 1204 290 L 1222 290 L 1222 548 L 727 548 L 727 504" stroke="#FF3621" stroke-width="1.6" stroke-dasharray="6 4" fill="none" marker-end="url(#seta-lava)"/>
+  <text x="742" y="538" font-size="12" font-weight="700" fill="#C42A17">The decision returns</text>
+  <text x="884" y="538" font-size="12" fill="#5A6F77">Lakebase CDF &#8594; Delta in UC &#8594; label for retraining</text>
+
+  <text x="40" y="604" class="texto" font-size="11.5">Synthetic data: Aur&#233;lia, the consultants, the orders and the calls are fictitious. Asset Bundles deploy the app, the pipeline, the job and the permissions.</text>
+</svg>

@@ -1,0 +1,6 @@
+kokoro>=0.9.4
+soundfile>=0.12
+numpy>=1.26
+databricks-sdk>=0.40
+requests>=2.31
+jiwer>=3.0

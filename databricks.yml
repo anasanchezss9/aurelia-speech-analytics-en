@@ -1,0 +1,72 @@
+bundle:
+  name: aurelia-speech-analytics-en
+
+# In fevm-field-toolbox the Lakeflow pipeline is owned by the Portuguese edition's
+# bundle, and both apps read the same tables, queue and Lakebase. A second bundle
+# deploying the same pipeline would fight over those tables, so this one deploys
+# only the English app. For a new workspace, uncomment the include and deploy the
+# pipeline, the job and the app from here.
+# include:
+#   - pipelines/declarative/pipeline.yml
+
+variables:
+  app_name:
+    description: Databricks App name
+    default: aurelia-speech-analytics-en
+  catalog:
+    description: Unity Catalog catalog where the build lives
+    default: field_toolbox_catalog
+  schema:
+    description: Build schema (volumes, tables, models)
+    default: aurelia_speech
+  whisper_endpoint:
+    description: Whisper endpoint for the pipeline variant with 02_silver_transcript.sql (optional)
+    default: aurelia-whisper-turbo
+  llm_endpoint:
+    description: LLM endpoint for the Record tab and for translating the call summaries
+    default: databricks-claude-sonnet-4-6
+  warehouse_id:
+    description: SQL Warehouse used by the dashboard
+    default: 9fc569e6e984dcde
+  job_id:
+    description: Job aurelia-speech-diario (pipeline, scoring, queue in Lakebase)
+    default: 186588700089291
+
+resources:
+  apps:
+    speech_analytics_en:
+      name: ${var.app_name}
+      description: "Speech analytics — missing-product claims and fraud (Aurélia Cosméticos, English edition)"
+      source_code_path: ./backend
+      resources:
+        - name: llm
+          description: Foundation Model API for the Record tab and the summary translation
+          serving_endpoint:
+            name: ${var.llm_endpoint}
+            permission: CAN_QUERY
+        - name: warehouse
+          description: SQL Warehouse used by the dashboard and by the transcript in the queue
+          sql_warehouse:
+            id: ${var.warehouse_id}
+            permission: CAN_USE
+        - name: job_diario
+          description: Job the Process button triggers
+          job:
+            id: ${var.job_id}
+            permission: CAN_MANAGE_RUN
+        - name: volume_audio
+          description: Volume where uploads write the audio files
+          uc_securable:
+            securable_full_name: ${var.catalog}.${var.schema}.audio_landing
+            securable_type: VOLUME
+            permission: WRITE_VOLUME
+
+targets:
+  ft:
+    mode: development
+    default: true
+    presets:
+      name_prefix: ""
+    workspace:
+      host: https://fevm-field-toolbox.cloud.databricks.com
+      profile: field-toolbox

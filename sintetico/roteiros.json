@@ -1,0 +1,3641 @@
+[
+  {
+    "call_id": "sint_001",
+    "filename": "sint_001.wav",
+    "scenario": "Pedido atrasado há oito dias; as clientes da consultora estão cobrando. O agente abre protocolo com a transportadora.",
+    "consultora_nome": "Marlene",
+    "consultora_genero": "f",
+    "agente_nome": "Camila",
+    "agente_genero": "f",
+    "gabarito": {
+      "tipo_problema": "atraso",
+      "suspeita_fraude": false,
+      "reincidencia": false,
+      "sentiment": "negativo",
+      "consultora_codigo": "65648",
+      "pedido_numero": "725215",
+      "produtos_faltantes": []
+    },
+    "falas": [
+      {
+        "quem": "agente",
+        "texto": "Central de Relacionamento Aurélia, meu nome é Camila. Com quem eu falo?",
+        "interrompe": false
+      },
+      {
+        "quem": "consultora",
+        "texto": "Oi, Camila. É a Marlene. Olha, eu tô ligando por causa de um pedido que não chegou, e tá um absurdo, viu.",
+        "interrompe": false
+      },
+      {
+        "quem": "agente",
+        "texto": "Poxa, Marlene, sinto muito por isso. Vou ver com você agora. Pode me informar o seu código de consultora?",
+        "interrompe": false
+      },
+      {
+        "quem": "consultora",
+        "texto": "Posso. É seis, cinco, seis, quatro, oito.",
+        "interrompe": false
+      },
+      {
+        "quem": "agente",
+        "texto": "Seis, cinco, seis, quatro, oito. Certo. E o número do pedido, você tem aí?",
+        "interrompe": false
+      },
+      {
+        "quem": "consultora",
+        "texto": "Tenho. É o pedido sete, dois, cinco, dois, um, cinco.",
+        "interrompe": false
+      },
+      {
+        "quem": "agente",
+        "texto": "Sete, dois, cinco, dois, um, cinco. Peraí, deixa eu abrir aqui... Tô vendo, Marlene. O pedido saiu do centro de distribuição, mas tá em rota com a transportadora e sem data de entrega confirmada.",
+        "interrompe": false
+      },
+      {
+        "quem": "consultora",
+        "texto": "Mas é isso, Camila, já faz oito dias que passou do prazo! Eu avisei as minhas clientes que ia chegar, e elas ficam me cobrando todo santo dia, tô passando vergonha, sabe?",
+        "interrompe": true
+      },
+      {
+        "quem": "agente",
+        "texto": "Imagino, você tem toda a razão de estar chateada. O prazo realmente já estourou, então...",
+        "interrompe": false
+      },
+      {
+        "quem": "consultora",
+        "texto": "Tem cliente minha que pediu Raízes pra presente, e o aniversário já passou! Eu não sei mais o que falar pra ela, tô sem resposta.",
+        "interrompe": true
+      },
+      {
+        "quem": "agente",
+        "texto": "Entendo, Marlene. O que eu posso fazer agora é abrir um protocolo direto com a transportadora, pedindo urgência na entrega. Pode ser?",
+        "interrompe": false
+      },
+      {
+        "quem": "consultora",
+        "texto": "Pode, pode sim. Mas eu quero que alguém resolva isso de verdade, tá? Não adianta só anotar.",
+        "interrompe": false
+      },
+      {
+        "quem": "agente",
+        "texto": "Combinado. Já tô registrando aqui. Prontinho, o protocolo é zero, quatro, ssete, nove, um, oito, três. Quer anotar?",
+        "interrompe": false
+      },
+      {
+        "quem": "consultora",
+        "texto": "Peraí, deixa eu pegar a caneta... Pode falar de novo.",
+        "interrompe": false
+      },
+      {
+        "quem": "agente",
+        "texto": "Zero, quatro, sete, nove, um, oito, três.",
+        "interrompe": false
+      },
+      {
+        "quem": "consultora",
+        "texto": "Zero, quatro, sete, nove, um, oito, três. Anotei. E quanto tempo eles têm pra me responder?",
+        "interrompe": false
+      },
+      {
+        "quem": "agente",
+        "texto": "A transportadora tem até quarenta e oito horas pra dar um retorno e atualizar a previsão. Eu mesma acompanho e te aviso se precisar de mais alguma coisa.",
+        "interrompe": false
+      },
+      {
+        "quem": "consultora",
+        "texto": "Tá bom, Camila. Vou esperar, mas tô bem chateada com essa demora, viu. Espero que resolva logo.",
+        "interrompe": false
+      },
+      {
+        "quem": "agente",
+        "texto": "Eu entendo, Marlene. Peço desculpas pelo transtorno e vamos correr atrás disso. A Aurélia agradece a ligação, tá? Tenha um bom dia.",
+        "interrompe": false
+      }
+    ],
+    "script": "Central de Relacionamento Aurélia, meu nome é Camila. Com quem eu falo? Oi, Camila. É a Marlene. Olha, eu tô ligando por causa de um pedido que não chegou, e tá um absurdo, viu. Poxa, Marlene, sinto muito por isso. Vou ver com você agora. Pode me informar o seu código de consultora? Posso. É seis, cinco, seis, quatro, oito. Seis, cinco, seis, quatro, oito. Certo. E o número do pedido, você tem aí? Tenho. É o pedido sete, dois, cinco, dois, um, cinco. Sete, dois, cinco, dois, um, cinco. Peraí, deixa eu abrir aqui... Tô vendo, Marlene. O pedido saiu do centro de distribuição, mas tá em rota com a transportadora e sem data de entrega confirmada. Mas é isso, Camila, já faz oito dias que passou do prazo! Eu avisei as minhas clientes que ia chegar, e elas ficam me cobrando todo santo dia, tô passando vergonha, sabe? Imagino, você tem toda a razão de estar chateada. O prazo realmente já estourou, então... Tem cliente minha que pediu Raízes pra presente, e o aniversário já passou! Eu não sei mais o que falar pra ela, tô sem resposta. Entendo, Marlene. O que eu posso fazer agora é abrir um protocolo direto com a transportadora, pedindo urgência na entrega. Pode ser? Pode, pode sim. Mas eu quero que alguém resolva isso de verdade, tá? Não adianta só anotar. Combinado. Já tô registrando aqui. Prontinho, o protocolo é zero, quatro, ssete, nove, um, oito, três. Quer anotar? Peraí, deixa eu pegar a caneta... Pode falar de novo. Zero, quatro, sete, nove, um, oito, três. Zero, quatro, sete, nove, um, oito, três. Anotei. E quanto tempo eles têm pra me responder? A transportadora tem até quarenta e oito horas pra dar um retorno e atualizar a previsão. Eu mesma acompanho e te aviso se precisar de mais alguma coisa. Tá bom, Camila. Vou esperar, mas tô bem chateada com essa demora, viu. Espero que resolva logo. Eu entendo, Marlene. Peço desculpas pelo transtorno e vamos correr atrás disso. A Aurélia agradece a ligação, tá? Tenha um bom dia."
+  },
+  {
+    "call_id": "sint_002",
+    "filename": "sint_002.wav",
+    "scenario": "Terceiro ciclo seguido em que o pedido atrasa. A consultora ameaça parar de vender e pede para falar com supervisor.",
+    "consultora_nome": "Marlene",
+    "consultora_genero": "f",
+    "agente_nome": "Rafael",
+    "agente_genero": "m",
+    "gabarito": {
+      "tipo_problema": "atraso",
+      "suspeita_fraude": false,
+      "reincidencia": true,
+      "sentiment": "negativo",
+      "consultora_codigo": "87148",
+      "pedido_numero": "703789",
+      "produtos_faltantes": []
+    },
+    "falas": [
+      {
+        "quem": "agente",
+        "texto": "Central de Relacionamento Aurélia, meu nome é Rafael, tudo bem? Com quem eu falo?",
+        "interrompe": false
+      },
+      {
+        "quem": "consultora",
+        "texto": "Oi, Rafael. É a Marlene. Olha, eu tô ligando porque... é o terceiro ciclo seguido que meu pedido atrasa, tá? O terceiro!",
+        "interrompe": false
+      },
+      {
+        "quem": "agente",
+        "texto": "Poxa, Marlene, sinto muito por isso. Vou olhar aqui com você. Me passa o seu código de consultora, por favor?",
+        "interrompe": false
+      },
+      {
+        "quem": "consultora",
+        "texto": "É oito, sete, um, quatro, oito.",
+        "interrompe": false
+      },
+      {
+        "quem": "agente",
+        "texto": "Oito, sete, um, quatro, oito. Certo. E qual é o número do pedido que atrasou?",
+        "interrompe": false
+      },
+      {
+        "quem": "consultora",
+        "texto": "Peraí, deixa eu ver aqui... é sete, zero, três, sete, oito, nove. Isso, sete, zero, três, sete, oito, nove.",
+        "interrompe": false
+      },
+      {
+        "quem": "agente",
+        "texto": "Sete, zero, três, sete, oito, nove, confirmado. Aqui consta que o prazo de entrega venceu há cinco dias e o pedido ainda tá em trânsito, no centro de distribuição da sua região.",
+        "interrompe": false
+      },
+      {
+        "quem": "consultora",
+        "texto": "Cinco dias, Rafael! Eu tenho cliente esperando Maré e Raízes desde o começo do ciclo. E nos dois ciclos passados foi igualzinho, tipo assim, exatamente igual.",
+        "interrompe": false
+      },
+      {
+        "quem": "agente",
+        "texto": "Entendo, Marlene. Então o que eu posso fazer agora é abrir um chamado de prioridade pra logística e...",
+        "interrompe": false
+      },
+      {
+        "quem": "consultora",
+        "texto": "Chamado não resolve, Rafael. Das outras vezes já abriram chamado e nada mudou. Eu vou parar de vender, sério, não dá mais.",
+        "interrompe": true
+      },
+      {
+        "quem": "agente",
+        "texto": "Eu entendo a sua chateação, Marlene, de verdade. Deixa eu pelo menos registrar tudo pra...",
+        "interrompe": false
+      },
+      {
+        "quem": "consultora",
+        "texto": "Não, não, eu quero falar com o supervisor. Hoje.",
+        "interrompe": true
+      },
+      {
+        "quem": "agente",
+        "texto": "Tudo bem, eu faço a transferência. Antes, só anota o protocolo pra não perder o histórico: zero, dois, sete, cinco, um, nove, quatro.",
+        "interrompe": false
+      },
+      {
+        "quem": "consultora",
+        "texto": "Hum, anotando... zero, dois, sete, cinco, um, nove, quatro. Tá.",
+        "interrompe": false
+      },
+      {
+        "quem": "agente",
+        "texto": "Isso. Registrei que é o terceiro ciclo seguido com atraso, então o supervisor já vai ver o histórico completo. A espera é de uns dois minutos, pode ser?",
+        "interrompe": false
+      },
+      {
+        "quem": "consultora",
+        "texto": "Pode. Mas olha, se ele não resolver, eu paro mesmo. Já perdi venda, já perdi cliente por causa disso.",
+        "interrompe": true
+      },
+      {
+        "quem": "agente",
+        "texto": "Compreendo, Marlene. Aguarda na linha, por favor, que eu já transfiro.",
+        "interrompe": false
+      },
+      {
+        "quem": "consultora",
+        "texto": "Tá bom, tô aguardando.",
+        "interrompe": false
+      }
+    ],
+    "script": "Central de Relacionamento Aurélia, meu nome é Rafael, tudo bem? Com quem eu falo? Oi, Rafael. É a Marlene. Olha, eu tô ligando porque... é o terceiro ciclo seguido que meu pedido atrasa, tá? O terceiro! Poxa, Marlene, sinto muito por isso. Vou olhar aqui com você. Me passa o seu código de consultora, por favor? É oito, sete, um, quatro, oito. Oito, sete, um, quatro, oito. Certo. E qual é o número do pedido que atrasou? Peraí, deixa eu ver aqui... é sete, zero, três, sete, oito, nove. Isso, sete, zero, três, sete, oito, nove. Sete, zero, três, sete, oito, nove, confirmado. Aqui consta que o prazo de entrega venceu há cinco dias e o pedido ainda tá em trânsito, no centro de distribuição da sua região. Cinco dias, Rafael! Eu tenho cliente esperando Maré e Raízes desde o começo do ciclo. E nos dois ciclos passados foi igualzinho, tipo assim, exatamente igual. Entendo, Marlene. Então o que eu posso fazer agora é abrir um chamado de prioridade pra logística e... Chamado não resolve, Rafael. Das outras vezes já abriram chamado e nada mudou. Eu vou parar de vender, sério, não dá mais. Eu entendo a sua chateação, Marlene, de verdade. Deixa eu pelo menos registrar tudo pra... Não, não, eu quero falar com o supervisor. Hoje. Tudo bem, eu faço a transferência. Antes, só anota o protocolo pra não perder o histórico: zero, dois, sete, cinco, um, nove, quatro. Hum, anotando... zero, dois, sete, cinco, um, nove, quatro. Tá. Isso. Registrei que é o terceiro ciclo seguido com atraso, então o supervisor já vai ver o histórico completo. A espera é de uns dois minutos, pode ser? Pode. Mas olha, se ele não resolver, eu paro mesmo. Já perdi venda, já perdi cliente por causa disso. Compreendo, Marlene. Aguarda na linha, por favor, que eu já transfiro. Tá bom, tô aguardando."
+  },
+  {
+    "call_id": "sint_003",
+    "filename": "sint_003.wav",
+    "scenario": "Consultora quer só saber a nova previsão de entrega; o rastreio parou numa cidade do caminho. Tom calmo.",
+    "consultora_nome": "Marlene",
+    "consultora_genero": "f",
+    "agente_nome": "Rodrigo",
+    "agente_genero": "m",
+    "gabarito": {
+      "tipo_problema": "atraso",
+      "suspeita_fraude": false,
+      "reincidencia": false,
+      "sentiment": "neutro",
+      "consultora_codigo": "17352",
+      "pedido_numero": "807026",
+      "produtos_faltantes": []
+    },
+    "falas": [
+      {
+        "quem": "agente",
+        "texto": "Central de Relacionamento Aurélia, boa tarde! Meu nome é Rodrigo. Com quem eu falo?",
+        "interrompe": false
+      },
+      {
+        "quem": "consultora",
+        "texto": "Oi, Rodrigo, boa tarde. Aqui é a Marlene.",
+        "interrompe": false
+      },
+      {
+        "quem": "agente",
+        "texto": "Prazer, Marlene. Me passa seu código de consultora, por favor?",
+        "interrompe": false
+      },
+      {
+        "quem": "consultora",
+        "texto": "Claro. É um, sete, três, cinco, dois.",
+        "interrompe": false
+      },
+      {
+        "quem": "agente",
+        "texto": "Um, sete, três, cinco, dois. Certo. E o número do pedido?",
+        "interrompe": false
+      },
+      {
+        "quem": "consultora",
+        "texto": "Peraí, deixa eu olhar aqui... é oito, zero, sete, zero, dois, seis.",
+        "interrompe": false
+      },
+      {
+        "quem": "agente",
+        "texto": "Oito, zero, sete, zero, dois, seis. Isso mesmo, achei aqui. Em que eu posso te ajudar hoje?",
+        "interrompe": false
+      },
+      {
+        "quem": "consultora",
+        "texto": "Então, eu só queria saber a nova previsão de entrega. O rastreio parou em Uberlândia, tá lá faz uns dois dias e não anda.",
+        "interrompe": false
+      },
+      {
+        "quem": "agente",
+        "texto": "Hum, entendi. Deixa eu olhar o rastreio aqui no sistema, só um instante, tá?",
+        "interrompe": false
+      },
+      {
+        "quem": "consultora",
+        "texto": "Tá bom, sem pressa nenhuma.",
+        "interrompe": false
+      },
+      {
+        "quem": "agente",
+        "texto": "Então, o pedido saiu do centro de distribuição normalmente e passou por Uberlândia. A última atualização foi na quarta-feira, e a transportadora tá com um atraso nessa rota, é...",
+        "interrompe": false
+      },
+      {
+        "quem": "consultora",
+        "texto": "Ah, então ficou parado lá mesmo, não é nada de errado com o pedido, né?",
+        "interrompe": true
+      },
+      {
+        "quem": "agente",
+        "texto": "Isso, não tem nenhum problema com o pedido, ele só tá aguardando seguir viagem. A nova previsão de entrega ficou para sexta-feira, até o fim do dia.",
+        "interrompe": false
+      },
+      {
+        "quem": "consultora",
+        "texto": "Sexta-feira. Tá, tranquilo. Eu só precisava saber isso pra avisar minhas clientes, tem um kit de Raízes e um de Diário nesse pedido.",
+        "interrompe": false
+      },
+      {
+        "quem": "agente",
+        "texto": "Pode avisar sim. Se até sexta o rastreio não andar, você me liga de novo que a gente aciona a transportadora, combinado?",
+        "interrompe": false
+      },
+      {
+        "quem": "consultora",
+        "texto": "Combinado. Ah, e precisa anotar alguma coisa, algum número?",
+        "interrompe": true
+      },
+      {
+        "quem": "agente",
+        "texto": "Vou te passar o protocolo desse atendimento: dois, quatro, nove, um, zero, cinco, oito. Quer que eu repita?",
+        "interrompe": false
+      },
+      {
+        "quem": "consultora",
+        "texto": "Pode repetir só pra eu conferir. Dois, quatro, nove, um, zero, cinco, oito, é isso?",
+        "interrompe": false
+      },
+      {
+        "quem": "agente",
+        "texto": "Isso mesmo, perfeito. Mais alguma coisa que eu possa ajudar, Marlene?",
+        "interrompe": false
+      },
+      {
+        "quem": "consultora",
+        "texto": "Não, era só isso mesmo. Obrigada, Rodrigo, tenha uma boa tarde.",
+        "interrompe": true
+      }
+    ],
+    "script": "Central de Relacionamento Aurélia, boa tarde! Meu nome é Rodrigo. Com quem eu falo? Oi, Rodrigo, boa tarde. Aqui é a Marlene. Prazer, Marlene. Me passa seu código de consultora, por favor? Claro. É um, sete, três, cinco, dois. Um, sete, três, cinco, dois. Certo. E o número do pedido? Peraí, deixa eu olhar aqui... é oito, zero, sete, zero, dois, seis. Oito, zero, sete, zero, dois, seis. Isso mesmo, achei aqui. Em que eu posso te ajudar hoje? Então, eu só queria saber a nova previsão de entrega. O rastreio parou em Uberlândia, tá lá faz uns dois dias e não anda. Hum, entendi. Deixa eu olhar o rastreio aqui no sistema, só um instante, tá? Tá bom, sem pressa nenhuma. Então, o pedido saiu do centro de distribuição normalmente e passou por Uberlândia. A última atualização foi na quarta-feira, e a transportadora tá com um atraso nessa rota, é... Ah, então ficou parado lá mesmo, não é nada de errado com o pedido, né? Isso, não tem nenhum problema com o pedido, ele só tá aguardando seguir viagem. A nova previsão de entrega ficou para sexta-feira, até o fim do dia. Sexta-feira. Tá, tranquilo. Eu só precisava saber isso pra avisar minhas clientes, tem um kit de Raízes e um de Diário nesse pedido. Pode avisar sim. Se até sexta o rastreio não andar, você me liga de novo que a gente aciona a transportadora, combinado? Combinado. Ah, e precisa anotar alguma coisa, algum número? Vou te passar o protocolo desse atendimento: dois, quatro, nove, um, zero, cinco, oito. Quer que eu repita? Pode repetir só pra eu conferir. Dois, quatro, nove, um, zero, cinco, oito, é isso? Isso mesmo, perfeito. Mais alguma coisa que eu possa ajudar, Marlene? Não, era só isso mesmo. Obrigada, Rodrigo, tenha uma boa tarde."
+  },
+  {
+    "call_id": "sint_004",
+    "filename": "sint_004.wav",
+    "scenario": "Pedido atrasado, mas o agente encontra que sai para entrega amanhã e oferece frete grátis no próximo ciclo. Consultora termina agradecida.",
+    "consultora_nome": "Marlene",
+    "consultora_genero": "f",
+    "agente_nome": "Rodrigo",
+    "agente_genero": "m",
+    "gabarito": {
+      "tipo_problema": "atraso",
+      "suspeita_fraude": false,
+      "reincidencia": false,
+      "sentiment": "positivo",
+      "consultora_codigo": "54978",
+      "pedido_numero": "535393",
+      "produtos_faltantes": []
+    },
+    "falas": [
+      {
+        "quem": "agente",
+        "texto": "Central de Relacionamento Aurélia, boa tarde, meu nome é Rodrigo. Com quem eu falo?",
+        "interrompe": false
+      },
+      {
+        "quem": "consultora",
+        "texto": "Oi, Rodrigo, boa tarde! Aqui é a Marlene, sou consultora.",
+        "interrompe": false
+      },
+      {
+        "quem": "agente",
+        "texto": "Prazer, Marlene. Me passa o seu código de consultora, por favor?",
+        "interrompe": false
+      },
+      {
+        "quem": "consultora",
+        "texto": "Claro. É cinco, quatro, nove, sete, oito.",
+        "interrompe": false
+      },
+      {
+        "quem": "agente",
+        "texto": "Cinco, quatro, nove, sete, oito. Certo. E o número do pedido que você quer ver?",
+        "interrompe": false
+      },
+      {
+        "quem": "consultora",
+        "texto": "É o pedido cinco, três, cinco, três, nove, três. Ele devia ter chegado já, né, e até agora nada.",
+        "interrompe": false
+      },
+      {
+        "quem": "agente",
+        "texto": "Cinco, três, cinco, três, nove, três. Peraí, Marlene, deixa eu abrir aqui no sistema.",
+        "interrompe": false
+      },
+      {
+        "quem": "consultora",
+        "texto": "Pode ver com calma. É que eu tenho cliente esperando, tipo assim, um Maré e dois Diário de ameixa.",
+        "interrompe": false
+      },
+      {
+        "quem": "agente",
+        "texto": "Entendi. Olha, achei o pedido. Ele está com a transportadora e a previsão é sair para entrega amanhã, ainda de manhã.",
+        "interrompe": false
+      },
+      {
+        "quem": "consultora",
+        "texto": "Ah, que bom! Então ele não ficou perdido por aí, né?",
+        "interrompe": false
+      },
+      {
+        "quem": "agente",
+        "texto": "Não, não, ele está certinho. Só atrasou um pouco na saída do centro de distribuição, mas já está no...",
+        "interrompe": false
+      },
+      {
+        "quem": "consultora",
+        "texto": "Ai, que alívio! Então amanhã eu consigo entregar tudo pras minhas clientes.",
+        "interrompe": true
+      },
+      {
+        "quem": "agente",
+        "texto": "Consegue sim. E, pelo atraso, eu vou deixar frete grátis no seu próximo ciclo, como um pedido de desculpas.",
+        "interrompe": false
+      },
+      {
+        "quem": "consultora",
+        "texto": "Nossa, sério? Que legal, Rodrigo! Eu nem esperava isso, viu.",
+        "interrompe": false
+      },
+      {
+        "quem": "agente",
+        "texto": "Sério, já fica registrado no seu cadastro. Você não precisa fazer nada, é só passar o pedido normalmente.",
+        "interrompe": false
+      },
+      {
+        "quem": "consultora",
+        "texto": "Perfeito, então. Muito obrigada mesmo, você foi super atencioso.",
+        "interrompe": true
+      },
+      {
+        "quem": "agente",
+        "texto": "Imagina, Marlene. Anota aí o protocolo do atendimento: dois, sete, zero, um, quatro, oito, nove.",
+        "interrompe": false
+      },
+      {
+        "quem": "consultora",
+        "texto": "Dois, sete, zero, um, quatro, oito, nove. Anotado! Obrigada de novo, tá? Uma ótima tarde pra você.",
+        "interrompe": false
+      },
+      {
+        "quem": "agente",
+        "texto": "Igualmente, Marlene. Boas vendas e até a próxima!",
+        "interrompe": false
+      }
+    ],
+    "script": "Central de Relacionamento Aurélia, boa tarde, meu nome é Rodrigo. Com quem eu falo? Oi, Rodrigo, boa tarde! Aqui é a Marlene, sou consultora. Prazer, Marlene. Me passa o seu código de consultora, por favor? Claro. É cinco, quatro, nove, sete, oito. Cinco, quatro, nove, sete, oito. Certo. E o número do pedido que você quer ver? É o pedido cinco, três, cinco, três, nove, três. Ele devia ter chegado já, né, e até agora nada. Cinco, três, cinco, três, nove, três. Peraí, Marlene, deixa eu abrir aqui no sistema. Pode ver com calma. É que eu tenho cliente esperando, tipo assim, um Maré e dois Diário de ameixa. Entendi. Olha, achei o pedido. Ele está com a transportadora e a previsão é sair para entrega amanhã, ainda de manhã. Ah, que bom! Então ele não ficou perdido por aí, né? Não, não, ele está certinho. Só atrasou um pouco na saída do centro de distribuição, mas já está no... Ai, que alívio! Então amanhã eu consigo entregar tudo pras minhas clientes. Consegue sim. E, pelo atraso, eu vou deixar frete grátis no seu próximo ciclo, como um pedido de desculpas. Nossa, sério? Que legal, Rodrigo! Eu nem esperava isso, viu. Sério, já fica registrado no seu cadastro. Você não precisa fazer nada, é só passar o pedido normalmente. Perfeito, então. Muito obrigada mesmo, você foi super atencioso. Imagina, Marlene. Anota aí o protocolo do atendimento: dois, sete, zero, um, quatro, oito, nove. Dois, sete, zero, um, quatro, oito, nove. Anotado! Obrigada de novo, tá? Uma ótima tarde pra você. Igualmente, Marlene. Boas vendas e até a próxima!"
+  },
+  {
+    "call_id": "sint_005",
+    "filename": "sint_005.wav",
+    "scenario": "Consultor homem do interior; o pedido sempre atrasa porque a transportadora não entra no bairro. Já reclamou antes.",
+    "consultora_nome": "Aparecido",
+    "consultora_genero": "m",
+    "agente_nome": "Rafaela",
+    "agente_genero": "f",
+    "gabarito": {
+      "tipo_problema": "atraso",
+      "suspeita_fraude": false,
+      "reincidencia": true,
+      "sentiment": "negativo",
+      "consultora_codigo": "91020",
+      "pedido_numero": "897010",
+      "produtos_faltantes": []
+    },
+    "falas": [
+      {
+        "quem": "agente",
+        "texto": "Central de Relacionamento Aurélia, bom dia, meu nome é Rafaela. Com quem eu falo?",
+        "interrompe": false
+      },
+      {
+        "quem": "consultora",
+        "texto": "Bom dia, Rafaela. É o Aparecido, eu sou consultor aqui no interior.",
+        "interrompe": false
+      },
+      {
+        "quem": "agente",
+        "texto": "Seu Aparecido, tudo bem? Em que eu posso ajudar o senhor hoje?",
+        "interrompe": false
+      },
+      {
+        "quem": "consultora",
+        "texto": "Ó, é o meu pedido de novo, né. Não chegou. Eu tô cansado disso, viu, cansado mesmo.",
+        "interrompe": false
+      },
+      {
+        "quem": "agente",
+        "texto": "Sinto muito por isso. Pra eu localizar aqui, o senhor pode me passar o seu código de consultor?",
+        "interrompe": false
+      },
+      {
+        "quem": "consultora",
+        "texto": "É... nove, um, zero, dois, zero.",
+        "interrompe": false
+      },
+      {
+        "quem": "agente",
+        "texto": "Nove, um, zero, dois, zero. Certo. E o número do pedido, o senhor tem aí?",
+        "interrompe": false
+      },
+      {
+        "quem": "consultora",
+        "texto": "Peraí, deixa eu pegar o papel aqui. Então, é oito, nove, sete, zero, um, zero.",
+        "interrompe": false
+      },
+      {
+        "quem": "agente",
+        "texto": "Oito, nove, sete, zero, um, zero. Confere. Seu Aparecido, aqui no sistema o pedido saiu pra entrega há nove dias e consta uma tentativa sem sucesso. O prazo era de seis dias úteis.",
+        "interrompe": false
+      },
+      {
+        "quem": "consultora",
+        "texto": "Tentativa sem sucesso? Mas ninguém foi lá! A transportadora não entra no meu bairro, eu já falei isso, tipo assim, já falei...",
+        "interrompe": true
+      },
+      {
+        "quem": "agente",
+        "texto": "O senhor já tinha feito essa reclamação antes, é isso?",
+        "interrompe": false
+      },
+      {
+        "quem": "consultora",
+        "texto": "Já, duas vezes. Na campanha passada e na retrasada. Disseram que iam resolver e nada. Eu tenho cliente esperando Maré, Diário, Raízes, e fico passando vergonha.",
+        "interrompe": false
+      },
+      {
+        "quem": "agente",
+        "texto": "Entendo, o senhor tem toda razão de estar chateado. Vou abrir uma ocorrência com a transportadora e marcar como reincidente, pedindo uma nova tentativa com contato antes.",
+        "interrompe": false
+      },
+      {
+        "quem": "consultora",
+        "texto": "Mas não adianta abrir e ficar no papel, moça. Toda campanha é a mesma coisa, eu perco venda, perco cliente...",
+        "interrompe": true
+      },
+      {
+        "quem": "agente",
+        "texto": "Eu sei. Por isso eu vou registrar também o problema de acesso ao bairro, pra área de logística avaliar. E se o senhor preferir, dá pra liberar a retirada na agência da sua cidade. Serve pro senhor?",
+        "interrompe": false
+      },
+      {
+        "quem": "consultora",
+        "texto": "Na agência eu até pego, né, mas não é o certo. Eu que vou gastar gasolina pra buscar o que é pra chegar na minha porta.",
+        "interrompe": false
+      },
+      {
+        "quem": "agente",
+        "texto": "Compreendo. Então vou deixar a retirada liberada, e a reentrega em até dois dias úteis, o que ocorrer primeiro. O protocolo é dois, quatro, sete, um, nove, três, zero, cinco.",
+        "interrompe": false
+      },
+      {
+        "quem": "consultora",
+        "texto": "Dois, quatro, sete, um, nove, três, zero, cinco. Anotei. Mas se não chegar eu ligo de novo, e dessa vez eu vou...",
+        "interrompe": true
+      },
+      {
+        "quem": "agente",
+        "texto": "Se precisar, o senhor liga e informa esse protocolo que a gente acompanha direto. Posso ajudar em mais alguma coisa, seu Aparecido?",
+        "interrompe": false
+      },
+      {
+        "quem": "consultora",
+        "texto": "Só isso mesmo. Espero que resolva dessa vez. Obrigado.",
+        "interrompe": false
+      }
+    ],
+    "script": "Central de Relacionamento Aurélia, bom dia, meu nome é Rafaela. Com quem eu falo? Bom dia, Rafaela. É o Aparecido, eu sou consultor aqui no interior. Seu Aparecido, tudo bem? Em que eu posso ajudar o senhor hoje? Ó, é o meu pedido de novo, né. Não chegou. Eu tô cansado disso, viu, cansado mesmo. Sinto muito por isso. Pra eu localizar aqui, o senhor pode me passar o seu código de consultor? É... nove, um, zero, dois, zero. Nove, um, zero, dois, zero. Certo. E o número do pedido, o senhor tem aí? Peraí, deixa eu pegar o papel aqui. Então, é oito, nove, sete, zero, um, zero. Oito, nove, sete, zero, um, zero. Confere. Seu Aparecido, aqui no sistema o pedido saiu pra entrega há nove dias e consta uma tentativa sem sucesso. O prazo era de seis dias úteis. Tentativa sem sucesso? Mas ninguém foi lá! A transportadora não entra no meu bairro, eu já falei isso, tipo assim, já falei... O senhor já tinha feito essa reclamação antes, é isso? Já, duas vezes. Na campanha passada e na retrasada. Disseram que iam resolver e nada. Eu tenho cliente esperando Maré, Diário, Raízes, e fico passando vergonha. Entendo, o senhor tem toda razão de estar chateado. Vou abrir uma ocorrência com a transportadora e marcar como reincidente, pedindo uma nova tentativa com contato antes. Mas não adianta abrir e ficar no papel, moça. Toda campanha é a mesma coisa, eu perco venda, perco cliente... Eu sei. Por isso eu vou registrar também o problema de acesso ao bairro, pra área de logística avaliar. E se o senhor preferir, dá pra liberar a retirada na agência da sua cidade. Serve pro senhor? Na agência eu até pego, né, mas não é o certo. Eu que vou gastar gasolina pra buscar o que é pra chegar na minha porta. Compreendo. Então vou deixar a retirada liberada, e a reentrega em até dois dias úteis, o que ocorrer primeiro. O protocolo é dois, quatro, sete, um, nove, três, zero, cinco. Dois, quatro, sete, um, nove, três, zero, cinco. Anotei. Mas se não chegar eu ligo de novo, e dessa vez eu vou... Se precisar, o senhor liga e informa esse protocolo que a gente acompanha direto. Posso ajudar em mais alguma coisa, seu Aparecido? Só isso mesmo. Espero que resolva dessa vez. Obrigado."
+  },
+  {
+    "call_id": "sint_006",
+    "filename": "sint_006.wav",
+    "scenario": "Pedido de Natal atrasado; consultora pergunta se dá para cancelar parte dos itens. O agente explica a política.",
+    "consultora_nome": "Márcia",
+    "consultora_genero": "f",
+    "agente_nome": "Rafael",
+    "agente_genero": "m",
+    "gabarito": {
+      "tipo_problema": "atraso",
+      "suspeita_fraude": false,
+      "reincidencia": false,
+      "sentiment": "neutro",
+      "consultora_codigo": "78065",
+      "pedido_numero": "275368",
+      "produtos_faltantes": []
+    },
+    "falas": [
+      {
+        "quem": "agente",
+        "texto": "Central de Relacionamento Aurélia, boa tarde, meu nome é Rafael. Com quem eu falo?",
+        "interrompe": false
+      },
+      {
+        "quem": "consultora",
+        "texto": "Oi, boa tarde, Rafael. Aqui é a Márcia, sou consultora.",
+        "interrompe": false
+      },
+      {
+        "quem": "agente",
+        "texto": "Oi, Márcia. Pode me passar o seu código de consultora, por favor?",
+        "interrompe": false
+      },
+      {
+        "quem": "consultora",
+        "texto": "Posso sim. É sete, oito, zero, seis, cinco.",
+        "interrompe": false
+      },
+      {
+        "quem": "agente",
+        "texto": "Sete, oito, zero, seis, cinco. Certo. E o número do pedido, qual é?",
+        "interrompe": false
+      },
+      {
+        "quem": "consultora",
+        "texto": "O pedido é dois, sete, cinco, três, seis, oito.",
+        "interrompe": false
+      },
+      {
+        "quem": "agente",
+        "texto": "Dois, sete, cinco, três, seis, oito. Peraí que eu abro aqui. Hum, tô vendo. É o pedido de Natal, né? Em que eu posso te ajudar?",
+        "interrompe": false
+      },
+      {
+        "quem": "consultora",
+        "texto": "Isso, é o de Natal. Então, ele era pra ter chegado dia dezoito e até agora nada. Eu queria entender o que aconteceu e, tipo assim, se dá pra cancelar uma parte dos itens.",
+        "interrompe": false
+      },
+      {
+        "quem": "agente",
+        "texto": "Entendi. Pelo que consta aqui, o pedido saiu do centro de distribuição, mas a transportadora tá com atraso por causa do volume de fim de ano. A nova previsão é até dia vinte e dois de dezembro.",
+        "interrompe": false
+      },
+      {
+        "quem": "consultora",
+        "texto": "Hum, tá. Dia vinte e dois já tá em cima do Natal, né. Aí eu pensei, alguns clientes meus já compraram em outro lugar, então eu queria tirar dois kits de Raízes e um Maré do pedido.",
+        "interrompe": true
+      },
+      {
+        "quem": "agente",
+        "texto": "Certo, Márcia. Deixa eu te explicar a política. Como o pedido já foi faturado e já tá em transporte, não dá pra cancelar só uma parte dos itens.",
+        "interrompe": false
+      },
+      {
+        "quem": "consultora",
+        "texto": "Ah, não dá nem um pedaço? Só esses três?",
+        "interrompe": false
+      },
+      {
+        "quem": "agente",
+        "texto": "Não, infelizmente não. Hoje as opções são duas. Ou você recusa o pedido inteiro na entrega, ou recebe tudo e pede a devolução dos itens que não quiser, em até sete dias depois de receber.",
+        "interrompe": true
+      },
+      {
+        "quem": "consultora",
+        "texto": "Entendi. E se eu recusar, eu perco o pedido todo, é isso?",
+        "interrompe": false
+      },
+      {
+        "quem": "agente",
+        "texto": "Isso. Ele volta pro centro de distribuição e é cancelado por completo. Aí você teria que fazer um pedido novo, e talvez nem chegue antes do Natal.",
+        "interrompe": false
+      },
+      {
+        "quem": "consultora",
+        "texto": "Então não vale a pena. Eu fico com o pedido, recebo e depois vejo a devolução dos kits de Raízes e do Maré. Os outros itens eu consigo vender.",
+        "interrompe": false
+      },
+      {
+        "quem": "agente",
+        "texto": "Combinado. Vou deixar uma observação no pedido sobre o atraso e sobre a sua intenção de devolução. O protocolo é quatro, um, nove, zero, dois, oito, sete.",
+        "interrompe": false
+      },
+      {
+        "quem": "consultora",
+        "texto": "Pera, deixa eu anotar. Quatro, um, nove, zero, dois, oito, sete. Tá certo.",
+        "interrompe": true
+      },
+      {
+        "quem": "agente",
+        "texto": "Isso mesmo. Mais alguma coisa, Márcia?",
+        "interrompe": false
+      },
+      {
+        "quem": "consultora",
+        "texto": "Não, era só isso. Obrigada, Rafael.",
+        "interrompe": false
+      },
+      {
+        "quem": "agente",
+        "texto": "Por nada. Boas vendas e um ótimo Natal pra você.",
+        "interrompe": false
+      }
+    ],
+    "script": "Central de Relacionamento Aurélia, boa tarde, meu nome é Rafael. Com quem eu falo? Oi, boa tarde, Rafael. Aqui é a Márcia, sou consultora. Oi, Márcia. Pode me passar o seu código de consultora, por favor? Posso sim. É sete, oito, zero, seis, cinco. Sete, oito, zero, seis, cinco. Certo. E o número do pedido, qual é? O pedido é dois, sete, cinco, três, seis, oito. Dois, sete, cinco, três, seis, oito. Peraí que eu abro aqui. Hum, tô vendo. É o pedido de Natal, né? Em que eu posso te ajudar? Isso, é o de Natal. Então, ele era pra ter chegado dia dezoito e até agora nada. Eu queria entender o que aconteceu e, tipo assim, se dá pra cancelar uma parte dos itens. Entendi. Pelo que consta aqui, o pedido saiu do centro de distribuição, mas a transportadora tá com atraso por causa do volume de fim de ano. A nova previsão é até dia vinte e dois de dezembro. Hum, tá. Dia vinte e dois já tá em cima do Natal, né. Aí eu pensei, alguns clientes meus já compraram em outro lugar, então eu queria tirar dois kits de Raízes e um Maré do pedido. Certo, Márcia. Deixa eu te explicar a política. Como o pedido já foi faturado e já tá em transporte, não dá pra cancelar só uma parte dos itens. Ah, não dá nem um pedaço? Só esses três? Não, infelizmente não. Hoje as opções são duas. Ou você recusa o pedido inteiro na entrega, ou recebe tudo e pede a devolução dos itens que não quiser, em até sete dias depois de receber. Entendi. E se eu recusar, eu perco o pedido todo, é isso? Isso. Ele volta pro centro de distribuição e é cancelado por completo. Aí você teria que fazer um pedido novo, e talvez nem chegue antes do Natal. Então não vale a pena. Eu fico com o pedido, recebo e depois vejo a devolução dos kits de Raízes e do Maré. Os outros itens eu consigo vender. Combinado. Vou deixar uma observação no pedido sobre o atraso e sobre a sua intenção de devolução. O protocolo é quatro, um, nove, zero, dois, oito, sete. Pera, deixa eu anotar. Quatro, um, nove, zero, dois, oito, sete. Tá certo. Isso mesmo. Mais alguma coisa, Márcia? Não, era só isso. Obrigada, Rafael. Por nada. Boas vendas e um ótimo Natal pra você."
+  },
+  {
+    "call_id": "sint_007",
+    "filename": "sint_007.wav",
+    "scenario": "Caixa lacrada chegou sem dois itens; a nota fiscal lista os dois. Provável erro de separação no centro de distribuição.",
+    "consultora_nome": "Cláudia",
+    "consultora_genero": "f",
+    "agente_nome": "Rafael",
+    "agente_genero": "m",
+    "gabarito": {
+      "tipo_problema": "falta_parcial",
+      "suspeita_fraude": false,
+      "reincidencia": false,
+      "sentiment": "negativo",
+      "consultora_codigo": "57717",
+      "pedido_numero": "945770",
+      "produtos_faltantes": [
+        "Maré masculino",
+        "Diário creme de ameixa"
+      ]
+    },
+    "falas": [
+      {
+        "quem": "agente",
+        "texto": "Central de Relacionamento Aurélia, meu nome é Rafael, tudo bem? Com quem eu falo?",
+        "interrompe": false
+      },
+      {
+        "quem": "consultora",
+        "texto": "Oi, Rafael. É a Cláudia. Tô ligando porque meu pedido chegou faltando coisa, e eu tô bem chateada, viu.",
+        "interrompe": false
+      },
+      {
+        "quem": "agente",
+        "texto": "Poxa, Cláudia, sinto muito por isso. Vou te ajudar sim. Pode me passar o seu código de consultora?",
+        "interrompe": false
+      },
+      {
+        "quem": "consultora",
+        "texto": "Posso. É cinco, sete, sete, um, sete.",
+        "interrompe": false
+      },
+      {
+        "quem": "agente",
+        "texto": "Cinco, sete, sete, um, sete. Certo. E o número do pedido?",
+        "interrompe": false
+      },
+      {
+        "quem": "consultora",
+        "texto": "Peraí, deixa eu olhar aqui... É nove, quatro, cinco, sete, sete, zero.",
+        "interrompe": false
+      },
+      {
+        "quem": "agente",
+        "texto": "Nove, quatro, cinco, sete, sete, zero, confere aqui. Me conta o que aconteceu quando a caixa chegou.",
+        "interrompe": false
+      },
+      {
+        "quem": "consultora",
+        "texto": "Então, a caixa chegou hoje de manhã, toda lacrada, a fita inteirinha, sem nada rasgado. Aí eu abri e faltam dois produtos. Tá na nota fiscal, mas não tá na caixa.",
+        "interrompe": false
+      },
+      {
+        "quem": "agente",
+        "texto": "Entendi. Quais são os itens que constam na nota e não vieram?",
+        "interrompe": false
+      },
+      {
+        "quem": "consultora",
+        "texto": "É o Maré masculino e o Diário creme de ameixa. Um de cada. Os dois tão na nota, e aqui, nada.",
+        "interrompe": false
+      },
+      {
+        "quem": "agente",
+        "texto": "Maré masculino e Diário creme de ameixa, um de cada. Você chegou a conferir a caixa toda, o papel de enchimento, tudo?",
+        "interrompe": false
+      },
+      {
+        "quem": "consultora",
+        "texto": "Conferi sim, duas vezes! Revirei tudo. Eu já tinha até separado o Maré pra uma cliente que vem buscar amanhã, imagina só.",
+        "interrompe": true
+      },
+      {
+        "quem": "agente",
+        "texto": "Pelo que eu vejo aqui, a caixa veio íntegra e a nota lista os dois itens, então provavelmente foi um erro de separação lá no centro de distribuição e...",
+        "interrompe": false
+      },
+      {
+        "quem": "consultora",
+        "texto": "Mas isso é um absurdo, né? Eu pago tudo em dia e agora fico no prejuízo e passando vergonha com cliente.",
+        "interrompe": true
+      },
+      {
+        "quem": "agente",
+        "texto": "Eu entendo, Cláudia, a sua frustração é justa. Vou abrir o registro e pedir o envio dos dois itens em separado, sem custo nenhum pra você.",
+        "interrompe": false
+      },
+      {
+        "quem": "consultora",
+        "texto": "E vai chegar quando? Porque cliente não espera, tá?",
+        "interrompe": false
+      },
+      {
+        "quem": "agente",
+        "texto": "O prazo é de até cinco dias úteis, mas eu vou marcar como prioridade.",
+        "interrompe": false
+      },
+      {
+        "quem": "consultora",
+        "texto": "Cinco dias é muito, hum... mas tá bom, faz o que dá pra fazer então.",
+        "interrompe": true
+      },
+      {
+        "quem": "agente",
+        "texto": "Anotado. O seu protocolo é zero, nove, dois, quatro, um, oito, três. Quer que eu repita?",
+        "interrompe": false
+      },
+      {
+        "quem": "consultora",
+        "texto": "Repete devagar, que eu vou anotar.",
+        "interrompe": false
+      },
+      {
+        "quem": "agente",
+        "texto": "Zero, nove, dois, quatro, um, oito, três. Mais alguma coisa, Cláudia?",
+        "interrompe": false
+      },
+      {
+        "quem": "consultora",
+        "texto": "Não, só isso. Espero que chegue logo, né. Obrigada.",
+        "interrompe": false
+      }
+    ],
+    "script": "Central de Relacionamento Aurélia, meu nome é Rafael, tudo bem? Com quem eu falo? Oi, Rafael. É a Cláudia. Tô ligando porque meu pedido chegou faltando coisa, e eu tô bem chateada, viu. Poxa, Cláudia, sinto muito por isso. Vou te ajudar sim. Pode me passar o seu código de consultora? Posso. É cinco, sete, sete, um, sete. Cinco, sete, sete, um, sete. Certo. E o número do pedido? Peraí, deixa eu olhar aqui... É nove, quatro, cinco, sete, sete, zero. Nove, quatro, cinco, sete, sete, zero, confere aqui. Me conta o que aconteceu quando a caixa chegou. Então, a caixa chegou hoje de manhã, toda lacrada, a fita inteirinha, sem nada rasgado. Aí eu abri e faltam dois produtos. Tá na nota fiscal, mas não tá na caixa. Entendi. Quais são os itens que constam na nota e não vieram? É o Maré masculino e o Diário creme de ameixa. Um de cada. Os dois tão na nota, e aqui, nada. Maré masculino e Diário creme de ameixa, um de cada. Você chegou a conferir a caixa toda, o papel de enchimento, tudo? Conferi sim, duas vezes! Revirei tudo. Eu já tinha até separado o Maré pra uma cliente que vem buscar amanhã, imagina só. Pelo que eu vejo aqui, a caixa veio íntegra e a nota lista os dois itens, então provavelmente foi um erro de separação lá no centro de distribuição e... Mas isso é um absurdo, né? Eu pago tudo em dia e agora fico no prejuízo e passando vergonha com cliente. Eu entendo, Cláudia, a sua frustração é justa. Vou abrir o registro e pedir o envio dos dois itens em separado, sem custo nenhum pra você. E vai chegar quando? Porque cliente não espera, tá? O prazo é de até cinco dias úteis, mas eu vou marcar como prioridade. Cinco dias é muito, hum... mas tá bom, faz o que dá pra fazer então. Anotado. O seu protocolo é zero, nove, dois, quatro, um, oito, três. Quer que eu repita? Repete devagar, que eu vou anotar. Zero, nove, dois, quatro, um, oito, três. Mais alguma coisa, Cláudia? Não, só isso. Espero que chegue logo, né. Obrigada."
+  },
+  {
+    "call_id": "sint_008",
+    "filename": "sint_008.wav",
+    "scenario": "Faltou um item pela segunda vez no mês; caixa lacrada. A consultora pede reenvio expresso.",
+    "consultora_nome": "Marlene",
+    "consultora_genero": "f",
+    "agente_nome": "Rafael",
+    "agente_genero": "m",
+    "gabarito": {
+      "tipo_problema": "falta_parcial",
+      "suspeita_fraude": false,
+      "reincidencia": true,
+      "sentiment": "negativo",
+      "consultora_codigo": "97293",
+      "pedido_numero": "140448",
+      "produtos_faltantes": [
+        "hidratante Diário de macadâmia"
+      ]
+    },
+    "falas": [
+      {
+        "quem": "agente",
+        "texto": "Central de Relacionamento Aurélia, meu nome é Rafael, tudo bem? Com quem eu falo?",
+        "interrompe": false
+      },
+      {
+        "quem": "consultora",
+        "texto": "Oi, Rafael. Aqui é a Marlene, sou consultora.",
+        "interrompe": false
+      },
+      {
+        "quem": "agente",
+        "texto": "Prazer, Marlene. Me passa o seu código de consultora, por favor?",
+        "interrompe": false
+      },
+      {
+        "quem": "consultora",
+        "texto": "É nove, sete, dois, nove, três.",
+        "interrompe": false
+      },
+      {
+        "quem": "agente",
+        "texto": "Nove, sete, dois, nove, três. Certo. E o número do pedido, você tem aí?",
+        "interrompe": false
+      },
+      {
+        "quem": "consultora",
+        "texto": "Peraí... é um, quatro, zero, quatro, quatro, oito.",
+        "interrompe": false
+      },
+      {
+        "quem": "agente",
+        "texto": "Um, quatro, zero, quatro, quatro, oito. Confere aqui. Me conta, o que aconteceu com esse pedido?",
+        "interrompe": false
+      },
+      {
+        "quem": "consultora",
+        "texto": "Então, ele chegou hoje, a caixa tava toda lacrada, certinha, sem nada aberto. Só que faltou o hidratante Diário de macadâmia. Tá na nota, mas não veio.",
+        "interrompe": false
+      },
+      {
+        "quem": "agente",
+        "texto": "Entendi. A caixa estava lacrada, sem violação, e só esse item não veio, é isso? Deixa eu só verificar se...",
+        "interrompe": false
+      },
+      {
+        "quem": "consultora",
+        "texto": "Isso, só ele. E olha, não é a primeira vez, tá? É a segunda vez só esse mês que falta produto no meu pedido. Eu já tô cansada, sério.",
+        "interrompe": true
+      },
+      {
+        "quem": "agente",
+        "texto": "Poxa, Marlene, eu entendo, e sinto muito. Realmente, duas vezes no mesmo mês é chato demais.",
+        "interrompe": false
+      },
+      {
+        "quem": "consultora",
+        "texto": "É, né? Eu tenho cliente esperando, prometi pra ela essa semana. Fico mal, tipo assim, sem moral com a cliente.",
+        "interrompe": false
+      },
+      {
+        "quem": "agente",
+        "texto": "Claro. Vou registrar como falta de item, erro de separação. Você quer que eu...",
+        "interrompe": false
+      },
+      {
+        "quem": "consultora",
+        "texto": "Quero o reenvio expresso, Rafael. Não quero esperar o prazo normal, não dá.",
+        "interrompe": true
+      },
+      {
+        "quem": "agente",
+        "texto": "Perfeito, vou solicitar o reenvio expresso só do hidratante Diário de macadâmia. O prazo estimado é de dois dias úteis.",
+        "interrompe": false
+      },
+      {
+        "quem": "consultora",
+        "texto": "Dois dias... tá bom. Mas por favor, que dessa vez venha certo. Já é a segunda vez, viu?",
+        "interrompe": false
+      },
+      {
+        "quem": "agente",
+        "texto": "Vou deixar anotado o histórico pra equipe conferir a separação com atenção. O protocolo é dois, zero, sete, um, nove, quatro, cinco.",
+        "interrompe": false
+      },
+      {
+        "quem": "consultora",
+        "texto": "Dois, zero, sete, um, nove, quatro, cinco. Anotei aqui.",
+        "interrompe": false
+      },
+      {
+        "quem": "agente",
+        "texto": "Isso. Posso te ajudar com mais alguma coisa, Marlene?",
+        "interrompe": false
+      },
+      {
+        "quem": "consultora",
+        "texto": "Não, só isso mesmo. Obrigada, Rafael.",
+        "interrompe": false
+      }
+    ],
+    "script": "Central de Relacionamento Aurélia, meu nome é Rafael, tudo bem? Com quem eu falo? Oi, Rafael. Aqui é a Marlene, sou consultora. Prazer, Marlene. Me passa o seu código de consultora, por favor? É nove, sete, dois, nove, três. Nove, sete, dois, nove, três. Certo. E o número do pedido, você tem aí? Peraí... é um, quatro, zero, quatro, quatro, oito. Um, quatro, zero, quatro, quatro, oito. Confere aqui. Me conta, o que aconteceu com esse pedido? Então, ele chegou hoje, a caixa tava toda lacrada, certinha, sem nada aberto. Só que faltou o hidratante Diário de macadâmia. Tá na nota, mas não veio. Entendi. A caixa estava lacrada, sem violação, e só esse item não veio, é isso? Deixa eu só verificar se... Isso, só ele. E olha, não é a primeira vez, tá? É a segunda vez só esse mês que falta produto no meu pedido. Eu já tô cansada, sério. Poxa, Marlene, eu entendo, e sinto muito. Realmente, duas vezes no mesmo mês é chato demais. É, né? Eu tenho cliente esperando, prometi pra ela essa semana. Fico mal, tipo assim, sem moral com a cliente. Claro. Vou registrar como falta de item, erro de separação. Você quer que eu... Quero o reenvio expresso, Rafael. Não quero esperar o prazo normal, não dá. Perfeito, vou solicitar o reenvio expresso só do hidratante Diário de macadâmia. O prazo estimado é de dois dias úteis. Dois dias... tá bom. Mas por favor, que dessa vez venha certo. Já é a segunda vez, viu? Vou deixar anotado o histórico pra equipe conferir a separação com atenção. O protocolo é dois, zero, sete, um, nove, quatro, cinco. Dois, zero, sete, um, nove, quatro, cinco. Anotei aqui. Isso. Posso te ajudar com mais alguma coisa, Marlene? Não, só isso mesmo. Obrigada, Rafael."
+  },
+  {
+    "call_id": "sint_009",
+    "filename": "sint_009.wav",
+    "scenario": "Veio um perfume a menos e um hidratante de outra fragrância no lugar do pedido. Caixa intacta.",
+    "consultora_nome": "Denise",
+    "consultora_genero": "f",
+    "agente_nome": "Camila",
+    "agente_genero": "f",
+    "gabarito": {
+      "tipo_problema": "falta_parcial",
+      "suspeita_fraude": false,
+      "reincidencia": false,
+      "sentiment": "neutro",
+      "consultora_codigo": "75719",
+      "pedido_numero": "474987",
+      "produtos_faltantes": [
+        "perfume Âmbar Oud",
+        "hidratante Diário de macadâmia"
+      ]
+    },
+    "falas": [
+      {
+        "quem": "agente",
+        "texto": "Central de Relacionamento Aurélia, meu nome é Camila, tudo bem? Com quem eu falo?",
+        "interrompe": false
+      },
+      {
+        "quem": "consultora",
+        "texto": "Oi, Camila, tudo bem. Aqui é a Denise.",
+        "interrompe": false
+      },
+      {
+        "quem": "agente",
+        "texto": "Denise, pra eu te ajudar, me passa o seu código de consultora, por favor?",
+        "interrompe": false
+      },
+      {
+        "quem": "consultora",
+        "texto": "Claro. É sete, cinco, sete, um, nove.",
+        "interrompe": false
+      },
+      {
+        "quem": "agente",
+        "texto": "Sete, cinco, sete, um, nove. Certo. E o número do pedido?",
+        "interrompe": false
+      },
+      {
+        "quem": "consultora",
+        "texto": "O pedido é quatro, sete, quatro, nove, oito, sete.",
+        "interrompe": false
+      },
+      {
+        "quem": "agente",
+        "texto": "Quatro, sete, quatro, nove, oito, sete, confirmado. Me conta, Denise, o que aconteceu?",
+        "interrompe": false
+      },
+      {
+        "quem": "consultora",
+        "texto": "Então, o pedido chegou hoje, a caixa veio toda lacrada, direitinha. Só que quando eu fui conferir, tá faltando um perfume. O perfume Âmbar Oud, ele não veio.",
+        "interrompe": false
+      },
+      {
+        "quem": "agente",
+        "texto": "Hum, o perfume Âmbar Oud não veio. Mais alguma coisa, Denise?",
+        "interrompe": false
+      },
+      {
+        "quem": "consultora",
+        "texto": "Tem sim. Eu pedi o hidratante Diário de macadâmia, e veio um Diário de ameixa, é...",
+        "interrompe": false
+      },
+      {
+        "quem": "agente",
+        "texto": "Veio o de ameixa no lugar do...",
+        "interrompe": true
+      },
+      {
+        "quem": "consultora",
+        "texto": "...no lugar do de macadâmia, isso. O resto tá tudo certinho, é só isso mesmo.",
+        "interrompe": true
+      },
+      {
+        "quem": "agente",
+        "texto": "Entendi. E a caixa, tava intacta mesmo? Fita sem mexer, sem rasgo?",
+        "interrompe": false
+      },
+      {
+        "quem": "consultora",
+        "texto": "Intacta, a fita tava normal. Acho que foi lá na separação, né, alguma troca.",
+        "interrompe": false
+      },
+      {
+        "quem": "agente",
+        "texto": "Deve ter sido isso, sim. Vou abrir o registro pra enviar o perfume e o hidratante certo. O prazo é de até cinco dias úteis.",
+        "interrompe": false
+      },
+      {
+        "quem": "consultora",
+        "texto": "Tá bom. E o hidratante de ameixa, eu devolvo como?",
+        "interrompe": false
+      },
+      {
+        "quem": "agente",
+        "texto": "Pode ficar com ele por enquanto, peraí... a transportadora recolhe quando entregar o novo. Anota o protocolo: três, um, nove, zero, quatro, dois, oito.",
+        "interrompe": false
+      },
+      {
+        "quem": "consultora",
+        "texto": "Três, um, nove, zero, quatro, dois, oito. Anotei. Tá certo, obrigada, Camila.",
+        "interrompe": true
+      },
+      {
+        "quem": "agente",
+        "texto": "Eu que agradeço, Denise. Tenha um bom dia!",
+        "interrompe": false
+      }
+    ],
+    "script": "Central de Relacionamento Aurélia, meu nome é Camila, tudo bem? Com quem eu falo? Oi, Camila, tudo bem. Aqui é a Denise. Denise, pra eu te ajudar, me passa o seu código de consultora, por favor? Claro. É sete, cinco, sete, um, nove. Sete, cinco, sete, um, nove. Certo. E o número do pedido? O pedido é quatro, sete, quatro, nove, oito, sete. Quatro, sete, quatro, nove, oito, sete, confirmado. Me conta, Denise, o que aconteceu? Então, o pedido chegou hoje, a caixa veio toda lacrada, direitinha. Só que quando eu fui conferir, tá faltando um perfume. O perfume Âmbar Oud, ele não veio. Hum, o perfume Âmbar Oud não veio. Mais alguma coisa, Denise? Tem sim. Eu pedi o hidratante Diário de macadâmia, e veio um Diário de ameixa, é... Veio o de ameixa no lugar do... ...no lugar do de macadâmia, isso. O resto tá tudo certinho, é só isso mesmo. Entendi. E a caixa, tava intacta mesmo? Fita sem mexer, sem rasgo? Intacta, a fita tava normal. Acho que foi lá na separação, né, alguma troca. Deve ter sido isso, sim. Vou abrir o registro pra enviar o perfume e o hidratante certo. O prazo é de até cinco dias úteis. Tá bom. E o hidratante de ameixa, eu devolvo como? Pode ficar com ele por enquanto, peraí... a transportadora recolhe quando entregar o novo. Anota o protocolo: três, um, nove, zero, quatro, dois, oito. Três, um, nove, zero, quatro, dois, oito. Anotei. Tá certo, obrigada, Camila. Eu que agradeço, Denise. Tenha um bom dia!"
+  },
+  {
+    "call_id": "sint_010",
+    "filename": "sint_010.wav",
+    "scenario": "Faltou um kit de presente; o agente agenda o complemento sem custo para o mesmo dia útil. Consultora satisfeita.",
+    "consultora_nome": "Marilene",
+    "consultora_genero": "f",
+    "agente_nome": "Rafael",
+    "agente_genero": "m",
+    "gabarito": {
+      "tipo_problema": "falta_parcial",
+      "suspeita_fraude": false,
+      "reincidencia": false,
+      "sentiment": "positivo",
+      "consultora_codigo": "68327",
+      "pedido_numero": "240245",
+      "produtos_faltantes": [
+        "kit de presente Raízes castanha"
+      ]
+    },
+    "falas": [
+      {
+        "quem": "agente",
+        "texto": "Central de Relacionamento Aurélia, meu nome é Rafael, tudo bem? Com quem eu falo?",
+        "interrompe": false
+      },
+      {
+        "quem": "consultora",
+        "texto": "Oi, Rafael, tudo bem sim. Aqui é a Marilene, sou consultora.",
+        "interrompe": false
+      },
+      {
+        "quem": "agente",
+        "texto": "Prazer, Marilene. Me passa o seu código de consultora, por favor?",
+        "interrompe": false
+      },
+      {
+        "quem": "consultora",
+        "texto": "Claro. É seis, oito, três, dois, sete.",
+        "interrompe": false
+      },
+      {
+        "quem": "agente",
+        "texto": "Seis, oito, três, dois, sete. Certo. E o número do pedido?",
+        "interrompe": false
+      },
+      {
+        "quem": "consultora",
+        "texto": "Peraí, deixa eu olhar aqui na nota... é dois, quatro, zero, dois, quatro, cinco.",
+        "interrompe": false
+      },
+      {
+        "quem": "agente",
+        "texto": "Dois, quatro, zero, dois, quatro, cinco. Achei aqui. Em que eu posso te ajudar?",
+        "interrompe": false
+      },
+      {
+        "quem": "consultora",
+        "texto": "Então, o pedido chegou ontem, a caixa veio toda lacrada, direitinha. Mas aí eu fui conferir e, tipo assim, faltou o kit de presente Raízes castanha.",
+        "interrompe": false
+      },
+      {
+        "quem": "agente",
+        "texto": "Entendi. E a caixa estava fechada mesmo, sem rasgo, sem fita mexida?",
+        "interrompe": false
+      },
+      {
+        "quem": "consultora",
+        "texto": "Nada, nada. Lacre inteiro. Eu acho que foi esquecimento na separação, né? Nunca tinha acontecido comigo, é a primeira vez, sempre vem tudo certinho.",
+        "interrompe": false
+      },
+      {
+        "quem": "agente",
+        "texto": "Fico feliz em saber. Aqui no sistema o kit aparece como faturado, mas não saiu na separação. Então eu vou providenciar o complemento, tá?",
+        "interrompe": false
+      },
+      {
+        "quem": "consultora",
+        "texto": "Ai, que bom. E tem algum custo, Rafael? Porque eu não queria que...",
+        "interrompe": false
+      },
+      {
+        "quem": "agente",
+        "texto": "Nenhum custo, Marilene. É um complemento sem custo nenhum pra você, e eu já deixo agendado pra hoje mesmo, dentro do dia útil.",
+        "interrompe": true
+      },
+      {
+        "quem": "consultora",
+        "texto": "Hoje mesmo? Nossa, que beleza! Eu até já tinha uma cliente esperando esse kit pra dar de presente.",
+        "interrompe": false
+      },
+      {
+        "quem": "agente",
+        "texto": "Então ela vai ganhar tempo. Só confirma pra mim: o endereço de entrega é o mesmo que está no seu cadastro?",
+        "interrompe": false
+      },
+      {
+        "quem": "consultora",
+        "texto": "É o mesmo, sim, não mudou nada.",
+        "interrompe": false
+      },
+      {
+        "quem": "agente",
+        "texto": "Perfeito. Seu protocolo é dois, sete, um, nove, zero, quatro, oito. Quer anotar?",
+        "interrompe": false
+      },
+      {
+        "quem": "consultora",
+        "texto": "Peraí, deixa eu pegar a caneta... dois, sete, um, nove, zero, quatro, oito. Pronto, anotei. Muito obrigada, viu, atendimento rápido, eu adorei.",
+        "interrompe": true
+      },
+      {
+        "quem": "agente",
+        "texto": "Imagina, Marilene, a Aurélia agradece. Boa venda pra você e boas festas!",
+        "interrompe": true
+      }
+    ],
+    "script": "Central de Relacionamento Aurélia, meu nome é Rafael, tudo bem? Com quem eu falo? Oi, Rafael, tudo bem sim. Aqui é a Marilene, sou consultora. Prazer, Marilene. Me passa o seu código de consultora, por favor? Claro. É seis, oito, três, dois, sete. Seis, oito, três, dois, sete. Certo. E o número do pedido? Peraí, deixa eu olhar aqui na nota... é dois, quatro, zero, dois, quatro, cinco. Dois, quatro, zero, dois, quatro, cinco. Achei aqui. Em que eu posso te ajudar? Então, o pedido chegou ontem, a caixa veio toda lacrada, direitinha. Mas aí eu fui conferir e, tipo assim, faltou o kit de presente Raízes castanha. Entendi. E a caixa estava fechada mesmo, sem rasgo, sem fita mexida? Nada, nada. Lacre inteiro. Eu acho que foi esquecimento na separação, né? Nunca tinha acontecido comigo, é a primeira vez, sempre vem tudo certinho. Fico feliz em saber. Aqui no sistema o kit aparece como faturado, mas não saiu na separação. Então eu vou providenciar o complemento, tá? Ai, que bom. E tem algum custo, Rafael? Porque eu não queria que... Nenhum custo, Marilene. É um complemento sem custo nenhum pra você, e eu já deixo agendado pra hoje mesmo, dentro do dia útil. Hoje mesmo? Nossa, que beleza! Eu até já tinha uma cliente esperando esse kit pra dar de presente. Então ela vai ganhar tempo. Só confirma pra mim: o endereço de entrega é o mesmo que está no seu cadastro? É o mesmo, sim, não mudou nada. Perfeito. Seu protocolo é dois, sete, um, nove, zero, quatro, oito. Quer anotar? Peraí, deixa eu pegar a caneta... dois, sete, um, nove, zero, quatro, oito. Pronto, anotei. Muito obrigada, viu, atendimento rápido, eu adorei. Imagina, Marilene, a Aurélia agradece. Boa venda pra você e boas festas!"
+  },
+  {
+    "call_id": "sint_011",
+    "filename": "sint_011.wav",
+    "scenario": "Consultora experiente com dez anos de Aurélia: falta o refil de um item pela terceira vez; ela confere tudo com a nota.",
+    "consultora_nome": "Márcia",
+    "consultora_genero": "f",
+    "agente_nome": "Rafael",
+    "agente_genero": "m",
+    "gabarito": {
+      "tipo_problema": "falta_parcial",
+      "suspeita_fraude": false,
+      "reincidencia": true,
+      "sentiment": "negativo",
+      "consultora_codigo": "57203",
+      "pedido_numero": "711972",
+      "produtos_faltantes": [
+        "refil do Diário de nozes pecã e cacau"
+      ]
+    },
+    "falas": [
+      {
+        "quem": "agente",
+        "texto": "Central de Relacionamento Aurélia, boa tarde, meu nome é Rafael. Com quem eu falo?",
+        "interrompe": false
+      },
+      {
+        "quem": "consultora",
+        "texto": "Boa tarde, Rafael. É a Márcia. Olha, já vou te falar, tô bem chateada, viu.",
+        "interrompe": false
+      },
+      {
+        "quem": "agente",
+        "texto": "Poxa, Márcia, sinto muito. Vamos ver isso juntos. Pode me passar o seu código de consultora?",
+        "interrompe": false
+      },
+      {
+        "quem": "consultora",
+        "texto": "Posso. É cinco, sete, dois, zero, três.",
+        "interrompe": false
+      },
+      {
+        "quem": "agente",
+        "texto": "Cinco, sete, dois, zero, três. Obrigado. E o número do pedido?",
+        "interrompe": false
+      },
+      {
+        "quem": "consultora",
+        "texto": "Peraí, deixa eu pegar a nota aqui. Sete, um, um, nove, sete, dois.",
+        "interrompe": false
+      },
+      {
+        "quem": "agente",
+        "texto": "Pedido sete, um, um, nove, sete, dois. Perfeito. Me conta o que aconteceu.",
+        "interrompe": false
+      },
+      {
+        "quem": "consultora",
+        "texto": "Então, a caixa chegou ontem, toda lacrada, a fita do jeito que tem que ser. Só que eu conferi tudo com a nota, item por item, e faltou o refil do Diário de nozes pecã e cacau. Tá na nota, mas não veio na caixa.",
+        "interrompe": false
+      },
+      {
+        "quem": "agente",
+        "texto": "Entendi. Então a caixa estava íntegra, sem rasgo, sem fita diferente, nada aberto?",
+        "interrompe": false
+      },
+      {
+        "quem": "consultora",
+        "texto": "Nada, tava perfeita. Por isso que eu falo, não é problema de caixa, é separação mesmo. E o pior, Rafael, é a terceira vez...",
+        "interrompe": false
+      },
+      {
+        "quem": "agente",
+        "texto": "A terceira vez com esse mesmo refil?",
+        "interrompe": true
+      },
+      {
+        "quem": "consultora",
+        "texto": "Esse mesmo, é! Terceira vez em poucos meses. Eu tenho dez anos de Aurélia, tipo assim, eu conheço o processo, nunca vi isso acontecer tanto.",
+        "interrompe": false
+      },
+      {
+        "quem": "agente",
+        "texto": "Imagino o transtorno. Deixa eu olhar no sistema aqui... Hum, tô vendo os dois registros anteriores no seu código. Vou abrir esse novo e mandar pra área de separação com observação de reincidência.",
+        "interrompe": false
+      },
+      {
+        "quem": "consultora",
+        "texto": "Mas só abrir não resolve, né? A minha cliente já tá esperando esse refil, eu fico mal com ela, de novo...",
+        "interrompe": true
+      },
+      {
+        "quem": "agente",
+        "texto": "Claro, Márcia. Eu consigo fazer o reenvio só do refil, com prioridade, em até cinco dias úteis. Ou, se preferir, o crédito do valor no seu próximo ciclo. O que fica melhor pra você?",
+        "interrompe": false
+      },
+      {
+        "quem": "consultora",
+        "texto": "Manda o refil. Crédito não adianta, a cliente quer o produto. Mas eu quero que isso fique registrado, viu? Não é a primeira nem a segunda.",
+        "interrompe": false
+      },
+      {
+        "quem": "agente",
+        "texto": "Fica registrado sim. O protocolo é dois, zero, quatro, oito, um, nove. Quer anotar?",
+        "interrompe": false
+      },
+      {
+        "quem": "consultora",
+        "texto": "Pera, tô anotando. Dois, zero, quatro, oito, um, nove. Tá. Vou aguardar, mas se faltar de novo eu vou ter que falar com a gerente do meu setor, tá bom?",
+        "interrompe": false
+      },
+      {
+        "quem": "agente",
+        "texto": "Combinado, Márcia, desculpa mais uma vez pelo ocorrido. Obrigado por ligar e tenha uma boa tarde.",
+        "interrompe": false
+      }
+    ],
+    "script": "Central de Relacionamento Aurélia, boa tarde, meu nome é Rafael. Com quem eu falo? Boa tarde, Rafael. É a Márcia. Olha, já vou te falar, tô bem chateada, viu. Poxa, Márcia, sinto muito. Vamos ver isso juntos. Pode me passar o seu código de consultora? Posso. É cinco, sete, dois, zero, três. Cinco, sete, dois, zero, três. Obrigado. E o número do pedido? Peraí, deixa eu pegar a nota aqui. Sete, um, um, nove, sete, dois. Pedido sete, um, um, nove, sete, dois. Perfeito. Me conta o que aconteceu. Então, a caixa chegou ontem, toda lacrada, a fita do jeito que tem que ser. Só que eu conferi tudo com a nota, item por item, e faltou o refil do Diário de nozes pecã e cacau. Tá na nota, mas não veio na caixa. Entendi. Então a caixa estava íntegra, sem rasgo, sem fita diferente, nada aberto? Nada, tava perfeita. Por isso que eu falo, não é problema de caixa, é separação mesmo. E o pior, Rafael, é a terceira vez... A terceira vez com esse mesmo refil? Esse mesmo, é! Terceira vez em poucos meses. Eu tenho dez anos de Aurélia, tipo assim, eu conheço o processo, nunca vi isso acontecer tanto. Imagino o transtorno. Deixa eu olhar no sistema aqui... Hum, tô vendo os dois registros anteriores no seu código. Vou abrir esse novo e mandar pra área de separação com observação de reincidência. Mas só abrir não resolve, né? A minha cliente já tá esperando esse refil, eu fico mal com ela, de novo... Claro, Márcia. Eu consigo fazer o reenvio só do refil, com prioridade, em até cinco dias úteis. Ou, se preferir, o crédito do valor no seu próximo ciclo. O que fica melhor pra você? Manda o refil. Crédito não adianta, a cliente quer o produto. Mas eu quero que isso fique registrado, viu? Não é a primeira nem a segunda. Fica registrado sim. O protocolo é dois, zero, quatro, oito, um, nove. Quer anotar? Pera, tô anotando. Dois, zero, quatro, oito, um, nove. Tá. Vou aguardar, mas se faltar de novo eu vou ter que falar com a gerente do meu setor, tá bom? Combinado, Márcia, desculpa mais uma vez pelo ocorrido. Obrigado por ligar e tenha uma boa tarde."
+  },
+  {
+    "call_id": "sint_012",
+    "filename": "sint_012.wav",
+    "scenario": "Pedido grande com trinta itens; faltaram três itens pequenos. Caixa lacrada, sem sinal de violação.",
+    "consultora_nome": "Marcela",
+    "consultora_genero": "f",
+    "agente_nome": "Rafael",
+    "agente_genero": "m",
+    "gabarito": {
+      "tipo_problema": "falta_parcial",
+      "suspeita_fraude": false,
+      "reincidencia": false,
+      "sentiment": "neutro",
+      "consultora_codigo": "60349",
+      "pedido_numero": "515798",
+      "produtos_faltantes": [
+        "sabonete em barra Diário",
+        "creme de mãos Raízes",
+        "batom Aura"
+      ]
+    },
+    "falas": [
+      {
+        "quem": "agente",
+        "texto": "Central de Relacionamento Aurélia, boa tarde, meu nome é Rafael. Com quem eu falo?",
+        "interrompe": false
+      },
+      {
+        "quem": "consultora",
+        "texto": "Oi, boa tarde, Rafael. Aqui é a Marcela, sou consultora.",
+        "interrompe": false
+      },
+      {
+        "quem": "agente",
+        "texto": "Oi, Marcela. Como posso te ajudar hoje? Antes, me passa o seu código de consultora, por favor.",
+        "interrompe": false
+      },
+      {
+        "quem": "consultora",
+        "texto": "Claro. É seis, zero, três, quatro, nove.",
+        "interrompe": false
+      },
+      {
+        "quem": "agente",
+        "texto": "Seis, zero, três, quatro, nove. Certo. E o número do pedido, você tem aí?",
+        "interrompe": false
+      },
+      {
+        "quem": "consultora",
+        "texto": "Tenho sim, peraí... é cinco, um, cinco, sete, nove, oito.",
+        "interrompe": false
+      },
+      {
+        "quem": "agente",
+        "texto": "Cinco, um, cinco, sete, nove, oito. Achei aqui. Me conta o que aconteceu com esse pedido.",
+        "interrompe": false
+      },
+      {
+        "quem": "consultora",
+        "texto": "Então, era um pedido grande, trinta itens. Eu fui conferir tudo ontem e, tipo assim, faltaram três itens. Três coisinhas pequenas.",
+        "interrompe": false
+      },
+      {
+        "quem": "agente",
+        "texto": "Entendi. E a caixa, como que ela chegou? Estava lacrada, tinha algum rasgo, fita diferente?",
+        "interrompe": false
+      },
+      {
+        "quem": "consultora",
+        "texto": "Não, não, a caixa estava lacrada, direitinha. A fita estava toda inteira, sem nada de aberto. Eu até tirei foto, por precaução.",
+        "interrompe": false
+      },
+      {
+        "quem": "agente",
+        "texto": "Perfeito, ajuda bastante. Quais itens são os que não vieram?",
+        "interrompe": false
+      },
+      {
+        "quem": "consultora",
+        "texto": "É o sabonete em barra Diário, o creme de mãos Raízes e o batom Aura. Esses três eu não achei na caixa.",
+        "interrompe": true
+      },
+      {
+        "quem": "agente",
+        "texto": "Deixa eu só confirmar, sabonete em barra Diário, creme de mãos Raízes e batom Aura. Isso?",
+        "interrompe": true
+      },
+      {
+        "quem": "consultora",
+        "texto": "Isso mesmo, isso. Os três constam na nota, mas não vieram.",
+        "interrompe": false
+      },
+      {
+        "quem": "agente",
+        "texto": "Certo. Pela caixa lacrada, parece que foi um erro na separação do pedido. Vou abrir uma solicitação para reenviar esses três itens, tudo bem?",
+        "interrompe": false
+      },
+      {
+        "quem": "consultora",
+        "texto": "Pode ser. Quanto tempo mais ou menos para chegar? Tenho cliente esperando.",
+        "interrompe": false
+      },
+      {
+        "quem": "agente",
+        "texto": "O reenvio sai junto do próximo ciclo de separação, e o prazo previsto é de cinco dias úteis. Vou deixar registrado que você tem urgência.",
+        "interrompe": false
+      },
+      {
+        "quem": "consultora",
+        "texto": "Tá bom, cinco dias úteis, entendi. Obrigada.",
+        "interrompe": true
+      },
+      {
+        "quem": "agente",
+        "texto": "Seu protocolo é dois, zero, dois, seis, um, quatro, quatro, sete. Quer anotar?",
+        "interrompe": false
+      },
+      {
+        "quem": "consultora",
+        "texto": "Pode falar de novo, devagar? Dois, zero, dois, seis, um, quatro, quatro, sete. Anotei. Obrigada, Rafael, tenha uma boa tarde.",
+        "interrompe": false
+      }
+    ],
+    "script": "Central de Relacionamento Aurélia, boa tarde, meu nome é Rafael. Com quem eu falo? Oi, boa tarde, Rafael. Aqui é a Marcela, sou consultora. Oi, Marcela. Como posso te ajudar hoje? Antes, me passa o seu código de consultora, por favor. Claro. É seis, zero, três, quatro, nove. Seis, zero, três, quatro, nove. Certo. E o número do pedido, você tem aí? Tenho sim, peraí... é cinco, um, cinco, sete, nove, oito. Cinco, um, cinco, sete, nove, oito. Achei aqui. Me conta o que aconteceu com esse pedido. Então, era um pedido grande, trinta itens. Eu fui conferir tudo ontem e, tipo assim, faltaram três itens. Três coisinhas pequenas. Entendi. E a caixa, como que ela chegou? Estava lacrada, tinha algum rasgo, fita diferente? Não, não, a caixa estava lacrada, direitinha. A fita estava toda inteira, sem nada de aberto. Eu até tirei foto, por precaução. Perfeito, ajuda bastante. Quais itens são os que não vieram? É o sabonete em barra Diário, o creme de mãos Raízes e o batom Aura. Esses três eu não achei na caixa. Deixa eu só confirmar, sabonete em barra Diário, creme de mãos Raízes e batom Aura. Isso? Isso mesmo, isso. Os três constam na nota, mas não vieram. Certo. Pela caixa lacrada, parece que foi um erro na separação do pedido. Vou abrir uma solicitação para reenviar esses três itens, tudo bem? Pode ser. Quanto tempo mais ou menos para chegar? Tenho cliente esperando. O reenvio sai junto do próximo ciclo de separação, e o prazo previsto é de cinco dias úteis. Vou deixar registrado que você tem urgência. Tá bom, cinco dias úteis, entendi. Obrigada. Seu protocolo é dois, zero, dois, seis, um, quatro, quatro, sete. Quer anotar? Pode falar de novo, devagar? Dois, zero, dois, seis, um, quatro, quatro, sete. Anotei. Obrigada, Rafael, tenha uma boa tarde."
+  },
+  {
+    "call_id": "sint_013",
+    "filename": "sint_013.wav",
+    "scenario": "Faltou o item mais caro do pedido, mas a caixa estava lacrada e com a fita original. A consultora acha que foi erro na expedição.",
+    "consultora_nome": "Marlene",
+    "consultora_genero": "f",
+    "agente_nome": "Rafael",
+    "agente_genero": "m",
+    "gabarito": {
+      "tipo_problema": "falta_parcial",
+      "suspeita_fraude": false,
+      "reincidencia": false,
+      "sentiment": "negativo",
+      "consultora_codigo": "89863",
+      "pedido_numero": "287202",
+      "produtos_faltantes": [
+        "Âmbar Exclusivo"
+      ]
+    },
+    "falas": [
+      {
+        "quem": "agente",
+        "texto": "Central de Relacionamento Aurélia, boa tarde, meu nome é Rafael. Com quem eu falo?",
+        "interrompe": false
+      },
+      {
+        "quem": "consultora",
+        "texto": "Oi, boa tarde, Rafael. É a Marlene. Eu tô ligando porque meu pedido chegou faltando coisa, e eu tô bem chateada, viu.",
+        "interrompe": false
+      },
+      {
+        "quem": "agente",
+        "texto": "Poxa, Marlene, sinto muito por isso. Vou te ajudar sim. Me passa o seu código de consultora, por favor?",
+        "interrompe": false
+      },
+      {
+        "quem": "consultora",
+        "texto": "É... oito, nove, oito, seis, três.",
+        "interrompe": false
+      },
+      {
+        "quem": "agente",
+        "texto": "Oito, nove, oito, seis, três. Certo. E o número do pedido, você tem aí?",
+        "interrompe": false
+      },
+      {
+        "quem": "consultora",
+        "texto": "Peraí, deixa eu olhar aqui na nota... é dois, oito, sete, dois, zero, dois.",
+        "interrompe": false
+      },
+      {
+        "quem": "agente",
+        "texto": "Dois, oito, sete, dois, zero, dois. Confirmado. Então me conta o que aconteceu com a entrega.",
+        "interrompe": false
+      },
+      {
+        "quem": "consultora",
+        "texto": "Então, a caixa chegou hoje de manhã, tudo certinho, lacrada, com a fita original da Aurélia, ninguém mexeu. Aí eu abri e faltou o Âmbar Exclusivo. Que é o mais caro do pedido, tipo assim, cento e noventa e nove reais.",
+        "interrompe": false
+      },
+      {
+        "quem": "agente",
+        "texto": "Entendi. Então a caixa estava lacrada, sem nenhum sinal de abertura, é isso?",
+        "interrompe": false
+      },
+      {
+        "quem": "consultora",
+        "texto": "Isso, isso, nada de rasgo, nada de fita diferente, era a original mesmo. Eu acho que foi erro lá na expedição, sabe? Esqueceram de separar o...",
+        "interrompe": true
+      },
+      {
+        "quem": "agente",
+        "texto": "Faz sentido, Marlene. Os outros itens do pedido vieram todos conforme a nota?",
+        "interrompe": false
+      },
+      {
+        "quem": "consultora",
+        "texto": "Vieram, é, o resto veio tudo. Só ele que não veio. E eu já tinha vendido pra uma cliente, aí fico mal com ela, né, é chato.",
+        "interrompe": false
+      },
+      {
+        "quem": "agente",
+        "texto": "Compreendo. Na nota fiscal, o Âmbar Exclusivo aparece como cobrado?",
+        "interrompe": false
+      },
+      {
+        "quem": "consultora",
+        "texto": "Aparece sim, tá cobrado, um frasco. Eu tô pagando por uma coisa que não recebi, é um absurdo, sinceramente.",
+        "interrompe": false
+      },
+      {
+        "quem": "agente",
+        "texto": "Você tem toda razão em ficar chateada. Eu vou registrar como falta de item e a gente...",
+        "interrompe": true
+      },
+      {
+        "quem": "consultora",
+        "texto": "Eu quero que reenvie, tá? Porque a cliente tá esperando. E se der pra ser rápido, eu agradeço.",
+        "interrompe": false
+      },
+      {
+        "quem": "agente",
+        "texto": "Vou pedir prioridade no reenvio. O prazo é de até cinco dias úteis. O seu protocolo é dois, zero, dois, quatro, um, três, cinco, nove.",
+        "interrompe": false
+      },
+      {
+        "quem": "consultora",
+        "texto": "Peraí, deixa eu anotar... dois, zero, dois, quatro, um, três, cinco, nove. Tá. Mas olha, foi falha de vocês, viu, eu fico bem aborrecida com isso.",
+        "interrompe": false
+      },
+      {
+        "quem": "agente",
+        "texto": "Está registrado, Marlene, e peço desculpas pelo transtorno. Posso ajudar em mais alguma coisa?",
+        "interrompe": false
+      },
+      {
+        "quem": "consultora",
+        "texto": "Não, é só isso. Tomara que chegue logo. Tchau.",
+        "interrompe": false
+      }
+    ],
+    "script": "Central de Relacionamento Aurélia, boa tarde, meu nome é Rafael. Com quem eu falo? Oi, boa tarde, Rafael. É a Marlene. Eu tô ligando porque meu pedido chegou faltando coisa, e eu tô bem chateada, viu. Poxa, Marlene, sinto muito por isso. Vou te ajudar sim. Me passa o seu código de consultora, por favor? É... oito, nove, oito, seis, três. Oito, nove, oito, seis, três. Certo. E o número do pedido, você tem aí? Peraí, deixa eu olhar aqui na nota... é dois, oito, sete, dois, zero, dois. Dois, oito, sete, dois, zero, dois. Confirmado. Então me conta o que aconteceu com a entrega. Então, a caixa chegou hoje de manhã, tudo certinho, lacrada, com a fita original da Aurélia, ninguém mexeu. Aí eu abri e faltou o Âmbar Exclusivo. Que é o mais caro do pedido, tipo assim, cento e noventa e nove reais. Entendi. Então a caixa estava lacrada, sem nenhum sinal de abertura, é isso? Isso, isso, nada de rasgo, nada de fita diferente, era a original mesmo. Eu acho que foi erro lá na expedição, sabe? Esqueceram de separar o... Faz sentido, Marlene. Os outros itens do pedido vieram todos conforme a nota? Vieram, é, o resto veio tudo. Só ele que não veio. E eu já tinha vendido pra uma cliente, aí fico mal com ela, né, é chato. Compreendo. Na nota fiscal, o Âmbar Exclusivo aparece como cobrado? Aparece sim, tá cobrado, um frasco. Eu tô pagando por uma coisa que não recebi, é um absurdo, sinceramente. Você tem toda razão em ficar chateada. Eu vou registrar como falta de item e a gente... Eu quero que reenvie, tá? Porque a cliente tá esperando. E se der pra ser rápido, eu agradeço. Vou pedir prioridade no reenvio. O prazo é de até cinco dias úteis. O seu protocolo é dois, zero, dois, quatro, um, três, cinco, nove. Peraí, deixa eu anotar... dois, zero, dois, quatro, um, três, cinco, nove. Tá. Mas olha, foi falha de vocês, viu, eu fico bem aborrecida com isso. Está registrado, Marlene, e peço desculpas pelo transtorno. Posso ajudar em mais alguma coisa? Não, é só isso. Tomara que chegue logo. Tchau."
+  },
+  {
+    "call_id": "sint_014",
+    "filename": "sint_014.wav",
+    "scenario": "Caixa chegou amassada e com a fita rasgada pela chuva, mas todos os itens estavam lá. Consultora quer registrar a ocorrência.",
+    "consultora_nome": "Marlene",
+    "consultora_genero": "f",
+    "agente_nome": "Rafael",
+    "agente_genero": "m",
+    "gabarito": {
+      "tipo_problema": "violacao_caixa",
+      "suspeita_fraude": false,
+      "reincidencia": false,
+      "sentiment": "negativo",
+      "consultora_codigo": "38593",
+      "pedido_numero": "793337",
+      "produtos_faltantes": []
+    },
+    "falas": [
+      {
+        "quem": "agente",
+        "texto": "Central de Relacionamento Aurélia, meu nome é Rafael, bom dia. Com quem eu falo?",
+        "interrompe": false
+      },
+      {
+        "quem": "consultora",
+        "texto": "Oi, bom dia. Aqui é a Marlene, consultora.",
+        "interrompe": false
+      },
+      {
+        "quem": "agente",
+        "texto": "Dona Marlene, tudo bem? Me passa o seu código de consultora, por favor.",
+        "interrompe": false
+      },
+      {
+        "quem": "consultora",
+        "texto": "Passo sim. É três, oito, cinco, nove, três.",
+        "interrompe": false
+      },
+      {
+        "quem": "agente",
+        "texto": "Três, oito, cinco, nove, três. Certo. E o número do pedido, a senhora tem aí?",
+        "interrompe": false
+      },
+      {
+        "quem": "consultora",
+        "texto": "Tenho. Peraí... é sete, nove, três, três, três, sete. Isso, sete, nove, três, três, três, sete.",
+        "interrompe": false
+      },
+      {
+        "quem": "agente",
+        "texto": "Perfeito, anotado. Me conta então o que aconteceu com esse pedido.",
+        "interrompe": false
+      },
+      {
+        "quem": "consultora",
+        "texto": "Olha, a caixa chegou toda amassada, moço. A fita rasgada, solta, o papelão mole de tão molhado. Pegou chuva, né, e o entregador largou assim mesmo. Tô muito chateada, viu.",
+        "interrompe": false
+      },
+      {
+        "quem": "agente",
+        "texto": "Poxa, sinto muito por isso. A senhora conseguiu conferir os itens? Faltou alguma coisa?",
+        "interrompe": false
+      },
+      {
+        "quem": "consultora",
+        "texto": "Não, não faltou nada, eu conferi tudo, item por item, mas...",
+        "interrompe": true
+      },
+      {
+        "quem": "agente",
+        "texto": "Ah, que bom que veio tudo. Algum produto ficou danificado, vazou, alguma coisa assim?",
+        "interrompe": true
+      },
+      {
+        "quem": "consultora",
+        "texto": "Também não, tá tudo inteiro. Só que, tipo assim, é uma falta de respeito. Eu ia entregar pra cliente hoje e fiquei com vergonha de mostrar uma caixa naquele estado.",
+        "interrompe": false
+      },
+      {
+        "quem": "agente",
+        "texto": "Entendo, a senhora tem toda razão de ficar chateada. Eu vou registrar a ocorrência da embalagem violada pela chuva, tá bom? Isso fica no histórico do pedido.",
+        "interrompe": false
+      },
+      {
+        "quem": "consultora",
+        "texto": "Pode registrar, é isso que eu quero mesmo. Que fique anotado que a caixa veio estragada, caso depois apareça algum problema.",
+        "interrompe": false
+      },
+      {
+        "quem": "agente",
+        "texto": "Fica anotado sim. Registrei aqui: caixa amassada, fita rasgada, todos os itens presentes e sem avaria. Mais alguma coisa que a senhora queira acrescentar?",
+        "interrompe": false
+      },
+      {
+        "quem": "consultora",
+        "texto": "Só isso. Ah, e pede pra transportadora ter mais cuidado, né? Chuva não é desculpa pra jogar a caixa na porta.",
+        "interrompe": true
+      },
+      {
+        "quem": "agente",
+        "texto": "Vou deixar esse comentário registrado também. O protocolo da ocorrência é dois, zero, dois, quatro, um, quatro, sete, oito. Quer anotar?",
+        "interrompe": false
+      },
+      {
+        "quem": "consultora",
+        "texto": "Peraí, deixa eu pegar a caneta... pode falar. Dois, zero, dois, quatro, um, quatro, sete, oito. Anotei.",
+        "interrompe": false
+      },
+      {
+        "quem": "agente",
+        "texto": "Isso mesmo. Obrigado por ter ligado, dona Marlene, e desculpa o transtorno. Tenha um bom dia.",
+        "interrompe": false
+      },
+      {
+        "quem": "consultora",
+        "texto": "Tá bom, obrigada. Bom dia pra você.",
+        "interrompe": false
+      }
+    ],
+    "script": "Central de Relacionamento Aurélia, meu nome é Rafael, bom dia. Com quem eu falo? Oi, bom dia. Aqui é a Marlene, consultora. Dona Marlene, tudo bem? Me passa o seu código de consultora, por favor. Passo sim. É três, oito, cinco, nove, três. Três, oito, cinco, nove, três. Certo. E o número do pedido, a senhora tem aí? Tenho. Peraí... é sete, nove, três, três, três, sete. Isso, sete, nove, três, três, três, sete. Perfeito, anotado. Me conta então o que aconteceu com esse pedido. Olha, a caixa chegou toda amassada, moço. A fita rasgada, solta, o papelão mole de tão molhado. Pegou chuva, né, e o entregador largou assim mesmo. Tô muito chateada, viu. Poxa, sinto muito por isso. A senhora conseguiu conferir os itens? Faltou alguma coisa? Não, não faltou nada, eu conferi tudo, item por item, mas... Ah, que bom que veio tudo. Algum produto ficou danificado, vazou, alguma coisa assim? Também não, tá tudo inteiro. Só que, tipo assim, é uma falta de respeito. Eu ia entregar pra cliente hoje e fiquei com vergonha de mostrar uma caixa naquele estado. Entendo, a senhora tem toda razão de ficar chateada. Eu vou registrar a ocorrência da embalagem violada pela chuva, tá bom? Isso fica no histórico do pedido. Pode registrar, é isso que eu quero mesmo. Que fique anotado que a caixa veio estragada, caso depois apareça algum problema. Fica anotado sim. Registrei aqui: caixa amassada, fita rasgada, todos os itens presentes e sem avaria. Mais alguma coisa que a senhora queira acrescentar? Só isso. Ah, e pede pra transportadora ter mais cuidado, né? Chuva não é desculpa pra jogar a caixa na porta. Vou deixar esse comentário registrado também. O protocolo da ocorrência é dois, zero, dois, quatro, um, quatro, sete, oito. Quer anotar? Peraí, deixa eu pegar a caneta... pode falar. Dois, zero, dois, quatro, um, quatro, sete, oito. Anotei. Isso mesmo. Obrigado por ter ligado, dona Marlene, e desculpa o transtorno. Tenha um bom dia. Tá bom, obrigada. Bom dia pra você."
+  },
+  {
+    "call_id": "sint_015",
+    "filename": "sint_015.wav",
+    "scenario": "Entregador deixou a caixa com o vizinho; a embalagem veio com a fita refeita, mas a consultora conferiu e não falta nada.",
+    "consultora_nome": "Marlene",
+    "consultora_genero": "f",
+    "agente_nome": "Rafael",
+    "agente_genero": "m",
+    "gabarito": {
+      "tipo_problema": "violacao_caixa",
+      "suspeita_fraude": false,
+      "reincidencia": false,
+      "sentiment": "neutro",
+      "consultora_codigo": "67168",
+      "pedido_numero": "367425",
+      "produtos_faltantes": []
+    },
+    "falas": [
+      {
+        "quem": "agente",
+        "texto": "Central de Relacionamento Aurélia, boa tarde, meu nome é Rafael. Com quem eu falo?",
+        "interrompe": false
+      },
+      {
+        "quem": "consultora",
+        "texto": "Oi, boa tarde, Rafael. Aqui é a Marlene, sou consultora.",
+        "interrompe": false
+      },
+      {
+        "quem": "agente",
+        "texto": "Prazer, Marlene. Me passa o seu código de consultora, por favor?",
+        "interrompe": false
+      },
+      {
+        "quem": "consultora",
+        "texto": "Claro. É seis, sete, um, seis, oito.",
+        "interrompe": false
+      },
+      {
+        "quem": "agente",
+        "texto": "Seis, sete, um, seis, oito. Certo. E o número do pedido, você tem aí?",
+        "interrompe": false
+      },
+      {
+        "quem": "consultora",
+        "texto": "Tenho sim, peraí... é três, seis, sete, quatro, dois, cinco.",
+        "interrompe": false
+      },
+      {
+        "quem": "agente",
+        "texto": "Três, seis, sete, quatro, dois, cinco. Confirmado. Me conta, Marlene, o que houve com esse pedido?",
+        "interrompe": false
+      },
+      {
+        "quem": "consultora",
+        "texto": "Então, o entregador deixou a caixa com a vizinha, né. Eu não estava em casa. Aí quando eu peguei, a fita estava meio diferente, tipo assim, refeita.",
+        "interrompe": false
+      },
+      {
+        "quem": "agente",
+        "texto": "Hum, entendi. A fita parecia refeita, é isso? Não era a fita original da Aurélia?",
+        "interrompe": false
+      },
+      {
+        "quem": "consultora",
+        "texto": "Isso. Tinha outra fita por cima, meio torta. Mas eu abri e conferi tudo com a nota, e não falta nada, viu? Só quis avisar mesmo.",
+        "interrompe": true
+      },
+      {
+        "quem": "agente",
+        "texto": "Perfeito, avisar é importante. Você conferiu item por item? Os produtos estavam lacrados, sem nada aberto?",
+        "interrompe": false
+      },
+      {
+        "quem": "consultora",
+        "texto": "Conferi, sim. Os dois Raízes, o Diário, o Maré, tudo lá. Os lacres estavam certinhos, nada aberto.",
+        "interrompe": false
+      },
+      {
+        "quem": "agente",
+        "texto": "Ótimo. Então a caixa chegou com sinal de violação na embalagem, mas o conteúdo está completo. É isso?",
+        "interrompe": true
+      },
+      {
+        "quem": "consultora",
+        "texto": "É isso, exatamente. Foi a primeira vez que eu vi isso, por isso achei melhor ligar.",
+        "interrompe": false
+      },
+      {
+        "quem": "agente",
+        "texto": "Fez bem. Vou registrar a ocorrência da embalagem para a gente repassar à transportadora. Você não precisa enviar nada, tá bom?",
+        "interrompe": false
+      },
+      {
+        "quem": "consultora",
+        "texto": "Tá bom. Só quero deixar registrado mesmo, para o caso de aparecer alguma coisa depois.",
+        "interrompe": false
+      },
+      {
+        "quem": "agente",
+        "texto": "Combinado. O protocolo é dois, zero, quatro, nove, um, três, oito. Quer anotar?",
+        "interrompe": false
+      },
+      {
+        "quem": "consultora",
+        "texto": "Pode falar... dois, zero, quatro, nove, um, três, oito. Anotei, obrigada, Rafael.",
+        "interrompe": false
+      },
+      {
+        "quem": "agente",
+        "texto": "Eu que agradeço, Marlene. Mais alguma coisa em que eu possa ajudar?",
+        "interrompe": false
+      },
+      {
+        "quem": "consultora",
+        "texto": "Não, é só isso. Tenha uma boa tarde.",
+        "interrompe": false
+      }
+    ],
+    "script": "Central de Relacionamento Aurélia, boa tarde, meu nome é Rafael. Com quem eu falo? Oi, boa tarde, Rafael. Aqui é a Marlene, sou consultora. Prazer, Marlene. Me passa o seu código de consultora, por favor? Claro. É seis, sete, um, seis, oito. Seis, sete, um, seis, oito. Certo. E o número do pedido, você tem aí? Tenho sim, peraí... é três, seis, sete, quatro, dois, cinco. Três, seis, sete, quatro, dois, cinco. Confirmado. Me conta, Marlene, o que houve com esse pedido? Então, o entregador deixou a caixa com a vizinha, né. Eu não estava em casa. Aí quando eu peguei, a fita estava meio diferente, tipo assim, refeita. Hum, entendi. A fita parecia refeita, é isso? Não era a fita original da Aurélia? Isso. Tinha outra fita por cima, meio torta. Mas eu abri e conferi tudo com a nota, e não falta nada, viu? Só quis avisar mesmo. Perfeito, avisar é importante. Você conferiu item por item? Os produtos estavam lacrados, sem nada aberto? Conferi, sim. Os dois Raízes, o Diário, o Maré, tudo lá. Os lacres estavam certinhos, nada aberto. Ótimo. Então a caixa chegou com sinal de violação na embalagem, mas o conteúdo está completo. É isso? É isso, exatamente. Foi a primeira vez que eu vi isso, por isso achei melhor ligar. Fez bem. Vou registrar a ocorrência da embalagem para a gente repassar à transportadora. Você não precisa enviar nada, tá bom? Tá bom. Só quero deixar registrado mesmo, para o caso de aparecer alguma coisa depois. Combinado. O protocolo é dois, zero, quatro, nove, um, três, oito. Quer anotar? Pode falar... dois, zero, quatro, nove, um, três, oito. Anotei, obrigada, Rafael. Eu que agradeço, Marlene. Mais alguma coisa em que eu possa ajudar? Não, é só isso. Tenha uma boa tarde."
+  },
+  {
+    "call_id": "sint_016",
+    "filename": "sint_016.wav",
+    "scenario": "Segunda vez que a caixa chega furada nas laterais; um frasco vazou e manchou os outros, mas nada sumiu.",
+    "consultora_nome": "Marlene",
+    "consultora_genero": "f",
+    "agente_nome": "Rafael",
+    "agente_genero": "m",
+    "gabarito": {
+      "tipo_problema": "violacao_caixa",
+      "suspeita_fraude": false,
+      "reincidencia": true,
+      "sentiment": "negativo",
+      "consultora_codigo": "89994",
+      "pedido_numero": "825360",
+      "produtos_faltantes": []
+    },
+    "falas": [
+      {
+        "quem": "agente",
+        "texto": "Central de Relacionamento Aurélia, meu nome é Rafael, tudo bem? Com quem eu falo?",
+        "interrompe": false
+      },
+      {
+        "quem": "consultora",
+        "texto": "Oi, Rafael. Aqui é a Marlene. Então, eu tô ligando porque olha, eu tô bem chateada, viu.",
+        "interrompe": false
+      },
+      {
+        "quem": "agente",
+        "texto": "Poxa, Marlene, sinto muito. Vou te ajudar sim. Primeiro me passa o seu código de consultora, por favor?",
+        "interrompe": false
+      },
+      {
+        "quem": "consultora",
+        "texto": "É oito, nove, nove, nove, quatro.",
+        "interrompe": false
+      },
+      {
+        "quem": "agente",
+        "texto": "Oito, nove, nove, nove, quatro. Certo. E o número do pedido, você tem aí?",
+        "interrompe": false
+      },
+      {
+        "quem": "consultora",
+        "texto": "Tenho, peraí. É oito, dois, cinco, três, seis, zero.",
+        "interrompe": false
+      },
+      {
+        "quem": "agente",
+        "texto": "Confirmando: oito, dois, cinco, três, seis, zero. Perfeito. Me conta, Marlene, o que aconteceu com essa caixa?",
+        "interrompe": false
+      },
+      {
+        "quem": "consultora",
+        "texto": "Ó, a caixa chegou toda furada, tipo assim, nas laterais, dos dois lados. Parecia que tinham enfiado alguma coisa, sabe?",
+        "interrompe": false
+      },
+      {
+        "quem": "agente",
+        "texto": "Entendi. E tinha alguma coisa dentro que sumiu ou que veio estragada?",
+        "interrompe": false
+      },
+      {
+        "quem": "consultora",
+        "texto": "Sumir não sumiu nada, eu conferi tudo, tá tudo aqui. Mas um frasco vazou, foi o Raízes, e aí molhou e manchou os outros produtos, o Diário, o Maré...",
+        "interrompe": true
+      },
+      {
+        "quem": "agente",
+        "texto": "Desculpa te interromper, Marlene. Então os itens vieram completos, só a embalagem furada e o vazamento, é isso?",
+        "interrompe": true
+      },
+      {
+        "quem": "consultora",
+        "texto": "Isso, isso. Tá tudo completo. Só que é a segunda vez, Rafael! A outra foi mês passado, a caixa veio furada igualzinho. Eu já tinha reclamado.",
+        "interrompe": false
+      },
+      {
+        "quem": "agente",
+        "texto": "Entendi, você já tinha passado por isso antes. Realmente isso é chato, ainda mais com cliente esperando o produto.",
+        "interrompe": false
+      },
+      {
+        "quem": "consultora",
+        "texto": "Pois é! Eu fico sem graça com a cliente, entrego manchado, cheio de cola, é horrível. Eu tô cansada disso, de verdade.",
+        "interrompe": false
+      },
+      {
+        "quem": "agente",
+        "texto": "Imagino. Vou registrar a violação da caixa e o vazamento, e pedir a análise da transportadora e a reposição dos produtos manchados. Pode ser?",
+        "interrompe": false
+      },
+      {
+        "quem": "consultora",
+        "texto": "Pode. Mas eu quero que alguém olhe isso de verdade, porque não é possível toda vez a mesma coisa.",
+        "interrompe": true
+      },
+      {
+        "quem": "agente",
+        "texto": "Vou deixar anotado como reincidência pra prioridade. O protocolo é dois, zero, sete, quatro, onze, nove. Ops, corrigindo: dois, zero, sete, quatro, um, um, nove.",
+        "interrompe": false
+      },
+      {
+        "quem": "consultora",
+        "texto": "Dois, zero, sete, quatro, um, um, nove. Anotei aqui.",
+        "interrompe": false
+      },
+      {
+        "quem": "agente",
+        "texto": "Isso. Em até cinco dias úteis você recebe um retorno. Mais alguma coisa, Marlene?",
+        "interrompe": false
+      },
+      {
+        "quem": "consultora",
+        "texto": "Não, é só isso. Espero que resolvam dessa vez. Obrigada, Rafael.",
+        "interrompe": false
+      }
+    ],
+    "script": "Central de Relacionamento Aurélia, meu nome é Rafael, tudo bem? Com quem eu falo? Oi, Rafael. Aqui é a Marlene. Então, eu tô ligando porque olha, eu tô bem chateada, viu. Poxa, Marlene, sinto muito. Vou te ajudar sim. Primeiro me passa o seu código de consultora, por favor? É oito, nove, nove, nove, quatro. Oito, nove, nove, nove, quatro. Certo. E o número do pedido, você tem aí? Tenho, peraí. É oito, dois, cinco, três, seis, zero. Confirmando: oito, dois, cinco, três, seis, zero. Perfeito. Me conta, Marlene, o que aconteceu com essa caixa? Ó, a caixa chegou toda furada, tipo assim, nas laterais, dos dois lados. Parecia que tinham enfiado alguma coisa, sabe? Entendi. E tinha alguma coisa dentro que sumiu ou que veio estragada? Sumir não sumiu nada, eu conferi tudo, tá tudo aqui. Mas um frasco vazou, foi o Raízes, e aí molhou e manchou os outros produtos, o Diário, o Maré... Desculpa te interromper, Marlene. Então os itens vieram completos, só a embalagem furada e o vazamento, é isso? Isso, isso. Tá tudo completo. Só que é a segunda vez, Rafael! A outra foi mês passado, a caixa veio furada igualzinho. Eu já tinha reclamado. Entendi, você já tinha passado por isso antes. Realmente isso é chato, ainda mais com cliente esperando o produto. Pois é! Eu fico sem graça com a cliente, entrego manchado, cheio de cola, é horrível. Eu tô cansada disso, de verdade. Imagino. Vou registrar a violação da caixa e o vazamento, e pedir a análise da transportadora e a reposição dos produtos manchados. Pode ser? Pode. Mas eu quero que alguém olhe isso de verdade, porque não é possível toda vez a mesma coisa. Vou deixar anotado como reincidência pra prioridade. O protocolo é dois, zero, sete, quatro, onze, nove. Ops, corrigindo: dois, zero, sete, quatro, um, um, nove. Dois, zero, sete, quatro, um, um, nove. Anotei aqui. Isso. Em até cinco dias úteis você recebe um retorno. Mais alguma coisa, Marlene? Não, é só isso. Espero que resolvam dessa vez. Obrigada, Rafael."
+  },
+  {
+    "call_id": "sint_017",
+    "filename": "sint_017.wav",
+    "scenario": "Caixa veio com o lacre rompido; o agente orienta a fotografar e já registra a troca da embalagem. Consultora agradece.",
+    "consultora_nome": "Marlene",
+    "consultora_genero": "f",
+    "agente_nome": "Rodrigo",
+    "agente_genero": "m",
+    "gabarito": {
+      "tipo_problema": "violacao_caixa",
+      "suspeita_fraude": false,
+      "reincidencia": false,
+      "sentiment": "positivo",
+      "consultora_codigo": "79531",
+      "pedido_numero": "634033",
+      "produtos_faltantes": []
+    },
+    "falas": [
+      {
+        "quem": "agente",
+        "texto": "Central de Relacionamento Aurélia, bom dia! Meu nome é Rodrigo, com quem eu falo?",
+        "interrompe": false
+      },
+      {
+        "quem": "consultora",
+        "texto": "Oi, bom dia, Rodrigo! Aqui é a Marlene, sou consultora.",
+        "interrompe": false
+      },
+      {
+        "quem": "agente",
+        "texto": "Prazer, Marlene! Me passa o seu código de consultora, por favor?",
+        "interrompe": false
+      },
+      {
+        "quem": "consultora",
+        "texto": "Tá. É sete, nove, cinco, três, um.",
+        "interrompe": false
+      },
+      {
+        "quem": "agente",
+        "texto": "Sete, nove, cinco, três, um. Certo. E o número do pedido, você tem aí?",
+        "interrompe": false
+      },
+      {
+        "quem": "consultora",
+        "texto": "Tenho sim, peraí... é seis, três, quatro, zero, três, três.",
+        "interrompe": false
+      },
+      {
+        "quem": "agente",
+        "texto": "Seis, três, quatro, zero, três, três. Perfeito. Me conta, Marlene, o que aconteceu com esse pedido?",
+        "interrompe": false
+      },
+      {
+        "quem": "consultora",
+        "texto": "Então, a caixa chegou hoje cedo, só que o lacre tava rompido, sabe? Tipo assim, meio solto, aberto.",
+        "interrompe": false
+      },
+      {
+        "quem": "agente",
+        "texto": "Entendi. E você chegou a conferir os produtos dentro da caixa?",
+        "interrompe": false
+      },
+      {
+        "quem": "consultora",
+        "texto": "Conferi sim, já conferi tudo com a nota. Tá tudo certinho, não faltou nada, graças a Deus. Os Raízes, o Diário, o Maré, tudo aqui.",
+        "interrompe": false
+      },
+      {
+        "quem": "agente",
+        "texto": "Que bom! Então foi só a embalagem mesmo. Olha, eu vou te pedir pra tirar umas fotos da caixa, mostrando o lacre rompido e a etiqueta de fora.",
+        "interrompe": false
+      },
+      {
+        "quem": "consultora",
+        "texto": "Ah, pode deixar, eu já tirei algumas, é...",
+        "interrompe": false
+      },
+      {
+        "quem": "agente",
+        "texto": "Ótimo, então me envia pelo aplicativo, na parte de ocorrências, que eu já vou registrando aqui a troca da embalagem.",
+        "interrompe": true
+      },
+      {
+        "quem": "consultora",
+        "texto": "Tá bom, vou mandar agora. Nossa, que rápido, achei que ia ser mais complicado.",
+        "interrompe": false
+      },
+      {
+        "quem": "agente",
+        "texto": "Imagina! Prontinho, já registrei aqui a troca da embalagem. O protocolo é dois, zero, quatro, sete, um, oito.",
+        "interrompe": false
+      },
+      {
+        "quem": "consultora",
+        "texto": "Dois, zero, quatro, sete, um, oito. Anotado! Posso ficar com os produtos, então?",
+        "interrompe": true
+      },
+      {
+        "quem": "agente",
+        "texto": "Pode sim, Marlene. Os produtos estão certos, o que a gente troca é só a embalagem. Alguém entra em contato pra combinar como fica.",
+        "interrompe": false
+      },
+      {
+        "quem": "consultora",
+        "texto": "Perfeito! Muito obrigada, viu, Rodrigo, você foi super atencioso. Gostei demais do atendimento.",
+        "interrompe": false
+      },
+      {
+        "quem": "agente",
+        "texto": "Eu que agradeço, Marlene! Mais alguma coisa em que eu possa ajudar?",
+        "interrompe": false
+      },
+      {
+        "quem": "consultora",
+        "texto": "Não, é só isso mesmo. Tenha um ótimo dia!",
+        "interrompe": false
+      }
+    ],
+    "script": "Central de Relacionamento Aurélia, bom dia! Meu nome é Rodrigo, com quem eu falo? Oi, bom dia, Rodrigo! Aqui é a Marlene, sou consultora. Prazer, Marlene! Me passa o seu código de consultora, por favor? Tá. É sete, nove, cinco, três, um. Sete, nove, cinco, três, um. Certo. E o número do pedido, você tem aí? Tenho sim, peraí... é seis, três, quatro, zero, três, três. Seis, três, quatro, zero, três, três. Perfeito. Me conta, Marlene, o que aconteceu com esse pedido? Então, a caixa chegou hoje cedo, só que o lacre tava rompido, sabe? Tipo assim, meio solto, aberto. Entendi. E você chegou a conferir os produtos dentro da caixa? Conferi sim, já conferi tudo com a nota. Tá tudo certinho, não faltou nada, graças a Deus. Os Raízes, o Diário, o Maré, tudo aqui. Que bom! Então foi só a embalagem mesmo. Olha, eu vou te pedir pra tirar umas fotos da caixa, mostrando o lacre rompido e a etiqueta de fora. Ah, pode deixar, eu já tirei algumas, é... Ótimo, então me envia pelo aplicativo, na parte de ocorrências, que eu já vou registrando aqui a troca da embalagem. Tá bom, vou mandar agora. Nossa, que rápido, achei que ia ser mais complicado. Imagina! Prontinho, já registrei aqui a troca da embalagem. O protocolo é dois, zero, quatro, sete, um, oito. Dois, zero, quatro, sete, um, oito. Anotado! Posso ficar com os produtos, então? Pode sim, Marlene. Os produtos estão certos, o que a gente troca é só a embalagem. Alguém entra em contato pra combinar como fica. Perfeito! Muito obrigada, viu, Rodrigo, você foi super atencioso. Gostei demais do atendimento. Eu que agradeço, Marlene! Mais alguma coisa em que eu possa ajudar? Não, é só isso mesmo. Tenha um ótimo dia!"
+  },
+  {
+    "call_id": "sint_018",
+    "filename": "sint_018.wav",
+    "scenario": "Consultor homem relata caixa com etiqueta de outra pessoa colada por cima; conferiu, está tudo certo.",
+    "consultora_nome": "Anderson",
+    "consultora_genero": "m",
+    "agente_nome": "Camila",
+    "agente_genero": "f",
+    "gabarito": {
+      "tipo_problema": "violacao_caixa",
+      "suspeita_fraude": false,
+      "reincidencia": false,
+      "sentiment": "neutro",
+      "consultora_codigo": "10228",
+      "pedido_numero": "197376",
+      "produtos_faltantes": []
+    },
+    "falas": [
+      {
+        "quem": "agente",
+        "texto": "Central de Relacionamento Aurélia, bom dia, meu nome é Camila. Com quem eu falo?",
+        "interrompe": false
+      },
+      {
+        "quem": "consultora",
+        "texto": "Bom dia, Camila. Aqui é o Anderson, sou consultor.",
+        "interrompe": false
+      },
+      {
+        "quem": "agente",
+        "texto": "Oi, Anderson. Pode me passar o seu código de consultor, por favor?",
+        "interrompe": false
+      },
+      {
+        "quem": "consultora",
+        "texto": "Posso. É um, zero, dois, dois, oito.",
+        "interrompe": false
+      },
+      {
+        "quem": "agente",
+        "texto": "Um, zero, dois, dois, oito. Certo. E o número do pedido, qual que é?",
+        "interrompe": false
+      },
+      {
+        "quem": "consultora",
+        "texto": "O pedido é um, nove, sete, três, sete, seis.",
+        "interrompe": false
+      },
+      {
+        "quem": "agente",
+        "texto": "Um, nove, sete, três, sete, seis. Achei aqui. Me conta, Anderson, o que aconteceu com ele?",
+        "interrompe": false
+      },
+      {
+        "quem": "consultora",
+        "texto": "Então, a caixa chegou hoje de manhã, mas tinha uma etiqueta de outra pessoa colada por cima da minha. Tipo assim, o nome de outra consultora, outro endereço...",
+        "interrompe": false
+      },
+      {
+        "quem": "agente",
+        "texto": "Hum, entendi. A etiqueta de outra pessoa estava por cima da sua?",
+        "interrompe": true
+      },
+      {
+        "quem": "consultora",
+        "texto": "Isso, por cima. E a fita da caixa tava meio levantada, a ponta amassada. Aí eu abri e conferi tudo, peraí, conferi item por item com a nota.",
+        "interrompe": false
+      },
+      {
+        "quem": "agente",
+        "texto": "E deu tudo certo? Não faltou nada?",
+        "interrompe": false
+      },
+      {
+        "quem": "consultora",
+        "texto": "Não, não faltou nada. Está tudo aqui, os produtos estão todos certinhos, lacrados. É só que me estranhou a etiqueta, né, então preferi avisar.",
+        "interrompe": false
+      },
+      {
+        "quem": "agente",
+        "texto": "Fez bem em avisar. Os produtos estão sem nenhum dano, então?",
+        "interrompe": false
+      },
+      {
+        "quem": "consultora",
+        "texto": "Sem dano nenhum. A embalagem de fora que estava meio judiada, só isso.",
+        "interrompe": false
+      },
+      {
+        "quem": "agente",
+        "texto": "Certo. Então vou registrar como caixa com a embalagem violada e etiqueta de outra pessoa, sem falta de produto. Pode ser assim?",
+        "interrompe": false
+      },
+      {
+        "quem": "consultora",
+        "texto": "Pode, pode sim. Eu só quero que fique registrado mesmo, pra caso apareça alguma coisa depois.",
+        "interrompe": true
+      },
+      {
+        "quem": "agente",
+        "texto": "Fica registrado, sim. Guarda a caixa e a etiqueta com você por uns dias, tá bom? O protocolo é dois, zero, quatro, cinco, nove, um, oito.",
+        "interrompe": false
+      },
+      {
+        "quem": "consultora",
+        "texto": "Dois, zero, quatro, cinco, nove, um, oito. Anotei aqui. Obrigado, Camila.",
+        "interrompe": false
+      },
+      {
+        "quem": "agente",
+        "texto": "Imagina, Anderson. A Aurélia agradece o contato, tenha um ótimo dia!",
+        "interrompe": false
+      }
+    ],
+    "script": "Central de Relacionamento Aurélia, bom dia, meu nome é Camila. Com quem eu falo? Bom dia, Camila. Aqui é o Anderson, sou consultor. Oi, Anderson. Pode me passar o seu código de consultor, por favor? Posso. É um, zero, dois, dois, oito. Um, zero, dois, dois, oito. Certo. E o número do pedido, qual que é? O pedido é um, nove, sete, três, sete, seis. Um, nove, sete, três, sete, seis. Achei aqui. Me conta, Anderson, o que aconteceu com ele? Então, a caixa chegou hoje de manhã, mas tinha uma etiqueta de outra pessoa colada por cima da minha. Tipo assim, o nome de outra consultora, outro endereço... Hum, entendi. A etiqueta de outra pessoa estava por cima da sua? Isso, por cima. E a fita da caixa tava meio levantada, a ponta amassada. Aí eu abri e conferi tudo, peraí, conferi item por item com a nota. E deu tudo certo? Não faltou nada? Não, não faltou nada. Está tudo aqui, os produtos estão todos certinhos, lacrados. É só que me estranhou a etiqueta, né, então preferi avisar. Fez bem em avisar. Os produtos estão sem nenhum dano, então? Sem dano nenhum. A embalagem de fora que estava meio judiada, só isso. Certo. Então vou registrar como caixa com a embalagem violada e etiqueta de outra pessoa, sem falta de produto. Pode ser assim? Pode, pode sim. Eu só quero que fique registrado mesmo, pra caso apareça alguma coisa depois. Fica registrado, sim. Guarda a caixa e a etiqueta com você por uns dias, tá bom? O protocolo é dois, zero, quatro, cinco, nove, um, oito. Dois, zero, quatro, cinco, nove, um, oito. Anotei aqui. Obrigado, Camila. Imagina, Anderson. A Aurélia agradece o contato, tenha um ótimo dia!"
+  },
+  {
+    "call_id": "sint_019",
+    "filename": "sint_019.wav",
+    "scenario": "Fita violada e sumiram justamente os três perfumes mais caros do pedido; a consultora diz que alguém abriu a caixa no caminho.",
+    "consultora_nome": "Marlene",
+    "consultora_genero": "f",
+    "agente_nome": "Rafael",
+    "agente_genero": "m",
+    "gabarito": {
+      "tipo_problema": "fraude_suspeita",
+      "suspeita_fraude": true,
+      "reincidencia": false,
+      "sentiment": "negativo",
+      "consultora_codigo": "22912",
+      "pedido_numero": "981914",
+      "produtos_faltantes": [
+        "Âmbar Exclusivo",
+        "Aura Artisan",
+        "Maré Oceano"
+      ]
+    },
+    "falas": [
+      {
+        "quem": "agente",
+        "texto": "Central de Relacionamento Aurélia, boa tarde, meu nome é Rafael. Com quem eu falo?",
+        "interrompe": false
+      },
+      {
+        "quem": "consultora",
+        "texto": "Boa tarde, Rafael. É a Marlene. Olha, eu tô muito, muito chateada, viu.",
+        "interrompe": false
+      },
+      {
+        "quem": "agente",
+        "texto": "Poxa, Marlene, sinto muito por isso. Vou te ajudar. Primeiro me passa seu código de consultora, por favor?",
+        "interrompe": false
+      },
+      {
+        "quem": "consultora",
+        "texto": "Tá. É dois, dois, nove, um, dois.",
+        "interrompe": false
+      },
+      {
+        "quem": "agente",
+        "texto": "Dois, dois, nove, um, dois. Certo. E o número do pedido, você tem aí?",
+        "interrompe": false
+      },
+      {
+        "quem": "consultora",
+        "texto": "Tenho, peraí. É nove, oito, um, nove, um, quatro. Isso, nove, oito, um, nove, um, quatro.",
+        "interrompe": false
+      },
+      {
+        "quem": "agente",
+        "texto": "Perfeito, tô com o pedido aqui na tela. Consta como entregue ontem. Me conta o que aconteceu.",
+        "interrompe": false
+      },
+      {
+        "quem": "consultora",
+        "texto": "Então, a caixa chegou com a fita toda violada, tipo assim, rasgada e colada de novo. Alguém abriu essa caixa no caminho, tenho certeza.",
+        "interrompe": false
+      },
+      {
+        "quem": "agente",
+        "texto": "Entendi. E dentro da caixa, faltou algum produto?",
+        "interrompe": false
+      },
+      {
+        "quem": "consultora",
+        "texto": "Faltou, faltaram três perfumes! Justo os três mais caros do pedido: o Âmbar Exclusivo, o Aura Artisan e o Maré Oceano. O resto tava tudo lá, os hidratantes, o Diário, tudo.",
+        "interrompe": false
+      },
+      {
+        "quem": "agente",
+        "texto": "Então só os três perfumes sumiram e o restante do pedido está completo, é isso? Pode ser que tenha havido um erro de...",
+        "interrompe": false
+      },
+      {
+        "quem": "consultora",
+        "texto": "Erro nada, Rafael! Não foi erro de separação, não. Levaram só o que valia mais, e a fita estava violada. Isso é roubo, é desvio, ué.",
+        "interrompe": true
+      },
+      {
+        "quem": "agente",
+        "texto": "Entendo, Marlene, e com essa fita violada eu vou tratar como suspeita de desvio, tá bom? Você já tinha passado por isso antes em algum pedido?",
+        "interrompe": false
+      },
+      {
+        "quem": "consultora",
+        "texto": "Não, nunca. Nunca tinha acontecido comigo, é a primeira vez. Por isso eu tô tão brava, sempre recebi tudo certinho.",
+        "interrompe": false
+      },
+      {
+        "quem": "agente",
+        "texto": "Certo. Guarda a caixa e a fita do jeito que estão, e se puder tira foto da caixa e dos produtos que vieram. Vou abrir uma investigação com a logística.",
+        "interrompe": false
+      },
+      {
+        "quem": "consultora",
+        "texto": "Já tirei foto, tá tudo guardado. Mas e as minhas clientes? Eu já vendi dois desses perfumes, eu preciso...",
+        "interrompe": false
+      },
+      {
+        "quem": "agente",
+        "texto": "Eu sei, Marlene, vou pedir prioridade no caso. O prazo de retorno é de até setenta e duas horas. Anota o protocolo: sete, quatro, zero, dois, oito, um, cinco.",
+        "interrompe": true
+      },
+      {
+        "quem": "consultora",
+        "texto": "Sete, quatro, zero, dois, oito, um, cinco. Tá anotado. Espero que resolva rápido, porque desse jeito eu fico no prejuízo.",
+        "interrompe": false
+      },
+      {
+        "quem": "agente",
+        "texto": "Vamos fazer o possível. Lamento muito o transtorno, Marlene. Mais alguma coisa em que eu possa ajudar?",
+        "interrompe": false
+      },
+      {
+        "quem": "consultora",
+        "texto": "Não, só isso. Obrigada, Rafael.",
+        "interrompe": false
+      }
+    ],
+    "script": "Central de Relacionamento Aurélia, boa tarde, meu nome é Rafael. Com quem eu falo? Boa tarde, Rafael. É a Marlene. Olha, eu tô muito, muito chateada, viu. Poxa, Marlene, sinto muito por isso. Vou te ajudar. Primeiro me passa seu código de consultora, por favor? Tá. É dois, dois, nove, um, dois. Dois, dois, nove, um, dois. Certo. E o número do pedido, você tem aí? Tenho, peraí. É nove, oito, um, nove, um, quatro. Isso, nove, oito, um, nove, um, quatro. Perfeito, tô com o pedido aqui na tela. Consta como entregue ontem. Me conta o que aconteceu. Então, a caixa chegou com a fita toda violada, tipo assim, rasgada e colada de novo. Alguém abriu essa caixa no caminho, tenho certeza. Entendi. E dentro da caixa, faltou algum produto? Faltou, faltaram três perfumes! Justo os três mais caros do pedido: o Âmbar Exclusivo, o Aura Artisan e o Maré Oceano. O resto tava tudo lá, os hidratantes, o Diário, tudo. Então só os três perfumes sumiram e o restante do pedido está completo, é isso? Pode ser que tenha havido um erro de... Erro nada, Rafael! Não foi erro de separação, não. Levaram só o que valia mais, e a fita estava violada. Isso é roubo, é desvio, ué. Entendo, Marlene, e com essa fita violada eu vou tratar como suspeita de desvio, tá bom? Você já tinha passado por isso antes em algum pedido? Não, nunca. Nunca tinha acontecido comigo, é a primeira vez. Por isso eu tô tão brava, sempre recebi tudo certinho. Certo. Guarda a caixa e a fita do jeito que estão, e se puder tira foto da caixa e dos produtos que vieram. Vou abrir uma investigação com a logística. Já tirei foto, tá tudo guardado. Mas e as minhas clientes? Eu já vendi dois desses perfumes, eu preciso... Eu sei, Marlene, vou pedir prioridade no caso. O prazo de retorno é de até setenta e duas horas. Anota o protocolo: sete, quatro, zero, dois, oito, um, cinco. Sete, quatro, zero, dois, oito, um, cinco. Tá anotado. Espero que resolva rápido, porque desse jeito eu fico no prejuízo. Vamos fazer o possível. Lamento muito o transtorno, Marlene. Mais alguma coisa em que eu possa ajudar? Não, só isso. Obrigada, Rafael."
+  },
+  {
+    "call_id": "sint_020",
+    "filename": "sint_020.wav",
+    "scenario": "Pela segunda vez a caixa chega com o peso certo, mas com produtos trocados por itens baratos; consultora acusa alguém da transportadora.",
+    "consultora_nome": "Rosângela",
+    "consultora_genero": "f",
+    "agente_nome": "Thiago",
+    "agente_genero": "m",
+    "gabarito": {
+      "tipo_problema": "fraude_suspeita",
+      "suspeita_fraude": true,
+      "reincidencia": true,
+      "sentiment": "negativo",
+      "consultora_codigo": "35410",
+      "pedido_numero": "339340",
+      "produtos_faltantes": [
+        "perfume Âmbar",
+        "creme Tempo"
+      ]
+    },
+    "falas": [
+      {
+        "quem": "agente",
+        "texto": "Central de Relacionamento Aurélia, meu nome é Thiago, tudo bem? Com quem eu falo?",
+        "interrompe": false
+      },
+      {
+        "quem": "consultora",
+        "texto": "Oi, Thiago. É a Rosângela. Olha, eu tô ligando pela segunda vez por causa do mesmo problema, viu.",
+        "interrompe": false
+      },
+      {
+        "quem": "agente",
+        "texto": "Poxa, sinto muito, Rosângela. Vou te ajudar sim. Me passa o seu código de consultora, por favor?",
+        "interrompe": false
+      },
+      {
+        "quem": "consultora",
+        "texto": "É... três, cinco, quatro, um, zero.",
+        "interrompe": false
+      },
+      {
+        "quem": "agente",
+        "texto": "Três, cinco, quatro, um, zero. Certo. E o número do pedido?",
+        "interrompe": false
+      },
+      {
+        "quem": "consultora",
+        "texto": "O pedido é três, três, nove, três, quatro, zero.",
+        "interrompe": false
+      },
+      {
+        "quem": "agente",
+        "texto": "Três, três, nove, três, quatro, zero, confirmado. Então me conta o que aconteceu com essa caixa.",
+        "interrompe": false
+      },
+      {
+        "quem": "consultora",
+        "texto": "Então, a caixa chegou ontem, toda lacradinha, e o peso tava certo, eu até pesei na balança de casa. Mas quando abri, hum, não tinha o perfume Âmbar nem o creme Tempo. No lugar veio dois sabonetes baratos de mercado e uns papéis amassados.",
+        "interrompe": false
+      },
+      {
+        "quem": "agente",
+        "texto": "Entendi. Então a caixa estava fechada, sem rasgo, e os itens que vieram não são da Aurélia, é isso?",
+        "interrompe": false
+      },
+      {
+        "quem": "consultora",
+        "texto": "Isso! E não é a primeira vez, Thiago! Mês passado foi igual, peso certo e produto trocado por coisa barata. Eu tô muito cansada disso, sério.",
+        "interrompe": true
+      },
+      {
+        "quem": "agente",
+        "texto": "Você chegou a abrir protocolo naquela vez?",
+        "interrompe": false
+      },
+      {
+        "quem": "consultora",
+        "texto": "Abri, peraí, abri sim. E ninguém me deu retorno. Eu tenho certeza que é alguém da transportadora, só pode ser. Pesa a caixa pra ninguém desconfiar. Isso é roubo, tá?",
+        "interrompe": false
+      },
+      {
+        "quem": "agente",
+        "texto": "Entendo a sua revolta, Rosângela, e eu vou registrar esse caso como suspeita de des...",
+        "interrompe": false
+      },
+      {
+        "quem": "consultora",
+        "texto": "E a minha cliente esperando! Eu fiquei com cara de boba, tipo assim, prometi o perfume pra ela.",
+        "interrompe": true
+      },
+      {
+        "quem": "agente",
+        "texto": "Eu imagino. Vou registrar como suspeita de desvio e mandar pra área de logística e prevenção de perdas investigar a transportadora. Você tem foto da caixa e dos itens que vieram?",
+        "interrompe": false
+      },
+      {
+        "quem": "consultora",
+        "texto": "Tenho, tirei foto da caixa lacrada, dos sabonetes e dos papéis. Mando por onde?",
+        "interrompe": false
+      },
+      {
+        "quem": "agente",
+        "texto": "Pode enviar pelo aplicativo, na opção de ajuda do pedido. Vou pedir a reposição dos dois produtos com prioridade. Seu protocolo é sete, dois, zero, quatro, nove, um, oito.",
+        "interrompe": false
+      },
+      {
+        "quem": "consultora",
+        "texto": "Sete, dois, zero, quatro, nove, um, oito. Anotei. Mas olha, se acontecer de novo eu vou parar de revender, hein.",
+        "interrompe": true
+      },
+      {
+        "quem": "agente",
+        "texto": "Compreendo, Rosângela. Vamos acompanhar de perto. Obrigado por ligar e me desculpa pelo transtorno.",
+        "interrompe": false
+      }
+    ],
+    "script": "Central de Relacionamento Aurélia, meu nome é Thiago, tudo bem? Com quem eu falo? Oi, Thiago. É a Rosângela. Olha, eu tô ligando pela segunda vez por causa do mesmo problema, viu. Poxa, sinto muito, Rosângela. Vou te ajudar sim. Me passa o seu código de consultora, por favor? É... três, cinco, quatro, um, zero. Três, cinco, quatro, um, zero. Certo. E o número do pedido? O pedido é três, três, nove, três, quatro, zero. Três, três, nove, três, quatro, zero, confirmado. Então me conta o que aconteceu com essa caixa. Então, a caixa chegou ontem, toda lacradinha, e o peso tava certo, eu até pesei na balança de casa. Mas quando abri, hum, não tinha o perfume Âmbar nem o creme Tempo. No lugar veio dois sabonetes baratos de mercado e uns papéis amassados. Entendi. Então a caixa estava fechada, sem rasgo, e os itens que vieram não são da Aurélia, é isso? Isso! E não é a primeira vez, Thiago! Mês passado foi igual, peso certo e produto trocado por coisa barata. Eu tô muito cansada disso, sério. Você chegou a abrir protocolo naquela vez? Abri, peraí, abri sim. E ninguém me deu retorno. Eu tenho certeza que é alguém da transportadora, só pode ser. Pesa a caixa pra ninguém desconfiar. Isso é roubo, tá? Entendo a sua revolta, Rosângela, e eu vou registrar esse caso como suspeita de des... E a minha cliente esperando! Eu fiquei com cara de boba, tipo assim, prometi o perfume pra ela. Eu imagino. Vou registrar como suspeita de desvio e mandar pra área de logística e prevenção de perdas investigar a transportadora. Você tem foto da caixa e dos itens que vieram? Tenho, tirei foto da caixa lacrada, dos sabonetes e dos papéis. Mando por onde? Pode enviar pelo aplicativo, na opção de ajuda do pedido. Vou pedir a reposição dos dois produtos com prioridade. Seu protocolo é sete, dois, zero, quatro, nove, um, oito. Sete, dois, zero, quatro, nove, um, oito. Anotei. Mas olha, se acontecer de novo eu vou parar de revender, hein. Compreendo, Rosângela. Vamos acompanhar de perto. Obrigado por ligar e me desculpa pelo transtorno."
+  },
+  {
+    "call_id": "sint_021",
+    "filename": "sint_021.wav",
+    "scenario": "Entregador insistiu para assinar sem conferir; ao abrir, a caixa tinha jornal no lugar de dois kits. Consultora tem foto e vídeo.",
+    "consultora_nome": "Marlene",
+    "consultora_genero": "f",
+    "agente_nome": "Rafael",
+    "agente_genero": "m",
+    "gabarito": {
+      "tipo_problema": "fraude_suspeita",
+      "suspeita_fraude": true,
+      "reincidencia": false,
+      "sentiment": "negativo",
+      "consultora_codigo": "38231",
+      "pedido_numero": "486216",
+      "produtos_faltantes": [
+        "kit Raízes castanha",
+        "kit Brilho"
+      ]
+    },
+    "falas": [
+      {
+        "quem": "agente",
+        "texto": "Central de Relacionamento Aurélia, boa tarde, meu nome é Rafael. Com quem eu falo?",
+        "interrompe": false
+      },
+      {
+        "quem": "consultora",
+        "texto": "Boa tarde, Rafael. É a Marlene. Olha, eu tô ligando porque recebi uma caixa aqui com... é, com jornal dentro. Jornal!",
+        "interrompe": false
+      },
+      {
+        "quem": "agente",
+        "texto": "Poxa, Marlene, sinto muito por isso. Vou te ajudar sim. Primeiro, me passa o seu código de consultora, por favor?",
+        "interrompe": false
+      },
+      {
+        "quem": "consultora",
+        "texto": "Tá. É três, oito, dois, três, um.",
+        "interrompe": false
+      },
+      {
+        "quem": "agente",
+        "texto": "Três, oito, dois, três, um. Confere aqui. E o número do pedido?",
+        "interrompe": false
+      },
+      {
+        "quem": "consultora",
+        "texto": "O pedido é quatro, oito, seis, dois, um, seis.",
+        "interrompe": false
+      },
+      {
+        "quem": "agente",
+        "texto": "Quatro, oito, seis, dois, um, seis. Certo. Me conta direitinho o que aconteceu.",
+        "interrompe": false
+      },
+      {
+        "quem": "consultora",
+        "texto": "Então, o entregador chegou todo apressado, insistindo pra eu assinar sem conferir. Tipo assim, \"assina logo que eu tô atrasado\". Eu achei estranho, mas...",
+        "interrompe": false
+      },
+      {
+        "quem": "agente",
+        "texto": "E você assinou ou não?",
+        "interrompe": true
+      },
+      {
+        "quem": "consultora",
+        "texto": "Assinei, né. Mas abri a caixa assim que ele saiu. Tava fechada, a fita normal, e dentro tinha jornal amassado no lugar de dois kits. Dois kits, Rafael!",
+        "interrompe": false
+      },
+      {
+        "quem": "agente",
+        "texto": "Entendi. Quais kits eram esses que não vieram?",
+        "interrompe": false
+      },
+      {
+        "quem": "consultora",
+        "texto": "Era o kit Raízes castanha e o kit Brilho. Justo os dois mais caros do pedido, peraí, isso não é erro de separação, isso é roubo.",
+        "interrompe": false
+      },
+      {
+        "quem": "agente",
+        "texto": "Compreendo a sua indignação. Você chegou a registrar alguma coisa da caixa?",
+        "interrompe": false
+      },
+      {
+        "quem": "consultora",
+        "texto": "Tenho foto e vídeo. Eu filmei abrindo a caixa, aparece o jornal, os outros produtos, tudo, tudo, tudo...",
+        "interrompe": false
+      },
+      {
+        "quem": "agente",
+        "texto": "Perfeito, isso ajuda muito. E já aconteceu algo parecido com você antes?",
+        "interrompe": true
+      },
+      {
+        "quem": "consultora",
+        "texto": "Nunca. Eu vendo há anos e nunca tinha acontecido uma coisa dessas comigo. Tô muito chateada, sinceramente.",
+        "interrompe": false
+      },
+      {
+        "quem": "agente",
+        "texto": "Vou abrir uma ocorrência de suspeita de desvio e encaminhar pra área de logística investigar a entrega. Preciso que você envie a foto e o vídeo pelo aplicativo ainda hoje, pode ser?",
+        "interrompe": false
+      },
+      {
+        "quem": "consultora",
+        "texto": "Mando agora. Mas e a reposição? Minha cliente tá esperando e eu tô no prejuízo, não é justo.",
+        "interrompe": true
+      },
+      {
+        "quem": "agente",
+        "texto": "Entendo. Assim que o material chegar, a gente prioriza a análise e a reposição dos dois kits. O protocolo é dois, zero, sete, cinco, nove, quatro, um, oito.",
+        "interrompe": false
+      },
+      {
+        "quem": "consultora",
+        "texto": "Dois, zero, sete, cinco, nove, quatro, um, oito. Anotei. Tá bom, Rafael, obrigada. Mas espero que resolvam isso rápido.",
+        "interrompe": false
+      }
+    ],
+    "script": "Central de Relacionamento Aurélia, boa tarde, meu nome é Rafael. Com quem eu falo? Boa tarde, Rafael. É a Marlene. Olha, eu tô ligando porque recebi uma caixa aqui com... é, com jornal dentro. Jornal! Poxa, Marlene, sinto muito por isso. Vou te ajudar sim. Primeiro, me passa o seu código de consultora, por favor? Tá. É três, oito, dois, três, um. Três, oito, dois, três, um. Confere aqui. E o número do pedido? O pedido é quatro, oito, seis, dois, um, seis. Quatro, oito, seis, dois, um, seis. Certo. Me conta direitinho o que aconteceu. Então, o entregador chegou todo apressado, insistindo pra eu assinar sem conferir. Tipo assim, \"assina logo que eu tô atrasado\". Eu achei estranho, mas... E você assinou ou não? Assinei, né. Mas abri a caixa assim que ele saiu. Tava fechada, a fita normal, e dentro tinha jornal amassado no lugar de dois kits. Dois kits, Rafael! Entendi. Quais kits eram esses que não vieram? Era o kit Raízes castanha e o kit Brilho. Justo os dois mais caros do pedido, peraí, isso não é erro de separação, isso é roubo. Compreendo a sua indignação. Você chegou a registrar alguma coisa da caixa? Tenho foto e vídeo. Eu filmei abrindo a caixa, aparece o jornal, os outros produtos, tudo, tudo, tudo... Perfeito, isso ajuda muito. E já aconteceu algo parecido com você antes? Nunca. Eu vendo há anos e nunca tinha acontecido uma coisa dessas comigo. Tô muito chateada, sinceramente. Vou abrir uma ocorrência de suspeita de desvio e encaminhar pra área de logística investigar a entrega. Preciso que você envie a foto e o vídeo pelo aplicativo ainda hoje, pode ser? Mando agora. Mas e a reposição? Minha cliente tá esperando e eu tô no prejuízo, não é justo. Entendo. Assim que o material chegar, a gente prioriza a análise e a reposição dos dois kits. O protocolo é dois, zero, sete, cinco, nove, quatro, um, oito. Dois, zero, sete, cinco, nove, quatro, um, oito. Anotei. Tá bom, Rafael, obrigada. Mas espero que resolvam isso rápido."
+  },
+  {
+    "call_id": "sint_022",
+    "filename": "sint_022.wav",
+    "scenario": "Consultora calma relata lacre com fita de outra cor e faltam dois perfumes; ela mesma pergunta se pode ter sido desvio. O agente encaminha para a área de segurança.",
+    "consultora_nome": "Marlene",
+    "consultora_genero": "f",
+    "agente_nome": "Rafael",
+    "agente_genero": "m",
+    "gabarito": {
+      "tipo_problema": "fraude_suspeita",
+      "suspeita_fraude": true,
+      "reincidencia": false,
+      "sentiment": "neutro",
+      "consultora_codigo": "72674",
+      "pedido_numero": "112585",
+      "produtos_faltantes": [
+        "um Maré masculino",
+        "um Âmbar feminino"
+      ]
+    },
+    "falas": [
+      {
+        "quem": "agente",
+        "texto": "Central de Relacionamento Aurélia, meu nome é Rafael, tudo bem? Com quem eu falo?",
+        "interrompe": false
+      },
+      {
+        "quem": "consultora",
+        "texto": "Oi, Rafael, tudo bem. Aqui é a Marlene, consultora.",
+        "interrompe": false
+      },
+      {
+        "quem": "agente",
+        "texto": "Prazer, Marlene. Me passa o seu código de consultora, por favor?",
+        "interrompe": false
+      },
+      {
+        "quem": "consultora",
+        "texto": "Claro. É sete, dois, seis, sete, quatro.",
+        "interrompe": false
+      },
+      {
+        "quem": "agente",
+        "texto": "Sete, dois, seis, sete, quatro. Certo. E o número do pedido, você tem aí?",
+        "interrompe": false
+      },
+      {
+        "quem": "consultora",
+        "texto": "Tenho sim. É um, um, dois, cinco, oito, cinco.",
+        "interrompe": false
+      },
+      {
+        "quem": "agente",
+        "texto": "Um, um, dois, cinco, oito, cinco. Perfeito, achei aqui. Me conta o que aconteceu com ele.",
+        "interrompe": false
+      },
+      {
+        "quem": "consultora",
+        "texto": "Então, a caixa chegou hoje de manhã. Só que o lacre tá com uma fita de outra cor, sabe? Não é a fita que vem normalmente da Aurélia.",
+        "interrompe": false
+      },
+      {
+        "quem": "agente",
+        "texto": "Hum, entendi. Uma fita diferente da original. E o conteúdo, você chegou a conferir?",
+        "interrompe": false
+      },
+      {
+        "quem": "consultora",
+        "texto": "Conferi, sim. Peraí, deixa eu olhar a nota de novo. É, faltam dois perfumes. Um Maré masculino e um Âmbar feminino.",
+        "interrompe": false
+      },
+      {
+        "quem": "agente",
+        "texto": "Dois perfumes então, o Maré masculino e o Âmbar feminino. O restante do pedido veio completo?",
+        "interrompe": false
+      },
+      {
+        "quem": "consultora",
+        "texto": "O resto veio tudo certinho, tipo assim, os Diário, o Raízes, tá tudo aqui. Só esses dois que não vieram. Será que isso pode ter sido desvio, Rafael?",
+        "interrompe": false
+      },
+      {
+        "quem": "agente",
+        "texto": "Olha, Marlene, pela fita diferente e pela falta justamente de dois perfumes, é uma possibilidade que a gente precisa investigar, sim.",
+        "interrompe": true
+      },
+      {
+        "quem": "consultora",
+        "texto": "Foi o que eu pensei, por isso eu quis ligar logo e não mexer em mais nada.",
+        "interrompe": true
+      },
+      {
+        "quem": "agente",
+        "texto": "Fez muito bem. Se puder, guarda a caixa, a fita e a nota fiscal do jeito que estão. Eu vou encaminhar o seu caso para a área de segurança.",
+        "interrompe": false
+      },
+      {
+        "quem": "consultora",
+        "texto": "Tá bom, eu guardo tudo aqui. E eles vão me ligar ou como é que funciona?",
+        "interrompe": false
+      },
+      {
+        "quem": "agente",
+        "texto": "Eles entram em contato com você pelo telefone cadastrado. O protocolo do atendimento é zero, quatro, nove, um, sete, três, oito. Anota aí.",
+        "interrompe": false
+      },
+      {
+        "quem": "consultora",
+        "texto": "Zero, quatro, nove, um, sete, três, oito. Anotei. Obrigada, Rafael.",
+        "interrompe": false
+      },
+      {
+        "quem": "agente",
+        "texto": "Eu que agradeço, Marlene. Mais alguma coisa em que eu possa ajudar?",
+        "interrompe": false
+      },
+      {
+        "quem": "consultora",
+        "texto": "Por enquanto não, é só isso mesmo. Tchau, tenha um bom dia.",
+        "interrompe": false
+      }
+    ],
+    "script": "Central de Relacionamento Aurélia, meu nome é Rafael, tudo bem? Com quem eu falo? Oi, Rafael, tudo bem. Aqui é a Marlene, consultora. Prazer, Marlene. Me passa o seu código de consultora, por favor? Claro. É sete, dois, seis, sete, quatro. Sete, dois, seis, sete, quatro. Certo. E o número do pedido, você tem aí? Tenho sim. É um, um, dois, cinco, oito, cinco. Um, um, dois, cinco, oito, cinco. Perfeito, achei aqui. Me conta o que aconteceu com ele. Então, a caixa chegou hoje de manhã. Só que o lacre tá com uma fita de outra cor, sabe? Não é a fita que vem normalmente da Aurélia. Hum, entendi. Uma fita diferente da original. E o conteúdo, você chegou a conferir? Conferi, sim. Peraí, deixa eu olhar a nota de novo. É, faltam dois perfumes. Um Maré masculino e um Âmbar feminino. Dois perfumes então, o Maré masculino e o Âmbar feminino. O restante do pedido veio completo? O resto veio tudo certinho, tipo assim, os Diário, o Raízes, tá tudo aqui. Só esses dois que não vieram. Será que isso pode ter sido desvio, Rafael? Olha, Marlene, pela fita diferente e pela falta justamente de dois perfumes, é uma possibilidade que a gente precisa investigar, sim. Foi o que eu pensei, por isso eu quis ligar logo e não mexer em mais nada. Fez muito bem. Se puder, guarda a caixa, a fita e a nota fiscal do jeito que estão. Eu vou encaminhar o seu caso para a área de segurança. Tá bom, eu guardo tudo aqui. E eles vão me ligar ou como é que funciona? Eles entram em contato com você pelo telefone cadastrado. O protocolo do atendimento é zero, quatro, nove, um, sete, três, oito. Anota aí. Zero, quatro, nove, um, sete, três, oito. Anotei. Obrigada, Rafael. Eu que agradeço, Marlene. Mais alguma coisa em que eu possa ajudar? Por enquanto não, é só isso mesmo. Tchau, tenha um bom dia."
+  },
+  {
+    "call_id": "sint_023",
+    "filename": "sint_023.wav",
+    "scenario": "Vizinhas consultoras do mesmo bairro também receberam caixas abertas sem os itens de maior valor. É o terceiro caso dela.",
+    "consultora_nome": "Cláudia Barreto",
+    "consultora_genero": "f",
+    "agente_nome": "Rafael",
+    "agente_genero": "m",
+    "gabarito": {
+      "tipo_problema": "fraude_suspeita",
+      "suspeita_fraude": true,
+      "reincidencia": true,
+      "sentiment": "negativo",
+      "consultora_codigo": "95101",
+      "pedido_numero": "885881",
+      "produtos_faltantes": [
+        "dois perfumes Maré",
+        "um Âmbar"
+      ]
+    },
+    "falas": [
+      {
+        "quem": "agente",
+        "texto": "Central de Relacionamento Aurélia, meu nome é Rafael, boa tarde. Com quem eu falo?",
+        "interrompe": false
+      },
+      {
+        "quem": "consultora",
+        "texto": "Oi, Rafael. É a Cláudia, Cláudia Barreto.",
+        "interrompe": false
+      },
+      {
+        "quem": "agente",
+        "texto": "Cláudia, pra eu te ajudar, me passa o seu código de consultora, por favor.",
+        "interrompe": false
+      },
+      {
+        "quem": "consultora",
+        "texto": "É... nove, cinco, um, zero, um.",
+        "interrompe": false
+      },
+      {
+        "quem": "agente",
+        "texto": "Nove, cinco, um, zero, um. Certo. E o número do pedido?",
+        "interrompe": false
+      },
+      {
+        "quem": "consultora",
+        "texto": "O pedido é oito, oito, cinco, oito, oito, um.",
+        "interrompe": false
+      },
+      {
+        "quem": "agente",
+        "texto": "Oito, oito, cinco, oito, oito, um. Confirmado aqui. Me conta o que aconteceu.",
+        "interrompe": false
+      },
+      {
+        "quem": "consultora",
+        "texto": "Então, a caixa chegou aberta, a fita toda cortada e faltando coisa. Dois perfumes Maré e um Âmbar. Só levaram os mais caros, tipo assim, o resto tava tudo lá dentro.",
+        "interrompe": false
+      },
+      {
+        "quem": "agente",
+        "texto": "Entendi. Então a caixa veio violada e sumiram dois perfumes Maré e um Âmbar, é isso?",
+        "interrompe": false
+      },
+      {
+        "quem": "consultora",
+        "texto": "Isso. E olha, Rafael, não é a primeira vez. É a terceira vez só esse ano, eu já abri chamado das outras duas e...",
+        "interrompe": false
+      },
+      {
+        "quem": "agente",
+        "texto": "Sinto muito, Cláudia. Eu estou vendo aqui no seu histórico, peraí, que...",
+        "interrompe": true
+      },
+      {
+        "quem": "consultora",
+        "texto": "E não é só comigo! A Marlene e a Josi, aqui do bairro, também receberam caixa aberta sem os perfumes mais caros. Isso não é erro de separação, não, tem alguém mexendo nisso.",
+        "interrompe": true
+      },
+      {
+        "quem": "agente",
+        "texto": "Você tem razão de estar chateada. A fita da caixa estava como? Dava pra ver se foi colada de novo?",
+        "interrompe": false
+      },
+      {
+        "quem": "consultora",
+        "texto": "Tava sim. Cortada e colada de novo com outra fita por cima, bem mal feito. Eu tirei foto antes de mexer em qualquer coisa.",
+        "interrompe": false
+      },
+      {
+        "quem": "agente",
+        "texto": "Perfeito, guarda essas fotos e a caixa. Vou registrar como suspeita de desvio e encaminhar pra área de prevenção a perdas, junto com o que você falou das suas vizinhas.",
+        "interrompe": false
+      },
+      {
+        "quem": "consultora",
+        "texto": "Tá, mas e a minha cliente? Eu já prometi esses perfumes pra ela, eu tô passando vergonha, sabe? Eu tô...",
+        "interrompe": false
+      },
+      {
+        "quem": "agente",
+        "texto": "Eu entendo. Vou pedir a reposição de dois perfumes Maré e um Âmbar com prioridade, pra você não ficar no prejuízo.",
+        "interrompe": true
+      },
+      {
+        "quem": "consultora",
+        "texto": "Tá bom. Mas eu quero que alguém investigue isso de verdade, hein. Cansei.",
+        "interrompe": false
+      },
+      {
+        "quem": "agente",
+        "texto": "Vai ser investigado, sim. Anota o protocolo: dois, sete, zero, quatro, nove, oito, um. Alguém entra em contato com você em até dois dias úteis.",
+        "interrompe": false
+      }
+    ],
+    "script": "Central de Relacionamento Aurélia, meu nome é Rafael, boa tarde. Com quem eu falo? Oi, Rafael. É a Cláudia, Cláudia Barreto. Cláudia, pra eu te ajudar, me passa o seu código de consultora, por favor. É... nove, cinco, um, zero, um. Nove, cinco, um, zero, um. Certo. E o número do pedido? O pedido é oito, oito, cinco, oito, oito, um. Oito, oito, cinco, oito, oito, um. Confirmado aqui. Me conta o que aconteceu. Então, a caixa chegou aberta, a fita toda cortada e faltando coisa. Dois perfumes Maré e um Âmbar. Só levaram os mais caros, tipo assim, o resto tava tudo lá dentro. Entendi. Então a caixa veio violada e sumiram dois perfumes Maré e um Âmbar, é isso? Isso. E olha, Rafael, não é a primeira vez. É a terceira vez só esse ano, eu já abri chamado das outras duas e... Sinto muito, Cláudia. Eu estou vendo aqui no seu histórico, peraí, que... E não é só comigo! A Marlene e a Josi, aqui do bairro, também receberam caixa aberta sem os perfumes mais caros. Isso não é erro de separação, não, tem alguém mexendo nisso. Você tem razão de estar chateada. A fita da caixa estava como? Dava pra ver se foi colada de novo? Tava sim. Cortada e colada de novo com outra fita por cima, bem mal feito. Eu tirei foto antes de mexer em qualquer coisa. Perfeito, guarda essas fotos e a caixa. Vou registrar como suspeita de desvio e encaminhar pra área de prevenção a perdas, junto com o que você falou das suas vizinhas. Tá, mas e a minha cliente? Eu já prometi esses perfumes pra ela, eu tô passando vergonha, sabe? Eu tô... Eu entendo. Vou pedir a reposição de dois perfumes Maré e um Âmbar com prioridade, pra você não ficar no prejuízo. Tá bom. Mas eu quero que alguém investigue isso de verdade, hein. Cansei. Vai ser investigado, sim. Anota o protocolo: dois, sete, zero, quatro, nove, oito, um. Alguém entra em contato com você em até dois dias úteis."
+  },
+  {
+    "call_id": "sint_024",
+    "filename": "sint_024.wav",
+    "scenario": "Um frasco de óleo trifásico chegou quebrado e vazou dentro da caixa; a caixa estava intacta. Consultora quer a troca.",
+    "consultora_nome": "Marlene",
+    "consultora_genero": "f",
+    "agente_nome": "Rafael",
+    "agente_genero": "m",
+    "gabarito": {
+      "tipo_problema": "outro",
+      "suspeita_fraude": false,
+      "reincidencia": false,
+      "sentiment": "negativo",
+      "consultora_codigo": "50000",
+      "pedido_numero": "118344",
+      "produtos_faltantes": []
+    },
+    "falas": [
+      {
+        "quem": "agente",
+        "texto": "Central de Relacionamento Aurélia, meu nome é Rafael, tudo bem? Com quem eu falo?",
+        "interrompe": false
+      },
+      {
+        "quem": "consultora",
+        "texto": "Oi, Rafael. Aqui é a Marlene. Olha, eu tô bem chateada, viu.",
+        "interrompe": false
+      },
+      {
+        "quem": "agente",
+        "texto": "Poxa, Marlene, sinto muito. Vou te ajudar, tá? Me passa o seu código de consultora, por favor.",
+        "interrompe": false
+      },
+      {
+        "quem": "consultora",
+        "texto": "É cinco, zero, zero, zero, zero.",
+        "interrompe": false
+      },
+      {
+        "quem": "agente",
+        "texto": "Cinco, zero, zero, zero, zero. Certinho. E o número do pedido, você tem aí?",
+        "interrompe": false
+      },
+      {
+        "quem": "consultora",
+        "texto": "Tenho, peraí... é o um, um, oito, três, quatro, quatro.",
+        "interrompe": false
+      },
+      {
+        "quem": "agente",
+        "texto": "Um, um, oito, três, quatro, quatro. Confirmado. Me conta, Marlene, o que aconteceu com esse pedido?",
+        "interrompe": false
+      },
+      {
+        "quem": "consultora",
+        "texto": "Então, o óleo trifásico do Diário chegou quebrado. O frasco rachou e o óleo vazou tudo dentro da caixa, tipo assim, a caixa tá toda melada.",
+        "interrompe": false
+      },
+      {
+        "quem": "agente",
+        "texto": "Nossa, que chato isso. E a caixa, ela chegou como? Estava lacrada, com algum rasgo, amassada?",
+        "interrompe": false
+      },
+      {
+        "quem": "consultora",
+        "texto": "Não, a caixa tava intacta, lacradinha, sem rasgo nenhum. Eu abri e já senti o cheiro, aí vi o frasco quebrado lá dentro.",
+        "interrompe": false
+      },
+      {
+        "quem": "agente",
+        "texto": "Entendi. Então a embalagem externa estava perfeita e o frasco quebrou por dentro. Os outros produtos do pedido vieram todos?",
+        "interrompe": false
+      },
+      {
+        "quem": "consultora",
+        "texto": "Vieram todos, não faltou nada, não. Só que eu ia entregar hoje pra cliente, e agora fico sem o óleo, e...",
+        "interrompe": true
+      },
+      {
+        "quem": "agente",
+        "texto": "Marlene, deixa eu só te falar: a gente vai fazer a troca desse óleo, tá bom? Você consegue me mandar uma foto do frasco quebrado pelo aplicativo?",
+        "interrompe": true
+      },
+      {
+        "quem": "consultora",
+        "texto": "Consigo sim, eu já tirei foto. É que eu tô com raiva, né, Rafael, porque paguei e recebi o produto estragado, não é justo.",
+        "interrompe": false
+      },
+      {
+        "quem": "agente",
+        "texto": "Eu entendo, você tem toda razão de ficar chateada. Vou abrir a solicitação de troca agora. O novo óleo vai junto com o seu próximo pedido, ou a gente envia separado.",
+        "interrompe": false
+      },
+      {
+        "quem": "consultora",
+        "texto": "Separado, por favor! Eu preciso o quanto antes, não dá pra esperar o próximo ciclo.",
+        "interrompe": true
+      },
+      {
+        "quem": "agente",
+        "texto": "Combinado, vou colocar como envio separado. O protocolo da sua solicitação é dois, sete, zero, nove, quatro, um, cinco, oito. Quer anotar?",
+        "interrompe": false
+      },
+      {
+        "quem": "consultora",
+        "texto": "Anotei aqui: dois, sete, zero, nove, quatro, um, cinco, oito. Tá. Espero que chegue rápido e inteiro dessa vez, hein.",
+        "interrompe": false
+      },
+      {
+        "quem": "agente",
+        "texto": "Vai chegar sim, Marlene. Obrigado por ligar e desculpa o transtorno. Tenha um bom dia.",
+        "interrompe": false
+      }
+    ],
+    "script": "Central de Relacionamento Aurélia, meu nome é Rafael, tudo bem? Com quem eu falo? Oi, Rafael. Aqui é a Marlene. Olha, eu tô bem chateada, viu. Poxa, Marlene, sinto muito. Vou te ajudar, tá? Me passa o seu código de consultora, por favor. É cinco, zero, zero, zero, zero. Cinco, zero, zero, zero, zero. Certinho. E o número do pedido, você tem aí? Tenho, peraí... é o um, um, oito, três, quatro, quatro. Um, um, oito, três, quatro, quatro. Confirmado. Me conta, Marlene, o que aconteceu com esse pedido? Então, o óleo trifásico do Diário chegou quebrado. O frasco rachou e o óleo vazou tudo dentro da caixa, tipo assim, a caixa tá toda melada. Nossa, que chato isso. E a caixa, ela chegou como? Estava lacrada, com algum rasgo, amassada? Não, a caixa tava intacta, lacradinha, sem rasgo nenhum. Eu abri e já senti o cheiro, aí vi o frasco quebrado lá dentro. Entendi. Então a embalagem externa estava perfeita e o frasco quebrou por dentro. Os outros produtos do pedido vieram todos? Vieram todos, não faltou nada, não. Só que eu ia entregar hoje pra cliente, e agora fico sem o óleo, e... Marlene, deixa eu só te falar: a gente vai fazer a troca desse óleo, tá bom? Você consegue me mandar uma foto do frasco quebrado pelo aplicativo? Consigo sim, eu já tirei foto. É que eu tô com raiva, né, Rafael, porque paguei e recebi o produto estragado, não é justo. Eu entendo, você tem toda razão de ficar chateada. Vou abrir a solicitação de troca agora. O novo óleo vai junto com o seu próximo pedido, ou a gente envia separado. Separado, por favor! Eu preciso o quanto antes, não dá pra esperar o próximo ciclo. Combinado, vou colocar como envio separado. O protocolo da sua solicitação é dois, sete, zero, nove, quatro, um, cinco, oito. Quer anotar? Anotei aqui: dois, sete, zero, nove, quatro, um, cinco, oito. Tá. Espero que chegue rápido e inteiro dessa vez, hein. Vai chegar sim, Marlene. Obrigado por ligar e desculpa o transtorno. Tenha um bom dia."
+  },
+  {
+    "call_id": "sint_025",
+    "filename": "sint_025.wav",
+    "scenario": "Consultora pergunta por que o boleto do ciclo veio com valor maior; o agente explica a mudança de pontuação.",
+    "consultora_nome": "Marilene",
+    "consultora_genero": "f",
+    "agente_nome": "Rafael",
+    "agente_genero": "m",
+    "gabarito": {
+      "tipo_problema": "outro",
+      "suspeita_fraude": false,
+      "reincidencia": false,
+      "sentiment": "neutro",
+      "consultora_codigo": "64366",
+      "pedido_numero": "389070",
+      "produtos_faltantes": []
+    },
+    "falas": [
+      {
+        "quem": "agente",
+        "texto": "Central de Relacionamento Aurélia, boa tarde, meu nome é Rafael. Com quem eu falo?",
+        "interrompe": false
+      },
+      {
+        "quem": "consultora",
+        "texto": "Oi, boa tarde, Rafael. Aqui é a Marilene, sou consultora.",
+        "interrompe": false
+      },
+      {
+        "quem": "agente",
+        "texto": "Prazer, Marilene. Pode me passar o seu código de consultora, por favor?",
+        "interrompe": false
+      },
+      {
+        "quem": "consultora",
+        "texto": "Posso sim. É seis, quatro, três, seis, seis.",
+        "interrompe": false
+      },
+      {
+        "quem": "agente",
+        "texto": "Seis, quatro, três, seis, seis. Certo. E o número do pedido, você tem aí?",
+        "interrompe": false
+      },
+      {
+        "quem": "consultora",
+        "texto": "Tenho, peraí... é três, oito, nove, zero, sete, zero.",
+        "interrompe": false
+      },
+      {
+        "quem": "agente",
+        "texto": "Três, oito, nove, zero, sete, zero. Confirmado. Em que eu posso te ajudar hoje?",
+        "interrompe": false
+      },
+      {
+        "quem": "consultora",
+        "texto": "Então, o boleto desse ciclo veio com valor maior, sabe? Veio cento e oitenta e sete reais e eu tava esperando uns cento e cinquenta, mais ou menos.",
+        "interrompe": false
+      },
+      {
+        "quem": "agente",
+        "texto": "Hum, entendi. Deixa eu olhar aqui o seu pedido e o histórico de pontuação, só um minutinho.",
+        "interrompe": false
+      },
+      {
+        "quem": "consultora",
+        "texto": "Tá bom, pode olhar. Eu pedi quase a mesma coisa do ciclo passado, Raízes, Diário, um Maré...",
+        "interrompe": true
+      },
+      {
+        "quem": "agente",
+        "texto": "É que o valor do boleto, Marilene, depende da faixa em que você fica. Nesse ciclo a sua pontuação ficou menor do que no ciclo anterior.",
+        "interrompe": true
+      },
+      {
+        "quem": "consultora",
+        "texto": "Ah, a pontuação. Mas como assim menor? Eu comprei parecido.",
+        "interrompe": false
+      },
+      {
+        "quem": "agente",
+        "texto": "Então, parecido em produtos, mas o pedido deste ciclo somou menos pontos. Aí você caiu pra uma faixa com desconto menor, e o boleto sobe.",
+        "interrompe": false
+      },
+      {
+        "quem": "consultora",
+        "texto": "Hum, tipo assim, o desconto mudou e por isso o valor mudou. Não foi erro de cobrança então.",
+        "interrompe": false
+      },
+      {
+        "quem": "agente",
+        "texto": "Isso mesmo. Conferi aqui e o valor de cento e oitenta e sete reais está correto, nenhum item cobrado a mais.",
+        "interrompe": false
+      },
+      {
+        "quem": "consultora",
+        "texto": "Tá, entendi. E pra voltar pra faixa de antes, o que eu faço?",
+        "interrompe": false
+      },
+      {
+        "quem": "agente",
+        "texto": "No próximo ciclo você precisa somar mais pontos no pedido. Você consegue acompanhar a pontuação no aplicativo, antes de fechar o pedido.",
+        "interrompe": false
+      },
+      {
+        "quem": "consultora",
+        "texto": "Ah, bom saber. Vou olhar lá então. Obrigada, Rafael.",
+        "interrompe": false
+      },
+      {
+        "quem": "agente",
+        "texto": "Por nada. Anota o protocolo do atendimento: dois, zero, cinco, um, oito, quatro, sete. Mais alguma dúvida?",
+        "interrompe": false
+      },
+      {
+        "quem": "consultora",
+        "texto": "Não, era só isso mesmo. Tchau, obrigada.",
+        "interrompe": false
+      }
+    ],
+    "script": "Central de Relacionamento Aurélia, boa tarde, meu nome é Rafael. Com quem eu falo? Oi, boa tarde, Rafael. Aqui é a Marilene, sou consultora. Prazer, Marilene. Pode me passar o seu código de consultora, por favor? Posso sim. É seis, quatro, três, seis, seis. Seis, quatro, três, seis, seis. Certo. E o número do pedido, você tem aí? Tenho, peraí... é três, oito, nove, zero, sete, zero. Três, oito, nove, zero, sete, zero. Confirmado. Em que eu posso te ajudar hoje? Então, o boleto desse ciclo veio com valor maior, sabe? Veio cento e oitenta e sete reais e eu tava esperando uns cento e cinquenta, mais ou menos. Hum, entendi. Deixa eu olhar aqui o seu pedido e o histórico de pontuação, só um minutinho. Tá bom, pode olhar. Eu pedi quase a mesma coisa do ciclo passado, Raízes, Diário, um Maré... É que o valor do boleto, Marilene, depende da faixa em que você fica. Nesse ciclo a sua pontuação ficou menor do que no ciclo anterior. Ah, a pontuação. Mas como assim menor? Eu comprei parecido. Então, parecido em produtos, mas o pedido deste ciclo somou menos pontos. Aí você caiu pra uma faixa com desconto menor, e o boleto sobe. Hum, tipo assim, o desconto mudou e por isso o valor mudou. Não foi erro de cobrança então. Isso mesmo. Conferi aqui e o valor de cento e oitenta e sete reais está correto, nenhum item cobrado a mais. Tá, entendi. E pra voltar pra faixa de antes, o que eu faço? No próximo ciclo você precisa somar mais pontos no pedido. Você consegue acompanhar a pontuação no aplicativo, antes de fechar o pedido. Ah, bom saber. Vou olhar lá então. Obrigada, Rafael. Por nada. Anota o protocolo do atendimento: dois, zero, cinco, um, oito, quatro, sete. Mais alguma dúvida? Não, era só isso mesmo. Tchau, obrigada."
+  },
+  {
+    "call_id": "sint_026",
+    "filename": "sint_026.wav",
+    "scenario": "Consultora liga para mudar o endereço de entrega antes do faturamento; o agente resolve na hora.",
+    "consultora_nome": "Marlene",
+    "consultora_genero": "f",
+    "agente_nome": "Rafael",
+    "agente_genero": "m",
+    "gabarito": {
+      "tipo_problema": "outro",
+      "suspeita_fraude": false,
+      "reincidencia": false,
+      "sentiment": "positivo",
+      "consultora_codigo": "83981",
+      "pedido_numero": "125520",
+      "produtos_faltantes": []
+    },
+    "falas": [
+      {
+        "quem": "agente",
+        "texto": "Central de Relacionamento Aurélia, bom dia, meu nome é Rafael. Com quem eu falo?",
+        "interrompe": false
+      },
+      {
+        "quem": "consultora",
+        "texto": "Oi, bom dia, Rafael! Aqui é a Marlene, tudo bem com você?",
+        "interrompe": false
+      },
+      {
+        "quem": "agente",
+        "texto": "Tudo bem, Marlene, obrigado. Me passa o seu código de consultora, por favor?",
+        "interrompe": false
+      },
+      {
+        "quem": "consultora",
+        "texto": "Passo sim. É oito, três, nove, oito, um.",
+        "interrompe": false
+      },
+      {
+        "quem": "agente",
+        "texto": "Oito, três, nove, oito, um. Certo. E qual o número do pedido que você quer mexer?",
+        "interrompe": false
+      },
+      {
+        "quem": "consultora",
+        "texto": "É o um, dois, cinco, cinco, dois, zero. Peraí, deixa eu conferir aqui... isso, um, dois, cinco, cinco, dois, zero.",
+        "interrompe": false
+      },
+      {
+        "quem": "agente",
+        "texto": "Um, dois, cinco, cinco, dois, zero. Achei aqui, Marlene. Ele ainda não foi faturado, tá? Em que posso te ajudar?",
+        "interrompe": false
+      },
+      {
+        "quem": "consultora",
+        "texto": "Ah, que bom que ainda não faturou! Então, eu vou passar uns dias na casa da minha irmã, e queria receber lá. Dá pra trocar o endereço de entrega?",
+        "interrompe": false
+      },
+      {
+        "quem": "agente",
+        "texto": "Dá sim, como o pedido ainda está aberto, eu consigo alterar agora mesmo. Você vai me falar o novo endereço, mas só a rua e o número, tá bom? Não precisa dizer completo.",
+        "interrompe": false
+      },
+      {
+        "quem": "consultora",
+        "texto": "Tá bom. É na Rua das Acácias, número trezentos e doze. É... isso mesmo, trezentos e doze.",
+        "interrompe": false
+      },
+      {
+        "quem": "agente",
+        "texto": "Rua das Acácias, trezentos e doze. Tem alguém lá pra receber em horário comercial?",
+        "interrompe": false
+      },
+      {
+        "quem": "consultora",
+        "texto": "Tem sim, minha irmã fica em casa o dia todo. Ela se chama Lúcia, pode colocar no recebimento.",
+        "interrompe": true
+      },
+      {
+        "quem": "agente",
+        "texto": "Perfeito, vou deixar o nome da Lúcia como contato. Só um minutinho que eu estou atualizando no sistema.",
+        "interrompe": true
+      },
+      {
+        "quem": "consultora",
+        "texto": "Fica à vontade! Hum, aproveitando, vai o Raízes e o Diário que eu pedi, né? Fiquei com medo de perder a promoção.",
+        "interrompe": false
+      },
+      {
+        "quem": "agente",
+        "texto": "Está tudo mantido, Marlene, o Raízes, o Diário e o resto do pedido. A promoção continua valendo, a mudança de endereço não altera nada.",
+        "interrompe": false
+      },
+      {
+        "quem": "consultora",
+        "texto": "Ai, que alívio! Nossa, vocês são muito rápidos, adorei.",
+        "interrompe": false
+      },
+      {
+        "quem": "agente",
+        "texto": "Pronto, endereço alterado. O prazo de entrega continua o mesmo, só que agora para o endereço novo. O seu protocolo é dois, zero, sete, quatro, quatro, nove.",
+        "interrompe": false
+      },
+      {
+        "quem": "consultora",
+        "texto": "Deixa eu anotar... dois, zero, sete, quatro, quatro, nove. Anotado!",
+        "interrompe": false
+      },
+      {
+        "quem": "agente",
+        "texto": "Isso mesmo. Posso te ajudar com mais alguma coisa, Marlene?",
+        "interrompe": false
+      },
+      {
+        "quem": "consultora",
+        "texto": "Não, era só isso. Muito obrigada, Rafael, você foi um amor. Tenha um ótimo dia!",
+        "interrompe": false
+      },
+      {
+        "quem": "agente",
+        "texto": "Eu que agradeço, Marlene. Bom dia pra você e boas vendas!",
+        "interrompe": false
+      }
+    ],
+    "script": "Central de Relacionamento Aurélia, bom dia, meu nome é Rafael. Com quem eu falo? Oi, bom dia, Rafael! Aqui é a Marlene, tudo bem com você? Tudo bem, Marlene, obrigado. Me passa o seu código de consultora, por favor? Passo sim. É oito, três, nove, oito, um. Oito, três, nove, oito, um. Certo. E qual o número do pedido que você quer mexer? É o um, dois, cinco, cinco, dois, zero. Peraí, deixa eu conferir aqui... isso, um, dois, cinco, cinco, dois, zero. Um, dois, cinco, cinco, dois, zero. Achei aqui, Marlene. Ele ainda não foi faturado, tá? Em que posso te ajudar? Ah, que bom que ainda não faturou! Então, eu vou passar uns dias na casa da minha irmã, e queria receber lá. Dá pra trocar o endereço de entrega? Dá sim, como o pedido ainda está aberto, eu consigo alterar agora mesmo. Você vai me falar o novo endereço, mas só a rua e o número, tá bom? Não precisa dizer completo. Tá bom. É na Rua das Acácias, número trezentos e doze. É... isso mesmo, trezentos e doze. Rua das Acácias, trezentos e doze. Tem alguém lá pra receber em horário comercial? Tem sim, minha irmã fica em casa o dia todo. Ela se chama Lúcia, pode colocar no recebimento. Perfeito, vou deixar o nome da Lúcia como contato. Só um minutinho que eu estou atualizando no sistema. Fica à vontade! Hum, aproveitando, vai o Raízes e o Diário que eu pedi, né? Fiquei com medo de perder a promoção. Está tudo mantido, Marlene, o Raízes, o Diário e o resto do pedido. A promoção continua valendo, a mudança de endereço não altera nada. Ai, que alívio! Nossa, vocês são muito rápidos, adorei. Pronto, endereço alterado. O prazo de entrega continua o mesmo, só que agora para o endereço novo. O seu protocolo é dois, zero, sete, quatro, quatro, nove. Deixa eu anotar... dois, zero, sete, quatro, quatro, nove. Anotado! Isso mesmo. Posso te ajudar com mais alguma coisa, Marlene? Não, era só isso. Muito obrigada, Rafael, você foi um amor. Tenha um ótimo dia! Eu que agradeço, Marlene. Bom dia pra você e boas vendas!"
+  },
+  {
+    "call_id": "sint_027",
+    "filename": "sint_027.wav",
+    "scenario": "Cobrança em duplicidade no cartão pelo segundo mês; consultora irritada exige estorno.",
+    "consultora_nome": "Marlene",
+    "consultora_genero": "f",
+    "agente_nome": "Rafael",
+    "agente_genero": "m",
+    "gabarito": {
+      "tipo_problema": "outro",
+      "suspeita_fraude": false,
+      "reincidencia": true,
+      "sentiment": "negativo",
+      "consultora_codigo": "18028",
+      "pedido_numero": "892878",
+      "produtos_faltantes": []
+    },
+    "falas": [
+      {
+        "quem": "agente",
+        "texto": "Central de Relacionamento Aurélia, meu nome é Rafael, tudo bem? Com quem eu falo?",
+        "interrompe": false
+      },
+      {
+        "quem": "consultora",
+        "texto": "Oi, Rafael. Aqui é a Marlene. Olha, eu tô ligando de novo, é o segundo mês seguido, por causa de cobrança no meu cartão.",
+        "interrompe": false
+      },
+      {
+        "quem": "agente",
+        "texto": "Poxa, Marlene, sinto muito por isso. Vou te ajudar sim. Me passa o seu código de consultora, por favor?",
+        "interrompe": false
+      },
+      {
+        "quem": "consultora",
+        "texto": "É... um, oito, zero, dois, oito.",
+        "interrompe": false
+      },
+      {
+        "quem": "agente",
+        "texto": "Um, oito, zero, dois, oito. Confere. E o número do pedido, você tem aí?",
+        "interrompe": false
+      },
+      {
+        "quem": "consultora",
+        "texto": "Tenho. É oito, nove, dois, oito, sete, oito.",
+        "interrompe": false
+      },
+      {
+        "quem": "agente",
+        "texto": "Oito, nove, dois, oito, sete, oito. Peraí que eu abro aqui. Então, me conta direitinho o que aconteceu.",
+        "interrompe": false
+      },
+      {
+        "quem": "consultora",
+        "texto": "Então, eu paguei esse pedido no cartão, deu duzentos e oitenta e quatro reais, era Raízes e Maré, e veio cobrado duas vezes na fatura. Duas vezes, Rafael!",
+        "interrompe": false
+      },
+      {
+        "quem": "agente",
+        "texto": "Entendi. Você viu duas cobranças do mesmo valor...",
+        "interrompe": false
+      },
+      {
+        "quem": "consultora",
+        "texto": "Do mesmo valor, no mesmo dia! E não é a primeira vez, tá? Mês passado aconteceu a mesma coisa, eu liguei, me falaram que ia resolver, e olha aí de novo.",
+        "interrompe": true
+      },
+      {
+        "quem": "agente",
+        "texto": "Tô vendo aqui no sistema. Tem duas transações aprovadas nesse pedido. E eu vejo o registro do mês passado também, é isso mesmo.",
+        "interrompe": false
+      },
+      {
+        "quem": "consultora",
+        "texto": "Então! Eu tô sem esse dinheiro, tenho conta pra pagar, tô muito chateada. Eu quero o estorno. Não quero crédito, não quero desconto no próximo, quero estorno.",
+        "interrompe": false
+      },
+      {
+        "quem": "agente",
+        "texto": "Compreendo, Marlene. Vou abrir a solicitação de estorno da cobrança duplicada, de duzentos e oitenta e quatro reais, e vou marcar como reincidência pra ir com prioridade.",
+        "interrompe": false
+      },
+      {
+        "quem": "consultora",
+        "texto": "Tá. E quanto tempo? Porque da outra vez falaram dez dias e passou um mês, hein.",
+        "interrompe": false
+      },
+      {
+        "quem": "agente",
+        "texto": "O prazo é de até dez dias úteis, mas vou deixar sinalizado o caso anterior. Seu protocolo é dois, zero, sete, quatro, um, nove, cinco.",
+        "interrompe": false
+      },
+      {
+        "quem": "consultora",
+        "texto": "Peraí, deixa eu anotar... dois, zero, sete, quatro, um, nove, cinco. Tá, anotei.",
+        "interrompe": true
+      },
+      {
+        "quem": "agente",
+        "texto": "Isso mesmo. Eu também te mando a confirmação por e-mail. Se por acaso não cair na fatura...",
+        "interrompe": false
+      },
+      {
+        "quem": "consultora",
+        "texto": "Se não cair eu ligo de novo e vou na ouvidoria, tô avisando. Já deu, viu?",
+        "interrompe": true
+      },
+      {
+        "quem": "agente",
+        "texto": "Fica à vontade, Marlene, você tá no seu direito. Peço desculpa pelo transtorno. Posso ajudar em mais alguma coisa?",
+        "interrompe": false
+      },
+      {
+        "quem": "consultora",
+        "texto": "Não, só isso mesmo. Resolve, por favor.",
+        "interrompe": false
+      },
+      {
+        "quem": "agente",
+        "texto": "Vou acompanhar de perto. Obrigado pela ligação e uma boa tarde pra você.",
+        "interrompe": false
+      }
+    ],
+    "script": "Central de Relacionamento Aurélia, meu nome é Rafael, tudo bem? Com quem eu falo? Oi, Rafael. Aqui é a Marlene. Olha, eu tô ligando de novo, é o segundo mês seguido, por causa de cobrança no meu cartão. Poxa, Marlene, sinto muito por isso. Vou te ajudar sim. Me passa o seu código de consultora, por favor? É... um, oito, zero, dois, oito. Um, oito, zero, dois, oito. Confere. E o número do pedido, você tem aí? Tenho. É oito, nove, dois, oito, sete, oito. Oito, nove, dois, oito, sete, oito. Peraí que eu abro aqui. Então, me conta direitinho o que aconteceu. Então, eu paguei esse pedido no cartão, deu duzentos e oitenta e quatro reais, era Raízes e Maré, e veio cobrado duas vezes na fatura. Duas vezes, Rafael! Entendi. Você viu duas cobranças do mesmo valor... Do mesmo valor, no mesmo dia! E não é a primeira vez, tá? Mês passado aconteceu a mesma coisa, eu liguei, me falaram que ia resolver, e olha aí de novo. Tô vendo aqui no sistema. Tem duas transações aprovadas nesse pedido. E eu vejo o registro do mês passado também, é isso mesmo. Então! Eu tô sem esse dinheiro, tenho conta pra pagar, tô muito chateada. Eu quero o estorno. Não quero crédito, não quero desconto no próximo, quero estorno. Compreendo, Marlene. Vou abrir a solicitação de estorno da cobrança duplicada, de duzentos e oitenta e quatro reais, e vou marcar como reincidência pra ir com prioridade. Tá. E quanto tempo? Porque da outra vez falaram dez dias e passou um mês, hein. O prazo é de até dez dias úteis, mas vou deixar sinalizado o caso anterior. Seu protocolo é dois, zero, sete, quatro, um, nove, cinco. Peraí, deixa eu anotar... dois, zero, sete, quatro, um, nove, cinco. Tá, anotei. Isso mesmo. Eu também te mando a confirmação por e-mail. Se por acaso não cair na fatura... Se não cair eu ligo de novo e vou na ouvidoria, tô avisando. Já deu, viu? Fica à vontade, Marlene, você tá no seu direito. Peço desculpa pelo transtorno. Posso ajudar em mais alguma coisa? Não, só isso mesmo. Resolve, por favor. Vou acompanhar de perto. Obrigado pela ligação e uma boa tarde pra você."
+  },
+  {
+    "call_id": "sint_028",
+    "filename": "sint_028.wav",
+    "scenario": "Consultor homem novo pergunta como funciona a promoção do ciclo e o prazo para passar o pedido.",
+    "consultora_nome": "Rafael",
+    "consultora_genero": "m",
+    "agente_nome": "Camila",
+    "agente_genero": "f",
+    "gabarito": {
+      "tipo_problema": "outro",
+      "suspeita_fraude": false,
+      "reincidencia": false,
+      "sentiment": "neutro",
+      "consultora_codigo": "58835",
+      "pedido_numero": "553839",
+      "produtos_faltantes": []
+    },
+    "falas": [
+      {
+        "quem": "agente",
+        "texto": "Central de Relacionamento Aurélia, meu nome é Camila, tudo bem? Com quem eu falo?",
+        "interrompe": false
+      },
+      {
+        "quem": "consultora",
+        "texto": "Oi, Camila, tudo bem? Aqui é o Rafael, eu sou consultor.",
+        "interrompe": false
+      },
+      {
+        "quem": "agente",
+        "texto": "Prazer, Rafael. Me passa o seu código de consultor, por favor?",
+        "interrompe": false
+      },
+      {
+        "quem": "consultora",
+        "texto": "Claro. É cinco, oito, oito, três, cinco.",
+        "interrompe": false
+      },
+      {
+        "quem": "agente",
+        "texto": "Cinco, oito, oito, três, cinco. Certo. E o número do pedido, você tem aí?",
+        "interrompe": false
+      },
+      {
+        "quem": "consultora",
+        "texto": "Tenho sim, peraí... é cinco, cinco, três, oito, três, nove.",
+        "interrompe": false
+      },
+      {
+        "quem": "agente",
+        "texto": "Cinco, cinco, três, oito, três, nove. Confirmado aqui. Em que posso te ajudar hoje?",
+        "interrompe": false
+      },
+      {
+        "quem": "consultora",
+        "texto": "Então, eu sou novo ainda, tô no meu segundo ciclo. Queria entender como funciona a promoção do ciclo, tipo assim, como eu entro nela.",
+        "interrompe": false
+      },
+      {
+        "quem": "agente",
+        "texto": "Ah, legal, Rafael! A promoção do ciclo vale para os pedidos que você passar dentro do prazo do ciclo, e os produtos em destaque já aparecem com o desconto no aplicativo.",
+        "interrompe": false
+      },
+      {
+        "quem": "consultora",
+        "texto": "Hum, entendi. Então eu não preciso fazer nada, é só colocar o produto no pedido?",
+        "interrompe": false
+      },
+      {
+        "quem": "agente",
+        "texto": "Isso. Você coloca os itens da promoção, tipo Raízes, Diário, e o desconto entra sozinho. Só que tem um valor mínimo de pedido, que é...",
+        "interrompe": true
+      },
+      {
+        "quem": "consultora",
+        "texto": "Ah, o mínimo, é... eu ia perguntar isso. Quanto que é?",
+        "interrompe": true
+      },
+      {
+        "quem": "agente",
+        "texto": "É cento e vinte reais em produtos pra pedido ser aceito, tá? Abaixo disso o sistema não deixa enviar.",
+        "interrompe": false
+      },
+      {
+        "quem": "consultora",
+        "texto": "Beleza, cento e vinte reais. E o prazo pra eu passar o pedido, até quando que é?",
+        "interrompe": false
+      },
+      {
+        "quem": "agente",
+        "texto": "O prazo vai até as vinte e três horas e cinquenta e nove minutos do último dia do ciclo. Depois disso, o pedido só entra no ciclo seguinte.",
+        "interrompe": false
+      },
+      {
+        "quem": "consultora",
+        "texto": "Tá, então melhor eu não deixar pra última hora, né? Porque às vezes o aplicativo fica lento.",
+        "interrompe": false
+      },
+      {
+        "quem": "agente",
+        "texto": "Exatamente, o ideal é passar com antecedência. Quer que eu te explique mais alguma coisa, Rafael?",
+        "interrompe": false
+      },
+      {
+        "quem": "consultora",
+        "texto": "Não, era isso mesmo. Ficou bem claro, obrigado.",
+        "interrompe": false
+      },
+      {
+        "quem": "agente",
+        "texto": "Imagina! Seu protocolo de atendimento é zero, zero, quatro, sete, dois, nove. Boas vendas e um ótimo ciclo!",
+        "interrompe": false
+      },
+      {
+        "quem": "consultora",
+        "texto": "Valeu, Camila, até mais!",
+        "interrompe": false
+      }
+    ],
+    "script": "Central de Relacionamento Aurélia, meu nome é Camila, tudo bem? Com quem eu falo? Oi, Camila, tudo bem? Aqui é o Rafael, eu sou consultor. Prazer, Rafael. Me passa o seu código de consultor, por favor? Claro. É cinco, oito, oito, três, cinco. Cinco, oito, oito, três, cinco. Certo. E o número do pedido, você tem aí? Tenho sim, peraí... é cinco, cinco, três, oito, três, nove. Cinco, cinco, três, oito, três, nove. Confirmado aqui. Em que posso te ajudar hoje? Então, eu sou novo ainda, tô no meu segundo ciclo. Queria entender como funciona a promoção do ciclo, tipo assim, como eu entro nela. Ah, legal, Rafael! A promoção do ciclo vale para os pedidos que você passar dentro do prazo do ciclo, e os produtos em destaque já aparecem com o desconto no aplicativo. Hum, entendi. Então eu não preciso fazer nada, é só colocar o produto no pedido? Isso. Você coloca os itens da promoção, tipo Raízes, Diário, e o desconto entra sozinho. Só que tem um valor mínimo de pedido, que é... Ah, o mínimo, é... eu ia perguntar isso. Quanto que é? É cento e vinte reais em produtos pra pedido ser aceito, tá? Abaixo disso o sistema não deixa enviar. Beleza, cento e vinte reais. E o prazo pra eu passar o pedido, até quando que é? O prazo vai até as vinte e três horas e cinquenta e nove minutos do último dia do ciclo. Depois disso, o pedido só entra no ciclo seguinte. Tá, então melhor eu não deixar pra última hora, né? Porque às vezes o aplicativo fica lento. Exatamente, o ideal é passar com antecedência. Quer que eu te explique mais alguma coisa, Rafael? Não, era isso mesmo. Ficou bem claro, obrigado. Imagina! Seu protocolo de atendimento é zero, zero, quatro, sete, dois, nove. Boas vendas e um ótimo ciclo! Valeu, Camila, até mais!"
+  },
+  {
+    "call_id": "sint_029",
+    "filename": "sint_029.wav",
+    "scenario": "Produto chegou com validade vencendo em vinte dias; a consultora não consegue vender e quer trocar.",
+    "consultora_nome": "Marlene",
+    "consultora_genero": "f",
+    "agente_nome": "Camila",
+    "agente_genero": "f",
+    "gabarito": {
+      "tipo_problema": "outro",
+      "suspeita_fraude": false,
+      "reincidencia": false,
+      "sentiment": "negativo",
+      "consultora_codigo": "99214",
+      "pedido_numero": "153318",
+      "produtos_faltantes": []
+    },
+    "falas": [
+      {
+        "quem": "agente",
+        "texto": "Central de Relacionamento Aurélia, meu nome é Camila, tudo bem? Com quem eu falo?",
+        "interrompe": false
+      },
+      {
+        "quem": "consultora",
+        "texto": "Oi, Camila. É a Marlene. Olha, eu tô ligando porque tô bem chateada, viu.",
+        "interrompe": false
+      },
+      {
+        "quem": "agente",
+        "texto": "Poxa, Marlene, sinto muito. Vou te ajudar sim. Primeiro me passa o seu código de consultora, por favor.",
+        "interrompe": false
+      },
+      {
+        "quem": "consultora",
+        "texto": "É nove, nove, dois, um, quatro.",
+        "interrompe": false
+      },
+      {
+        "quem": "agente",
+        "texto": "Nove, nove, dois, um, quatro. Certo. E o número do pedido, você tem aí?",
+        "interrompe": false
+      },
+      {
+        "quem": "consultora",
+        "texto": "Peraí, deixa eu achar aqui... é um, cinco, três, três, um, oito.",
+        "interrompe": false
+      },
+      {
+        "quem": "agente",
+        "texto": "Um, cinco, três, três, um, oito. Confirmado. Então me conta, o que aconteceu com esse pedido?",
+        "interrompe": false
+      },
+      {
+        "quem": "consultora",
+        "texto": "Então, ele chegou ontem, aí eu fui conferir e os hidratantes Diário, são quatro, tão com a validade pra vencer em vinte dias. Vinte dias, Camila! Isso é um absurdo.",
+        "interrompe": false
+      },
+      {
+        "quem": "agente",
+        "texto": "Entendi. E a caixa, chegou direitinho? Nada aberto, nada amassado?",
+        "interrompe": false
+      },
+      {
+        "quem": "consultora",
+        "texto": "Não, a caixa tava ótima, toda lacrada. O problema é só a validade mesmo. Eu não consigo vender isso, tipo assim, ninguém quer levar produto que vai vencer daqui a pouco, e eu fico com...",
+        "interrompe": false
+      },
+      {
+        "quem": "agente",
+        "texto": "Imagino, Marlene, você tem toda razão em ficar chateada. Ninguém devia receber produto assim, ainda mais pra revender.",
+        "interrompe": true
+      },
+      {
+        "quem": "consultora",
+        "texto": "Pois é. Eu paguei o pedido certinho, né, e agora tô com quatro hidratantes parados aqui. Fiquei bem decepcionada, sinceramente.",
+        "interrompe": false
+      },
+      {
+        "quem": "agente",
+        "texto": "Eu entendo. Vou abrir uma solicitação de troca desses quatro Diário por produtos com a validade em dia. Eles estão com a embalagem original, sem uso?",
+        "interrompe": false
+      },
+      {
+        "quem": "consultora",
+        "texto": "Tão sim, nem tirei do plástico. Mas, olha, eu queria que isso fosse resolvido logo, porque eu já tinha cliente esperando...",
+        "interrompe": false
+      },
+      {
+        "quem": "agente",
+        "texto": "Vai ser rápido, Marlene. A transportadora vai fazer a coleta dos...",
+        "interrompe": false
+      },
+      {
+        "quem": "consultora",
+        "texto": "Ah, mas eu vou ter que ficar esperando em casa de novo? Eu trabalho, Camila, não dá pra ficar o dia inteiro parada.",
+        "interrompe": true
+      },
+      {
+        "quem": "agente",
+        "texto": "Fica tranquila, a coleta é feita em até cinco dias úteis e você recebe um aviso antes. A reposição sai logo depois que os produtos forem recebidos. Seu protocolo é zero, quatro, sete, dois, nove, um, oito.",
+        "interrompe": false
+      },
+      {
+        "quem": "consultora",
+        "texto": "Zero, quatro, sete, dois, nove, um, oito. Tá anotado. Tá bom, então. Mas fica o meu desabafo, viu, isso não devia ter acontecido.",
+        "interrompe": false
+      },
+      {
+        "quem": "agente",
+        "texto": "Registrei o seu relato, Marlene, e peço desculpas pelo transtorno. Posso ajudar em mais alguma coisa?",
+        "interrompe": false
+      },
+      {
+        "quem": "consultora",
+        "texto": "Não, só isso mesmo. Obrigada, Camila.",
+        "interrompe": false
+      }
+    ],
+    "script": "Central de Relacionamento Aurélia, meu nome é Camila, tudo bem? Com quem eu falo? Oi, Camila. É a Marlene. Olha, eu tô ligando porque tô bem chateada, viu. Poxa, Marlene, sinto muito. Vou te ajudar sim. Primeiro me passa o seu código de consultora, por favor. É nove, nove, dois, um, quatro. Nove, nove, dois, um, quatro. Certo. E o número do pedido, você tem aí? Peraí, deixa eu achar aqui... é um, cinco, três, três, um, oito. Um, cinco, três, três, um, oito. Confirmado. Então me conta, o que aconteceu com esse pedido? Então, ele chegou ontem, aí eu fui conferir e os hidratantes Diário, são quatro, tão com a validade pra vencer em vinte dias. Vinte dias, Camila! Isso é um absurdo. Entendi. E a caixa, chegou direitinho? Nada aberto, nada amassado? Não, a caixa tava ótima, toda lacrada. O problema é só a validade mesmo. Eu não consigo vender isso, tipo assim, ninguém quer levar produto que vai vencer daqui a pouco, e eu fico com... Imagino, Marlene, você tem toda razão em ficar chateada. Ninguém devia receber produto assim, ainda mais pra revender. Pois é. Eu paguei o pedido certinho, né, e agora tô com quatro hidratantes parados aqui. Fiquei bem decepcionada, sinceramente. Eu entendo. Vou abrir uma solicitação de troca desses quatro Diário por produtos com a validade em dia. Eles estão com a embalagem original, sem uso? Tão sim, nem tirei do plástico. Mas, olha, eu queria que isso fosse resolvido logo, porque eu já tinha cliente esperando... Vai ser rápido, Marlene. A transportadora vai fazer a coleta dos... Ah, mas eu vou ter que ficar esperando em casa de novo? Eu trabalho, Camila, não dá pra ficar o dia inteiro parada. Fica tranquila, a coleta é feita em até cinco dias úteis e você recebe um aviso antes. A reposição sai logo depois que os produtos forem recebidos. Seu protocolo é zero, quatro, sete, dois, nove, um, oito. Zero, quatro, sete, dois, nove, um, oito. Tá anotado. Tá bom, então. Mas fica o meu desabafo, viu, isso não devia ter acontecido. Registrei o seu relato, Marlene, e peço desculpas pelo transtorno. Posso ajudar em mais alguma coisa? Não, só isso mesmo. Obrigada, Camila."
+  },
+  {
+    "call_id": "sint_030",
+    "filename": "sint_030.wav",
+    "scenario": "Consultora liga para elogiar a entrega rápida e aproveita para tirar uma dúvida sobre o aplicativo.",
+    "consultora_nome": "Marlene",
+    "consultora_genero": "f",
+    "agente_nome": "Rafael",
+    "agente_genero": "m",
+    "gabarito": {
+      "tipo_problema": "outro",
+      "suspeita_fraude": false,
+      "reincidencia": false,
+      "sentiment": "positivo",
+      "consultora_codigo": "10937",
+      "pedido_numero": "283045",
+      "produtos_faltantes": []
+    },
+    "falas": [
+      {
+        "quem": "agente",
+        "texto": "Central de Relacionamento Aurélia, boa tarde, meu nome é Rafael. Com quem eu falo?",
+        "interrompe": false
+      },
+      {
+        "quem": "consultora",
+        "texto": "Oi, Rafael, boa tarde! Aqui é a Marlene, tudo bem com você?",
+        "interrompe": false
+      },
+      {
+        "quem": "agente",
+        "texto": "Tudo ótimo, Marlene. Me passa o seu código de consultora, por favor?",
+        "interrompe": false
+      },
+      {
+        "quem": "consultora",
+        "texto": "É... um, zero, nove, três, sete.",
+        "interrompe": false
+      },
+      {
+        "quem": "agente",
+        "texto": "Um, zero, nove, três, sete. Confere. E o número do pedido, você tem aí?",
+        "interrompe": false
+      },
+      {
+        "quem": "consultora",
+        "texto": "Tenho, peraí... é dois, oito, três, zero, quatro, cinco.",
+        "interrompe": false
+      },
+      {
+        "quem": "agente",
+        "texto": "Dois, oito, três, zero, quatro, cinco. Certo, achei o pedido aqui. Em que eu posso te ajudar?",
+        "interrompe": false
+      },
+      {
+        "quem": "consultora",
+        "texto": "Então, na verdade eu liguei pra elogiar, sabe? O pedido chegou muito rápido. Eu fiz na segunda e na quarta já tava aqui na minha porta.",
+        "interrompe": false
+      },
+      {
+        "quem": "agente",
+        "texto": "Que bom, Marlene! E veio tudo certinho na caixa?",
+        "interrompe": false
+      },
+      {
+        "quem": "consultora",
+        "texto": "Tudo certinho! Os três Diário de amora, o Maré, o Raízes, tudo lacrado, nada faltando. Minhas clientes vão ficar muito felizes.",
+        "interrompe": false
+      },
+      {
+        "quem": "agente",
+        "texto": "Fico feliz em saber. Vou registrar o seu elogio pra equipe de logística e, se você quiser...",
+        "interrompe": false
+      },
+      {
+        "quem": "consultora",
+        "texto": "Ah, e aproveitando, Rafael, posso tirar uma dúvida do aplicativo?",
+        "interrompe": true
+      },
+      {
+        "quem": "agente",
+        "texto": "Claro, pode falar.",
+        "interrompe": false
+      },
+      {
+        "quem": "consultora",
+        "texto": "É que eu tô tentando achar onde eu vejo o rastreio do pedido, tipo assim, pra mandar pras minhas clientes. Eu abro o app e só aparece a vitrine.",
+        "interrompe": false
+      },
+      {
+        "quem": "agente",
+        "texto": "Entendi. Você abre o aplicativo, toca em Pedidos no menu lá embaixo, e depois escolhe o pedido que você quer...",
+        "interrompe": false
+      },
+      {
+        "quem": "consultora",
+        "texto": "Ah, peraí, tô abrindo aqui... achei! Meus Pedidos, é isso?",
+        "interrompe": true
+      },
+      {
+        "quem": "agente",
+        "texto": "Isso mesmo. Toca no pedido e vai aparecer Acompanhar entrega, com todas as etapas.",
+        "interrompe": false
+      },
+      {
+        "quem": "consultora",
+        "texto": "Apareceu! Nossa, que fácil, eu tava procurando no lugar errado esse tempo todo.",
+        "interrompe": false
+      },
+      {
+        "quem": "agente",
+        "texto": "Acontece bastante, não se preocupa. Posso ajudar em mais alguma coisa?",
+        "interrompe": false
+      },
+      {
+        "quem": "consultora",
+        "texto": "Não, só isso mesmo. Muito obrigada, viu, Rafael, vocês são nota dez.",
+        "interrompe": true
+      },
+      {
+        "quem": "agente",
+        "texto": "Imagina, Marlene. O protocolo do atendimento é sete, um, quatro, nove, dois, zero, oito. Uma ótima tarde pra você!",
+        "interrompe": false
+      }
+    ],
+    "script": "Central de Relacionamento Aurélia, boa tarde, meu nome é Rafael. Com quem eu falo? Oi, Rafael, boa tarde! Aqui é a Marlene, tudo bem com você? Tudo ótimo, Marlene. Me passa o seu código de consultora, por favor? É... um, zero, nove, três, sete. Um, zero, nove, três, sete. Confere. E o número do pedido, você tem aí? Tenho, peraí... é dois, oito, três, zero, quatro, cinco. Dois, oito, três, zero, quatro, cinco. Certo, achei o pedido aqui. Em que eu posso te ajudar? Então, na verdade eu liguei pra elogiar, sabe? O pedido chegou muito rápido. Eu fiz na segunda e na quarta já tava aqui na minha porta. Que bom, Marlene! E veio tudo certinho na caixa? Tudo certinho! Os três Diário de amora, o Maré, o Raízes, tudo lacrado, nada faltando. Minhas clientes vão ficar muito felizes. Fico feliz em saber. Vou registrar o seu elogio pra equipe de logística e, se você quiser... Ah, e aproveitando, Rafael, posso tirar uma dúvida do aplicativo? Claro, pode falar. É que eu tô tentando achar onde eu vejo o rastreio do pedido, tipo assim, pra mandar pras minhas clientes. Eu abro o app e só aparece a vitrine. Entendi. Você abre o aplicativo, toca em Pedidos no menu lá embaixo, e depois escolhe o pedido que você quer... Ah, peraí, tô abrindo aqui... achei! Meus Pedidos, é isso? Isso mesmo. Toca no pedido e vai aparecer Acompanhar entrega, com todas as etapas. Apareceu! Nossa, que fácil, eu tava procurando no lugar errado esse tempo todo. Acontece bastante, não se preocupa. Posso ajudar em mais alguma coisa? Não, só isso mesmo. Muito obrigada, viu, Rafael, vocês são nota dez. Imagina, Marlene. O protocolo do atendimento é sete, um, quatro, nove, dois, zero, oito. Uma ótima tarde pra você!"
+  }
+]
